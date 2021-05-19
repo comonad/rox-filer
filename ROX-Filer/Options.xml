@@ -41,6 +41,8 @@
 		If this is on then files which have one or more extended attributes set will have an emblem added to indicate this.</toggle>
 	<toggle name='hide_root_msg' label="Hide the message bar Running as user 'root'">
 		This hides the bar even with the command-line option -u, --user if user is the root.</toggle>
+	<entry name='time_format' label="Time and date format">
+		Set time and date format for Properties window and extra details view.</entry>
 	</frame>
 
     <section title='New Window'>

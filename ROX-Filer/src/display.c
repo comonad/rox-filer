@@ -113,6 +113,7 @@ void display_init()
 	option_add_int(&o_display_sort_by, "display_sort_by", SORT_NAME);
 	option_add_int(&o_display_show_hidden, "display_show_hidden", TRUE);
 	option_add_int(&o_xattr_show, "xattr_show", TRUE);
+	option_add_string(&o_time_format, "time_format", COMPACT_TIME_FORMAT);
 	option_add_int(&o_huge_size, "huge_size", HUGE_SIZE);
 
 	option_add_int(&o_display_size, "display_icon_size", AUTO_SIZE_ICONS);
