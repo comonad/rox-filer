@@ -52,6 +52,8 @@
 static GHashTable *uid_hash = NULL;	/* UID -> User name */
 static GHashTable *gid_hash = NULL;	/* GID -> Group name */
 
+Option o_time_format;
+
 /* Static prototypes */
 static void MD5Transform(guint32 buf[4], guint32 const in[16]);
 
@@ -591,7 +593,7 @@ void set_blocking(int fd, gboolean blocking)
  */
 char *pretty_time(const time_t *time)
 {
-        char time_buf[32];
+        char time_buf[64];
 	struct tm *tms;
 
 	if (time == NULL)
@@ -601,7 +603,7 @@ char *pretty_time(const time_t *time)
 	if (tms == NULL)
 		return g_strdup("(invalid time)");
 
-        if (strftime(time_buf, sizeof(time_buf), COMPACT_TIME_FORMAT, tms) == 0)
+        if (strftime(time_buf, sizeof(time_buf), o_time_format.value, tms) == 0)
 		time_buf[0]= 0;
 
 	return to_utf8(time_buf);
