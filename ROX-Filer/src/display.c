@@ -94,6 +94,7 @@ Option o_background_colour;
 static Option o_wrap_by_char;
 static Option o_huge_size;
 int huge_size = HUGE_SIZE;
+static int timelen = 0;
 
 /* Static prototypes */
 static void options_changed(void);
@@ -884,16 +885,19 @@ static void options_changed(void)
 		o_small_width.has_changed ||
 		o_max_length.has_changed ||
 		o_wrap_by_char.has_changed ||
+		o_time_format.has_changed ||
 		o_huge_size.has_changed
 	)
 		flags |= VIEW_UPDATE_NAME; /* Recreate PangoLayout */
+
+	if (o_time_format.has_changed)
+		timelen = 0;
 
 	if (o_display_show_dir_thumbs.has_changed ||
 			o_jpeg_thumbs.has_changed ||
 			o_pixmap_thumb_file_size.has_changed
 	)
 		flags |= VIEW_UPDATE_VIEWDATA;
-
 
 	gboolean changed =
 		o_display_show_thumbs.has_changed ||
@@ -963,7 +967,6 @@ static char *getdetails(FilerWindow *filer_window,
 	}
 	else if (sizeonly && filer_window->details_type == DETAILS_TIMES)
 	{ //time is heavy
-		static int timelen = 0;
 		if (!timelen)
 		{
 			gchar *ctime = pretty_time(&item->ctime);
