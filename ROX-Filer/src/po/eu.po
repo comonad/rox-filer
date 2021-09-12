@@ -7,60 +7,65 @@ msgid ""
 msgstr ""
 "Project-Id-Version: rox-es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-09 14:02+0100\n"
+"POT-Creation-Date: 2021-09-12 13:09+0200\n"
 "PO-Revision-Date: 2005-06-05 23:09+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team:  librezale.org <librezale@librezale.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
 
 #: abox.c:127
-msgid "<dir>"
-msgstr "<dir>"
+msgid "<src>"
+msgstr ""
 
-#: abox.c:219
+#: abox.c:172 abox.c:174
+msgid "+.Num"
+msgstr ""
+
+#: abox.c:234
 msgid "_Quiet"
 msgstr "_Ixilik"
 
-#: abox.c:228
+#: abox.c:247
 msgid "Quiet"
 msgstr "Ixilik"
 
-#: abox.c:228
+#: abox.c:247
 msgid "Don't confirm every operation"
 msgstr "Ez berrretsi ekintza bakoitza"
 
-#: abox.c:455 tips:60
+#: abox.c:441 infobox.c:803 tips:52 tips:112
 msgid "Name"
 msgstr "Izena"
 
-#: abox.c:461 menu.c:232
+#: abox.c:447 menu.c:751
 msgid "Directory"
 msgstr "Direktorio"
 
-#: abox.c:550
+#: abox.c:546
 msgid "Expression:"
 msgstr "Espresioa:"
 
-#: action.c:58
+#: action.c:57
 msgid "See the attr(5) man page for full details."
 msgstr ""
 
-#: action.c:60
+#: action.c:59
 msgid "See the fsattr(5) man page for full details."
 msgstr ""
 
-#: action.c:62
+#: action.c:61
 msgid "You do not appear to have OS support."
 msgstr ""
 
-#: action.c:188
+#: action.c:198
 msgid "Find expression reference"
 msgstr "Bilaketa espresioari erreferentzia"
 
-#: action.c:199
+#: action.c:209
 msgid ""
 "<u>Quick Start</u>\n"
 "Just put the name of the file you're looking for in single quotes:\n"
@@ -136,11 +141,11 @@ msgstr ""
 "'komandoa'-n % fitxategiaren bideaz aldatuko da)\n"
 "<b>prune</b> (gezurra, eta direktorio baten edukien bilaketa ezintzen du)."
 
-#: action.c:246
+#: action.c:256
 msgid "Change permissions reference"
 msgstr "Bilaketa espresioari buruzko argibideak"
 
-#: action.c:257
+#: action.c:267
 msgid ""
 "Normally, you can just select a command from the menu (click \n"
 "on the arrow beside the command box). Sometimes, you need more...\n"
@@ -201,11 +206,11 @@ msgstr ""
 "\n"
 "chmod(1) manualaren orria begiratu xehetasun gehiagorako."
 
-#: action.c:298
+#: action.c:308
 msgid "Set type reference"
 msgstr "Mota erreferentzia ezarri"
 
-#: action.c:309
+#: action.c:319
 #, fuzzy
 msgid ""
 "Normally ROX-Filer determines the type of a regular file\n"
@@ -237,48 +242,55 @@ msgstr ""
 "eragileak onartzen badu.\n"
 "\n"
 
-#: action.c:416
+#: action.c:459
+#, fuzzy
 msgid ""
 "\n"
-"Process terminated.\n"
+"Process terminated."
 msgstr ""
 "\n"
 "Prozesua amaiturik.\n"
 
-#: action.c:432
-msgid "There was one error.\n"
+#: action.c:479
+#, fuzzy
+msgid " - There was one error."
 msgstr "Errore bat gertatu da.\n"
 
-#: action.c:434
-#, c-format
-msgid "There were %d errors.\n"
+#: action.c:481
+#, fuzzy, c-format
+msgid " - There were %d errors."
 msgstr "%d errore gertatu dira.\n"
 
-#: action.c:458
+#: action.c:516
 msgid "ERROR reading"
 msgstr "Irakurketa ERROREA"
 
-#: action.c:501
+#: action.c:565
+#, fuzzy
 msgid ""
 "'\n"
-"Done\n"
+"Done"
 msgstr ""
 "'\n"
 "Eginda\n"
 
-#: action.c:557 support.c:395
+#: action.c:621 support.c:425
 msgid "ERROR"
 msgstr "ERROREA"
 
-#: action.c:711 main.c:674 main.c:681 main.c:688
+#: action.c:798 main.c:696 main.c:710
 msgid "Yes"
 msgstr "Bai"
 
-#: action.c:714 main.c:676 main.c:690
+#: action.c:801 main.c:698 main.c:710
 msgid "No"
 msgstr "Ez"
 
-#: action.c:732
+#: action.c:806
+msgid "Add seq num"
+msgstr ""
+
+#: action.c:824
 msgid ""
 "\n"
 "Asking child process to terminate...\n"
@@ -286,7 +298,7 @@ msgstr ""
 "\n"
 "Prozesu semeari amaitzeko eskatzen...\n"
 
-#: action.c:739
+#: action.c:831
 msgid ""
 "\n"
 "Trying to KILL run-away process...\n"
@@ -294,41 +306,41 @@ msgstr ""
 "\n"
 "Prozezu iheskorra HIKTZEN saiatzen...\n"
 
-#: action.c:892
+#: action.c:1008
 #, c-format
 msgid "?Count contents of %s?"
 msgstr "?%s-ren edukia kalkulatu?"
 
-#: action.c:928
+#: action.c:1046
 #, c-format
 msgid "?Delete %s'%s'?"
 msgstr "?%s'%s' ezabatu?"
 
-#: action.c:929
+#: action.c:1047
 msgid "WRITE-PROTECTED "
 msgstr "IDAZKETA-AURKA BABESTURIK"
 
-#: action.c:936
+#: action.c:1055
 #, c-format
 msgid "'Deleting '%s'\n"
 msgstr "''%s' ezabatzen\n"
 
-#: action.c:949
+#: action.c:1070
 #, c-format
 msgid "'Directory '%s' deleted\n"
 msgstr "''%s' Direktorioa ezabaturik\n"
 
-#: action.c:982
+#: action.c:1104
 #, c-format
 msgid "?Eject '%s'?"
 msgstr "?'%s' atera?"
 
-#: action.c:989
+#: action.c:1111
 #, c-format
 msgid "'Eject '%s'\n"
 msgstr "''%s' atera\n"
 
-#: action.c:1008
+#: action.c:1130
 #, c-format
 msgid ""
 "!%s\n"
@@ -337,80 +349,95 @@ msgstr ""
 "!%s\n"
 "huts ateratzean\n"
 
-#: action.c:1027 action.c:1046
+#: action.c:1150 action.c:1169
 #, c-format
 msgid "?Check '%s'?"
 msgstr "?'%s' egiaztatu?"
 
-#: action.c:1043
+#: action.c:1166
 msgid "!Invalid find condition - change it and try again\n"
 msgstr "!Bilaketa baldintza baliogabe - aldatu eta berriz saiatu\n"
 
-#: action.c:1053
+#: action.c:1176
 #, c-format
 msgid "'(while checking '%s')\n"
 msgstr "'('%s' egiaztatzen)\n"
 
-#: action.c:1127 action.c:1152
+#: action.c:1251 action.c:1276
 #, c-format
 msgid "?Change permissions of '%s'?"
 msgstr "?'%s'-ren baimenak aldatu?"
 
-#: action.c:1133
+#: action.c:1257
 #, c-format
 msgid "'Changing permissions of '%s'\n"
 msgstr "''%s'-ren baimank aldatzen\n"
 
-#: action.c:1150
+#: action.c:1274
 msgid "!Invalid mode command - change it and try again\n"
 msgstr "!Modu baliogabea - aldatu eta ebrriz saiatu\n"
 
-#: action.c:1207 action.c:1227
+#: action.c:1332
+#, fuzzy, c-format
+msgid "?Change contents of '%s'?"
+msgstr "?'%s'-ren mota aldatu?"
+
+#: action.c:1335 action.c:1355
 #, c-format
 msgid "?Change type of '%s'?"
 msgstr "?'%s'-ren mota aldatu?"
 
-#: action.c:1224
+#: action.c:1352
 msgid "!Invalid type - change it and try again\n"
 msgstr "!mota baliogabea - aldatu eta berriz saiatu\n"
 
-#: action.c:1246
+#: action.c:1374
 #, c-format
 msgid "'Changing type of '%s' to '%s'\n"
 msgstr "''%s'-ren mota '%s'-ra aldatzen\n"
 
-#: action.c:1325
+#: action.c:1397
+#, fuzzy, c-format
+msgid "'Not changing type of directory '%s'\n"
+msgstr "''%s'-ren mota '%s'-ra aldatzen\n"
+
+#: action.c:1403
+#, c-format
+msgid "'Non-regular file '%s' not changed\n"
+msgstr ""
+
+#: action.c:1548 action.c:1857
 #, c-format
 msgid "?'%s' already exists - %s?"
 msgstr "?'%s' badago dagoeneko - %s?"
 
-#: action.c:1327
+#: action.c:1550 action.c:1859
 msgid "merge contents"
 msgstr "edukiak batu"
 
-#: action.c:1328
+#: action.c:1551 action.c:1860
 msgid "overwrite"
 msgstr "gainidatzi"
 
-#: action.c:1344
+#: action.c:1570
 msgid "'Trying copy anyway...\n"
 msgstr "'Hala ere kopiatzen saiatzen...\n"
 
-#: action.c:1353
+#: action.c:1579
 #, c-format
 msgid "?Copy %s as %s?"
 msgstr "?%s %s-ra kopiatu?"
 
-#: action.c:1357
+#: action.c:1584 action.c:1717
 #, c-format
 msgid "'Copying %s as %s\n"
 msgstr "'%s %s-ra kopiatzen\n"
 
-#: action.c:1372
+#: action.c:1601 action.c:1906
 msgid "!ERROR: Destination already exists, but is not a directory\n"
 msgstr "!ERROREA Helburua badago baina ez da direktorio bat\n"
 
-#: action.c:1444
+#: action.c:1686
 #, c-format
 msgid ""
 "!%s\n"
@@ -419,26 +446,7 @@ msgstr ""
 "!%s\n"
 "Huts '%s' kopiatzerakoan\n"
 
-#: action.c:1488
-#, c-format
-msgid "?'%s' already exists - overwrite?"
-msgstr "?'%s' badago - gainidatzi?"
-
-#: action.c:1503
-msgid "'Trying move anyway...\n"
-msgstr "'Hala ere mugitzen saiatzen...\n"
-
-#: action.c:1511
-#, c-format
-msgid "?Move %s as %s?"
-msgstr "?%s %s-ra mugit?"
-
-#: action.c:1515
-#, c-format
-msgid "'Moving %s as %s\n"
-msgstr "'%s %s-ra mugitzen\n"
-
-#: action.c:1523
+#: action.c:1769
 #, c-format
 msgid ""
 "!%s\n"
@@ -447,46 +455,60 @@ msgstr ""
 "!%s\n"
 "Huts %s %s-ra mugitzerakoan\n"
 
-#: action.c:1544
+#: action.c:1880
+msgid "'Trying move anyway...\n"
+msgstr "'Hala ere mugitzen saiatzen...\n"
+
+#: action.c:1889
+#, c-format
+msgid "?Move %s as %s?"
+msgstr "?%s %s-ra mugit?"
+
+#: action.c:1894
+#, c-format
+msgid "'Moving %s as %s\n"
+msgstr "'%s %s-ra mugitzen\n"
+
+#: action.c:1952
 msgid "!ERROR: Can't copy object into itself\n"
 msgstr "!ERROREA: Ezinda objetu bat bere buruan kopiatu\n"
 
-#: action.c:1559
+#: action.c:1964
 msgid "!ERROR: Can't move/rename object into itself\n"
 msgstr "!ERROREA: Ezinda objetu bat bere burura mugitu/berrizendatu\n"
 
 # Verificar
-#: action.c:1571
+#: action.c:1973
 #, c-format
 msgid "'Linking %s as %s\n"
 msgstr "'%s %s-rekin lotzen\n"
 
-#: action.c:1576
+#: action.c:1978
 #, c-format
 msgid "?Link %s as %s?"
 msgstr "?%s %s-rekin lotu?"
 
-#: action.c:1618
+#: action.c:2021
 #, c-format
 msgid "'Mounting %s\n"
 msgstr "'%s muntatzen\n"
 
-#: action.c:1619
+#: action.c:2022
 #, c-format
 msgid "'Unmounting %s\n"
 msgstr "'%s desmuntatzen\n"
 
-#: action.c:1622
+#: action.c:2025
 #, c-format
 msgid "?Mount %s?"
 msgstr "?%s muntatu?"
 
-#: action.c:1623
+#: action.c:2026
 #, c-format
 msgid "?Unmount %s?"
 msgstr "?%s desmuntatu?"
 
-#: action.c:1643
+#: action.c:2047
 #, c-format
 msgid ""
 "!%s\n"
@@ -495,7 +517,7 @@ msgstr ""
 "!%s\n"
 "Huts muntatzerakoan\n"
 
-#: action.c:1644
+#: action.c:2048
 #, c-format
 msgid ""
 "!%s\n"
@@ -504,11 +526,11 @@ msgstr ""
 "!%s\n"
 "Huts desmunatzerakoan\n"
 
-#: action.c:1652
+#: action.c:2056
 msgid "'(seems to be mounted now anyway)\n"
 msgstr "'(dirudienez muntaturik dagoeneko hala ere)\n"
 
-#: action.c:1698
+#: action.c:2102
 #, c-format
 msgid ""
 "'\n"
@@ -517,296 +539,320 @@ msgstr ""
 "'\n"
 "Guztira: %s ("
 
-#: action.c:1704
+#: action.c:2108
 msgid "file"
 msgstr "fitxategia"
 
-#: action.c:1704
+#: action.c:2108
 msgid "files"
 msgstr "fitxategi"
 
-#: action.c:1708
+#: action.c:2112
 msgid "no directories)\n"
 msgstr "direktoriorik ez)\n"
 
-#: action.c:1712
+#: action.c:2116
 msgid "directory"
 msgstr "direktorio"
 
-#: action.c:1713
+#: action.c:2117
 msgid "directories"
 msgstr "direktorio"
 
-#: action.c:1754
+#: action.c:2155
 msgid "!No mount points selected!\n"
 msgstr "!Ez da muntatzepunturik aukeratu!\n"
 
-#: action.c:1839
+#: action.c:2231
 msgid "?Another search?"
 msgstr "?Beste bilaket bat?"
 
-#: action.c:1869 action.c:1900
+#: action.c:2259 action.c:2291
 #, c-format
 msgid "!'%s' is a symbolic link\n"
 msgstr "!'%s' esteka sinboliko bat da\n"
 
-#: action.c:1940
+#: action.c:2342
 msgid "You need to select some items to search through"
 msgstr "Bertan bilatzeko beharko diren elementuak aukeratu behar dituzu"
 
-#: action.c:1950 menu.c:223
+#: action.c:2352 menu.c:728
 msgid "Find"
 msgstr "Bilatu"
 
-#: action.c:1983
+#: action.c:2387
 msgid "You need to select some items to count"
 msgstr "Kontatzeko elementu batzuk aukeratu behar dituzu"
 
-#: action.c:1987
+#: action.c:2391
 msgid "Disk Usage"
 msgstr "Diska erabilera"
 
-#: action.c:2021
+#: action.c:2429
 msgid "Mount / Unmount"
 msgstr "Muntatu / Desmuntatu"
 
-#: action.c:2034
+#: action.c:2448
 msgid "ROX-Filer does not yet support mount points on your system. Sorry."
 msgstr ""
 "ROX-Filer-ek ez ditu oraindik zure sistemako munatze puntuak onartzen. "
 "Barkatu."
 
-#: action.c:2048 menu.c:210 tips:208
+#: action.c:2462 menu.c:701 tips:246
 msgid "Delete"
 msgstr "Ezabatu"
 
-#: action.c:2058 tips:213
+#: action.c:2476 action.c:2680 action.c:2737
 msgid "Force"
 msgstr "Indartu"
 
-#: action.c:2058
+#: action.c:2476
 msgid "Don't confirm deletion of non-writeable items"
 msgstr "Idazketa aurka babesturiko elementuen ezabatzea ez berretsi"
 
-#: action.c:2061 action.c:2116 action.c:2175 action.c:2228 action.c:2264
-#: tips:215
+#: action.c:2479 action.c:2540 action.c:2605 action.c:2695 action.c:2752
+#: tips:253
 msgid "Brief"
 msgstr "Labur"
 
-#: action.c:2061
+#: action.c:2479
 msgid "Only log directories being deleted"
 msgstr "Ezabaturik izango diren direktorioak bakarrik bistarazi"
 
-#: action.c:2078
+#: action.c:2498
 msgid "You need to select the items whose permissions you want to change"
 msgstr "Baimenak aldatu nahi dizkiezun elementuak aukeratu behar dituzu"
 
-#: action.c:2086
+#: action.c:2506
 msgid "a+x (Make executable/searchable)"
 msgstr "a+x (abiarazgarri/irakurgarri egin)"
 
-#: action.c:2088
+#: action.c:2508
 msgid "a-x (Make non-executable/non-searchable)"
 msgstr "a-x (ez-abiarazgarri/ez-irakurgarri egin)"
 
-#: action.c:2090
+#: action.c:2510
 msgid "u+rw (Give owner read+write)"
 msgstr "u+rw (Jabeari Irakurketa+Idazketa baimena eman)"
 
-#: action.c:2092
+#: action.c:2512
 msgid "go-rwx (Private - owner access only)"
 msgstr "go-rwx (Pribatu - jabearentza soilik)"
 
-#: action.c:2094
+#: action.c:2514
 msgid "go=u-w (Public access, not write)"
 msgstr "go=u-w (Sarrera publikoa, idazketarik gabekoa)"
 
-#: action.c:2105 menu.c:184 menu.c:221 tips:75
+#: action.c:2525 menu.c:724 tips:75 tips:118
 msgid "Permissions"
 msgstr "Baimenak"
 
-#: action.c:2116 action.c:2175
+#: action.c:2540 action.c:2605
 msgid "Don't list processed files"
 msgstr "Ez zerredatu prozesaturiko fitxategiak"
 
-#: action.c:2119 action.c:2178 tips:217
+#: action.c:2543 action.c:2608 tips:255
 msgid "Recurse"
 msgstr "Errekurtsibo"
 
-#: action.c:2119
+#: action.c:2543
 msgid "Also change contents of subdirectories"
 msgstr "Azpidirektorioen edukia ere aldatu"
 
-#: action.c:2123
+#: action.c:2547
 msgid "Command:"
 msgstr "Komandoa:"
 
-#: action.c:2151
+#: action.c:2577
 msgid "You need to select the items whose type you want to change"
 msgstr "Mota aldatu nahi diezun elementuak aukeratu behar dituzu"
 
-#: action.c:2164
+#: action.c:2590
 msgid "Set type"
 msgstr "Mota ezarri"
 
-#: action.c:2178
+#: action.c:2608
 msgid "Change contents of subdirectories"
 msgstr "Azpikarpeten edukia aldatu"
 
-#: action.c:2185 infobox.c:615
+#: action.c:2615 infobox.c:659
 msgid "Type:"
 msgstr "Mota:"
 
-#: action.c:2214 dnd.c:124 menu.c:1999 tips:202
+#: action.c:2662 dnd.c:1105 menu.c:693 tips:240
 msgid "Copy"
 msgstr "Kopiatu"
 
-#: action.c:2224 action.c:2260 tips:219
+#: action.c:2680 action.c:2737
+#, fuzzy
+msgid "Don't confirm over-write."
+msgstr "Ez berrretsi ekintza bakoitza"
+
+#: action.c:2683 action.c:2740 tips:261
+msgid "Ignore Older"
+msgstr ""
+
+#: action.c:2684 action.c:2741 tips:262
+#, fuzzy
+msgid "Silently ignore if source is older than destination."
+msgstr "Jatorria helburua baino berriagoa bakarrik gainidatzi."
+
+#: action.c:2687 action.c:2744 tips:259
 msgid "Newer"
 msgstr "Berriago"
 
-#: action.c:2225 action.c:2261 tips:220
-msgid "Only over-write if source is newer than destination."
+#: action.c:2688 action.c:2745 tips:260
+#, fuzzy
+msgid "Always over-write if source is newer than destination."
 msgstr "Jatorria helburua baino berriagoa bakarrik gainidatzi."
 
-#: action.c:2228
+#: action.c:2691 action.c:2748 tips:257
+msgid "Merge"
+msgstr ""
+
+#: action.c:2692 action.c:2749 tips:258
+#, fuzzy
+msgid "Always merge directories."
+msgstr "direktorio"
+
+#: action.c:2695
 msgid "Only log directories as they are copied"
 msgstr "Kopiatzen ari diren direktorioak bakarrik bistarazi"
 
-#: action.c:2250 dnd.c:125 tips:204
+#: action.c:2719 dnd.c:1106 tips:242
 msgid "Move"
 msgstr "Mugitu"
 
-#: action.c:2264
+#: action.c:2752
 msgid "Don't log each file as it is moved"
 msgstr "Ez bistarazi mugitzen ari den fitxategi bakoitza"
 
-#: action.c:2284 tips:206
+#: action.c:2775 tips:244
 msgid "Link"
 msgstr "Esteka"
 
-#: action.c:2303 appmenu.c:113
+#: action.c:2800 appmenu.c:120 filer.c:909 infobox.c:1075
 msgid "Eject"
 msgstr "Atera"
 
-#: action.c:2360
+#: action.c:2875
 msgid "Deleting items such as "
 msgstr "Honelako elementuak ezabatzen: "
 
-#: action.c:2364
+#: action.c:2879
 msgid "Deleting the item "
 msgstr "Elementu hau ezabatzen: "
 
-#: action.c:2366
+#: action.c:2881
 msgid "Deleting the items "
 msgstr "Elementu hauek ezabatzen: "
 
-#: action.c:2385
+#: action.c:2900
 msgid " and "
 msgstr " eta "
 
-#: action.c:2394
+#: action.c:2909
 msgid " will affect some items on the pinboard or panel - really delete it?"
 msgstr ""
 " panelaren edo idazmahaiaren elementu batzui eragigo die  - benetan ezabatu "
 "nahi al duzu?"
 
-#: action.c:2401
+#: action.c:2916
 msgid " will affect some items on the pinboard or panel - really delete them?"
 msgstr ""
 " panelaren edo idazmahaiaren elementu batzui eragigo die  - benetan ezabatu "
 "nahi al dituzu?"
 
-#: appmenu.c:198
+#: appmenu.c:206
 msgid "<missing label>"
 msgstr "<etiketa gabea>"
 
-#: appmenu.c:295
+#: appmenu.c:317
 #, c-format
 msgid ""
 "Symlink any programs you want into this directory. They will appear in the "
 "menu for all items of this type (%s/%s)."
 msgstr ""
-"Crea enlaces simbÛlicos a los programas que quieras en Èste directorio. "
-"Ellos aparecer·n en el men˙ para todos los elementos de Èste tipo (%s/%s)."
+"Crea enlaces simb√≥licos a los programas que quieras en √©ste directorio. "
+"Ellos aparecer√°n en el men√∫ para todos los elementos de √©ste tipo (%s/%s)."
 
-#: appmenu.c:339 menu.c:234
+#: appmenu.c:331 menu.c:753
 msgid "Customise Menu..."
 msgstr "Menua pertsonalizatu..."
 
-#: appmenu.c:396 menu.c:251 toolbar.c:159
+#: appmenu.c:386 menu.c:785 toolbar.c:202
 msgid "Help"
 msgstr "Laguntza"
 
-#: bookmarks.c:147
-msgid "Path"
-msgstr "Bidea"
-
-#: bookmarks.c:155
+#: bookmarks.c:268
 msgid "Title"
 msgstr "Izenburua"
 
-#: bookmarks.c:304
+#: bookmarks.c:276 log.c:176
+msgid "Path"
+msgstr "Bidea"
+
+#: bookmarks.c:466
 #, c-format
 msgid "Can't bookmark non-local resource '%s'\n"
 msgstr "No puedo agregar el recurso no local '%s' a los marcadores\n"
 
-#: bookmarks.c:312 bookmarks.c:630
+#: bookmarks.c:474 bookmarks.c:823
 #, c-format
 msgid "'%s' isn't a directory"
 msgstr "'%s' ez da direktorio bat"
 
-#: bookmarks.c:518
+#: bookmarks.c:711
 msgid "You should first select some rows to delete"
 msgstr "Lehenik ezabatzeko lerro batzuek aukeratu behar dituzu"
 
-#: bookmarks.c:542
+#: bookmarks.c:735
 msgid "Put the cursor on an entry in the list to move it"
 msgstr "Zerrendako sarrera bat aukeratu mugitzeko"
 
-#: bookmarks.c:562
+#: bookmarks.c:755
 msgid "This item is already at the end"
 msgstr "Elementu hau dagoeneko azkenekoa da"
 
-#: bookmarks.c:636
+#: bookmarks.c:829
 #, c-format
 msgid "Can't bookmark non-local directories like '%s'"
 msgstr "No puedo agregar directorios no locales como '%s' a los marcadores"
 
-#: bookmarks.c:778
+#: bookmarks.c:998
 msgid "Add New Bookmark"
 msgstr "Laster-marka gehitu"
 
-#: bookmarks.c:785
+#: bookmarks.c:1005
 msgid "Edit Bookmarks"
 msgstr "Laster-markak editatu"
 
-#: bookmarks.c:790
+#: bookmarks.c:1010
 msgid "Recently Visited"
 msgstr "Azkenaldian ikusitakoak"
 
-#: bulk_rename.c:68
+#: bulk_rename.c:69
 msgid "Bulk rename files"
 msgstr "Izen aldaketa anitzak"
 
-#: bulk_rename.c:71
+#: bulk_rename.c:72
 msgid "Reset"
 msgstr "Berezarri"
 
-#: bulk_rename.c:76
+#: bulk_rename.c:77
 #, fuzzy
 msgid "Make the New column a copy of Old"
 msgstr "Lehen zutabea gero zutabearen kopia bat egin."
 
-#: bulk_rename.c:81
+#: bulk_rename.c:82
 msgid "_Rename"
 msgstr "_Berrizendatu"
 
-#: bulk_rename.c:94
+#: bulk_rename.c:95
 msgid "Replace:"
 msgstr "Aldatu:"
 
-#: bulk_rename.c:101
+#: bulk_rename.c:102
 #, fuzzy
 msgid ""
 "This is a regular expression to search for.\n"
@@ -826,18 +872,20 @@ msgid "With:"
 msgstr "Honekin:"
 
 #: bulk_rename.c:116
+#, fuzzy
 msgid ""
-"The first match in each filename will be replaced by this string. There are "
-"no special characters."
+"The first match in each filename will be replaced by this string. The only "
+"special characters are back-references from \\0 to \\9. To use them "
+"literally, they have to be escaped with a backslash."
 msgstr ""
 "Fitxategi izen bakoitzeko lehen parekatze zuzena kate honegatik aldatuko du. "
 "Ez daude karaktere bereizik."
 
-#: bulk_rename.c:120
+#: bulk_rename.c:122
 msgid "Apply"
 msgstr "Ezarri"
 
-#: bulk_rename.c:123
+#: bulk_rename.c:125
 #, fuzzy
 msgid ""
 "Do a search-and-replace in the New column. The files are not actually "
@@ -846,46 +894,46 @@ msgstr ""
 "Gero zutabean bilatu eta ordeztu egin. Fitxategiak ez dira berrizendatuko "
 "behekaldeko Berrizendatu botoia klikatu arte."
 
-#: bulk_rename.c:142
+#: bulk_rename.c:144
 msgid "Old name"
 msgstr ""
 
-#: bulk_rename.c:151
+#: bulk_rename.c:153
 #, fuzzy
 msgid "New name"
 msgstr "Berrizendatu"
 
-#: bulk_rename.c:259
+#: bulk_rename.c:295
 #, fuzzy
 msgid "No strings (in the New column) matched the given expression"
 msgstr "Ez dago (gero zutabean) espresio hori betetzen duen katerik"
 
-#: bulk_rename.c:264
+#: bulk_rename.c:300
 msgid "One name matched, but the result was the same"
 msgstr "Izen bat aurkitu da baina emaitza berdina da"
 
-#: bulk_rename.c:267
+#: bulk_rename.c:303
 #, c-format
 msgid "%d names matched, but the results were all the same"
 msgstr "%d izen aurkitu dira, baina emaitzak berdinak dira"
 
-#: bulk_rename.c:293
+#: bulk_rename.c:330
 msgid ""
 "Specify a regular expression to match, and a string to replace matches with."
 msgstr "Ezarri bilatzeko espresio bat, eta aurkitutakoak aldatzeko katea."
 
-#: bulk_rename.c:310
+#: bulk_rename.c:347
 #, c-format
 msgid "%s (for '%s')"
 msgstr "%s ('%s'-rentzat)"
 
-#: bulk_rename.c:343
+#: bulk_rename.c:380
 #, c-format
 msgid "A file called '%s' already exists. Aborting bulk rename."
 msgstr ""
 "'%s' izeneko fitxategi bat badago dagoeneko. Berrizendaketa utzi egin da."
 
-#: bulk_rename.c:348
+#: bulk_rename.c:385
 #, c-format
 msgid ""
 "Failed to rename '%s' as '%s':\n"
@@ -895,12 +943,12 @@ msgstr ""
 "Huts '%s' '%s' bezala berrizendatzekoan:\b%s\n"
 "Berrizendaketa uzten."
 
-#: bulk_rename.c:410
+#: bulk_rename.c:447
 #, c-format
 msgid "A file called '%s' already exists"
 msgstr "'%s' izeneko fitxategi bat badago dagoeneko"
 
-#: bulk_rename.c:421
+#: bulk_rename.c:458
 #, fuzzy, c-format
 msgid ""
 "Some of the New names contain / characters (eg '%s'). This will cause the "
@@ -909,53 +957,69 @@ msgstr ""
 "Lehen zutabeko fitxategi batenbatek / karakterea du (adib '%s'). Honek "
 "fitxategiak direktorio ezberdinetan amaitzea egin dezake. Jarraitu?"
 
-#: bulk_rename.c:436
+#: bulk_rename.c:473
 msgid "None of the names have changed. Nothing to do!"
 msgstr "Izenek ez dute aldaketarik. Ezer egiteke!"
 
-#: choices.c:428
-#, fuzzy
-msgid "Choices migration"
-msgstr "Txinatar (tradizionala)"
+#: choices.c:434
+#, c-format
+msgid "%d directories could not be migrated"
+msgstr ""
 
 #: choices.c:436
 #, c-format
 msgid ""
 "Choices have been moved from \n"
-"<b>%s</b>\n"
+"%s\n"
 " to the new location \n"
-"<b>%s</b>\n"
+"%s\n"
+"%s"
 msgstr ""
 
-#: choices.c:447
-#, c-format
-msgid "%d directories could not be migrated"
-msgstr ""
-
-#: dir.c:982
+#: dir.c:1077
 #, c-format
 msgid "Can't stat directory: %s"
 msgstr "Direktorio analisia ez da posible izan: %s"
 
-#: dir.c:991
+#: dir.c:1087
 #, c-format
 msgid "Can't open directory: %s"
 msgstr "Ezin izan da direktorioa ireki: %s"
 
-#: display.c:588
+#: display.c:704 tips:57 tips:116
+msgid "Size"
+msgstr "Tamaina"
+
+#: display.c:705
+msgid "‚î§"
+msgstr ""
+
+#: display.c:706
+msgid "‚îê"
+msgstr ""
+
+#: display.c:707
+msgid "‚îò"
+msgstr ""
+
+#: display.c:709
+msgid "‚îú"
+msgstr ""
+
+#: display.c:709
+msgid "‚îå"
+msgstr ""
+
+#: display.c:710
+msgid "‚îº"
+msgstr ""
+
+#: display.c:958
 #, c-format
 msgid "lstat(2) failed: %s"
 msgstr "lstat(2) huts egin du: %s"
 
-#: dnd.c:126
-msgid "Link (relative)"
-msgstr ""
-
-#: dnd.c:127
-msgid "Link (absolute)"
-msgstr ""
-
-#: dnd.c:426
+#: dnd.c:423
 msgid "Internal error - bad info type"
 msgstr "Barne errorea - okerreko informazio mota"
 
@@ -972,7 +1036,7 @@ msgid ""
 "XdndDirectSave0 target provided, but the atom XdndDirectSave0 (type text/"
 "plain) did not contain a leafname\n"
 msgstr ""
-"Destino XdndDirectSave0 provisto, pero el ·tomo XdndDirectSave0 (tipo text/"
+"Destino XdndDirectSave0 provisto, pero el √°tomo XdndDirectSave0 (tipo text/"
 "plain) no contiene un nombre de archivo\n"
 
 #: dnd.c:618
@@ -995,7 +1059,7 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Fallo al agregar algunos elementos al escritorio porque est·n en una m·quina "
+"Fallo al agregar algunos elementos al escritorio porque est√°n en una m√°quina "
 "remota. Por ejemplo:\n"
 "\n"
 "%s"
@@ -1039,14 +1103,14 @@ msgid ""
 msgstr ""
 "Ezin dira hurruneko makinatik datuak jaso (application/octet-stream ez dago)"
 
-#: dnd.c:1016
+#: dnd.c:1015 menu.c:2406
 msgid ""
 "Some of these files are on a different machine - they will be ignored - sorry"
 msgstr ""
 "Fitxategi hauetako batzuek beste makina batetan daude - alde batetara utziko "
 "dira - barkatu"
 
-#: dnd.c:1023
+#: dnd.c:1024 menu.c:2414
 msgid ""
 "None of these files are on the local machine - I can't operate on multiple "
 "remote files - sorry."
@@ -1054,28 +1118,44 @@ msgstr ""
 "Fitxategietako bat ere ez ez dago makina lokalean - Ezin da hurruneko "
 "fitxategi bat baino gehiagorekin ekintza egin - barkatu."
 
-#: dnd.c:1036
+#: dnd.c:1040
 msgid "Unknown action requested"
 msgstr "Ekintza ezezagun bat eskatu da"
 
-#: dnd.c:1044
+#: dnd.c:1049 menu.c:2432
 #, c-format
 msgid "Error getting file list: %s"
 msgstr "Errorea fitxategi zerrenda eskuratzerakoan: %s"
 
-#: dropbox.c:114
+#: dnd.c:1107
+msgid "Link (relative)"
+msgstr ""
+
+#: dnd.c:1108
+msgid "Link (absolute)"
+msgstr ""
+
+#: dnd.c:1109
+msgid "Link (relative, sym path)"
+msgstr ""
+
+#: dnd.c:1110
+msgid "Link (absolute, sym path)"
+msgstr ""
+
+#: dropbox.c:112
 msgid "Show"
 msgstr "Ikusi"
 
-#: dropbox.c:120
+#: dropbox.c:118
 msgid "Show the current choice in a filer window"
 msgstr "Huneko aukera kudeatzaile leiho batetan bistarazi"
 
-#: dropbox.c:174
+#: dropbox.c:172
 msgid "<nothing>"
 msgstr "<ezer>"
 
-#: dropbox.c:239
+#: dropbox.c:237
 msgid ""
 "I can't show you the currently set item, because nothing is currently set. "
 "Drag something onto me!"
@@ -1083,18 +1163,18 @@ msgstr ""
 "Ezin da ezarritako elemetua bistarazi ez bait dago batez ezarririk. "
 "Arrastatu ezazu zerbait hona!"
 
-#: dropbox.c:263
+#: dropbox.c:261
 msgid "Sorry, you need to drop exactly one file onto the drop area."
 msgstr ""
-"Lo siento, tienes que arrastrar exactamente un archvo sobre el ·rea de "
+"Lo siento, tienes que arrastrar exactamente un archvo sobre el √°rea de "
 "arrastre."
 
-#: dropbox.c:273
+#: dropbox.c:271
 #, c-format
 msgid "Sorry, I can't use '%s' because it's not a local file."
 msgstr "Ezin da '%s' fitxategi lokal bat ez da eta."
 
-#: dropbox.c:280 pinboard.c:853
+#: dropbox.c:278 pinboard.c:932
 #, c-format
 msgid ""
 "Can't access '%s':\n"
@@ -1103,7 +1183,7 @@ msgstr ""
 "Ezin da '%s' eskuratu:\n"
 "%s"
 
-#: filer.c:453
+#: filer.c:718
 #, c-format
 msgid ""
 "Error scanning '%s':\n"
@@ -1112,357 +1192,407 @@ msgstr ""
 "Errorea '%s' irakurtzerakoan:\n"
 "%s\n"
 
-#: filer.c:457
-#, c-format
-msgid ""
-"Error scanning '%s':\n"
-"%s"
-msgstr ""
-"Errorea '%s' irakurtzerakoan:\n"
-"%s"
-
-#: filer.c:562
+#: filer.c:884
 msgid ""
 "Do you want to unmount this device?\n"
 "\n"
 "Unmounting a device makes it safe to remove the disk."
 msgstr ""
-"øGailu hau desmuntatu nahi al duzu?\n"
+"¬øGailu hau desmuntatu nahi al duzu?\n"
 "\n"
 "Gailua desmuntatu eta gero diska era ziur batetan atera dezakezu."
 
-#: filer.c:566
+#: filer.c:889
+msgid "Perform the same action in future for this mount point"
+msgstr ""
+
+#: filer.c:896
 msgid "No change"
 msgstr "Aldaketa gabea"
 
-#: filer.c:572 menu.c:862
+#: filer.c:902 infobox.c:1073 menu.c:1092
 msgid "Unmount"
 msgstr "Desmuntatu"
 
-#: filer.c:669
-msgid "Directory missing/deleted"
-msgstr "Direktorioa ezabatua/falta da"
-
-#: filer.c:1031
+#: filer.c:1490
 #, c-format
 msgid ""
 "Group %s is not set. Select some files and press Ctrl+%s to set the group. "
 "Press %s on its own to reselect the files later.\n"
 "Make sure NumLock is on if you use the keypad."
 msgstr ""
-"El grupo %s no est· definido. Selecciona algunos archivos y presiona Ctrl+%s "
+"El grupo %s no est√° definido. Selecciona algunos archivos y presiona Ctrl+%s "
 "para definir el grupo. Presiona %s para seleccionar de nuevo los archivos "
-"despuÈs.\n"
-"AsÈgurate que NumLock est· activado si utilizas el teclado numÈrico."
+"despu√©s.\n"
+"As√©gurate que NumLock est√° activado si utilizas el teclado num√©rico."
 
-#: filer.c:1267
-#, c-format
-msgid "Directory '%s' is not accessible"
-msgstr "'%s' direktorioa ez da eskuragarria"
+#: filer.c:2655
+msgid "A"
+msgstr ""
 
-#: filer.c:1419
-#, c-format
-msgid "Directory '%s' not found."
-msgstr "'%s' direktorioa ez da aurkitu."
+#: filer.c:2656 filer.c:2668
+msgid "!"
+msgstr ""
 
-#: filer.c:1713
-msgid "Cancel"
-msgstr "Ezeztatu"
+#: filer.c:2659 find.c:923
+msgid "G"
+msgstr "G"
 
-#: filer.c:2002
+#: filer.c:2664
 msgid "S"
 msgstr "S"
 
-#: filer.c:2004
+#: filer.c:2669
 msgid "T"
 msgstr "A"
 
-#: filer.c:2026
+#: filer.c:2670
+msgid "D"
+msgstr ""
+
+#: filer.c:2671
+msgid "F"
+msgstr ""
+
+#: filer.c:2681
+msgid "ALL, "
+msgstr ""
+
+#: filer.c:2681
+msgid "Not ALL, "
+msgstr ""
+
+#: filer.c:2686
+#, c-format
+msgid "Glob (%s), "
+msgstr ""
+
+#: filer.c:2694
 msgid "Scanning, "
 msgstr "Irakurtzen, "
 
-#: filer.c:2028
+#: filer.c:2697
 msgid "Thumbs, "
 msgstr "Argazkitxoak, "
 
-#: filer.c:2304
+#: filer.c:2697
+#, fuzzy
+msgid "Not Thumbs, "
+msgstr "Argazkitxoak, "
+
+#: filer.c:2698
+msgid "Dirs only, "
+msgstr ""
+
+#: filer.c:2699
+msgid "Files only, "
+msgstr ""
+
+#: filer.c:3174
 msgid "Symbolic link to "
 msgstr "Hona esteka sinbolikoa: "
 
-#: filer.c:2335
+#: filer.c:3216
 msgid "This filename is not valid UTF-8. You should rename it.\n"
 msgstr "Fitxategi zen hau ez da UTF-8 baliozkoa. Aldatu egin behar duzu.\n"
 
-#: filer.c:2643 menu.c:1989
+#: filer.c:3647 menu.c:2599
 msgid "Item no longer exists!"
 msgstr "Elementua ez dago dagoeneko!"
 
-#: filer.c:3327
+#: filer.c:4451
+msgid "‚ñº"
+msgstr ""
+
+#: filer.c:4451
+msgid "‚ñΩ"
+msgstr ""
+
+#: filer.c:4462
+msgid "‚ñ∑"
+msgstr ""
+
+#: filer.c:4462
+msgid "‚ñ∂"
+msgstr ""
+
+#: filer.c:4707
 msgid "Select display properties to save"
 msgstr "Hauatatu gorde ebhar diren pantaila propietateak"
 
-#: filer.c:3334
+#: filer.c:4712
+msgid "<b>Save display settings for parent directory/*</b>"
+msgstr ""
+
+#: filer.c:4713
+msgid "<b>Save display settings for directory</b>"
+msgstr ""
+
+#: filer.c:4720
+#, fuzzy
+msgid "Select settings to save"
+msgstr "Hauatatu gorde ebhar diren pantaila propietateak"
+
+#: filer.c:4727
 msgid "Position"
 msgstr "Kokalekua"
 
-#: filer.c:3339 toolbar.c:135 toolbar.c:139 tips:63
-msgid "Size"
-msgstr "Tamaina"
+#: filer.c:4732
+#, fuzzy
+msgid "Window size"
+msgstr "Leihoa"
 
-#: filer.c:3344
+#: filer.c:4737
 msgid "Show hidden"
 msgstr "Mostrar ocultos"
 
-#: filer.c:3350
-msgid "Display style"
+#: filer.c:4743
+#, fuzzy
+msgid "Display style (Icon size)"
 msgstr "Bistaratze estiloa"
 
-#: filer.c:3356
+#: filer.c:4749
 msgid "Sort type and order"
 msgstr "Saikatze mota eta ordena"
 
 # tips:30 toolbar.c:128/
-#: filer.c:3361 toolbar.c:143
+#: filer.c:4754
 msgid "Details"
 msgstr "Xehetasuna"
 
-#: filer.c:3366 tips:114 tips:115
+#: filer.c:4759 tips:152 tips:153
 msgid "Thumbnails"
 msgstr "Argazkitxoak"
 
-#: filer.c:3372
+#: filer.c:4765
 msgid "Filter"
 msgstr "Iruzkina"
 
-#: find.c:487
+#: find.c:485
 msgid "And"
 msgstr "Eta"
 
-#: find.c:511
+#: find.c:509
 msgid "Not"
 msgstr "Ez"
 
-#: find.c:554
+#: find.c:552
 msgid "system"
 msgstr "sistema"
 
-#: find.c:562
+#: find.c:560
 msgid "prune"
 msgstr "moztu"
 
-#: find.c:650
+#: find.c:648
 msgid "After"
 msgstr "Gero"
 
-#: find.c:652
+#: find.c:650
 msgid "Before"
 msgstr "Lehenago"
 
-#: find.c:746
+#: find.c:744
 msgid "IsReg"
 msgstr "RegDa"
 
-#: find.c:748
+#: find.c:746
 msgid "IsLink"
 msgstr "EstekaDa"
 
-#: find.c:750
+#: find.c:748
 msgid "IsDir"
 msgstr "DirDa"
 
-#: find.c:752
+#: find.c:750
 msgid "IsChar"
 msgstr "KarDa"
 
-#: find.c:754
+#: find.c:752
 msgid "IsBlock"
 msgstr "BlokeDa"
 
-#: find.c:756
+#: find.c:754
 msgid "IsDev"
 msgstr "GailuaDa"
 
-#: find.c:758
+#: find.c:756
 msgid "IsPipe"
 msgstr "TutuaDa"
 
-#: find.c:760
+#: find.c:758
 msgid "IsSocket"
 msgstr "SocketaDa"
 
-#: find.c:762
+#: find.c:760
 msgid "IsDoor"
 msgstr "AteaDa"
 
-#: find.c:764
+#: find.c:762
 msgid "IsSUID"
 msgstr "SUIDDa"
 
-#: find.c:766
+#: find.c:764
 msgid "IsSGID"
 msgstr "SGIDDa"
 
-#: find.c:768
+#: find.c:766
 msgid "IsSticky"
 msgstr "EsPegajoso"
 
-#: find.c:770
+#: find.c:768
 msgid "IsReadable"
 msgstr "IrakurgarriaDa"
 
-#: find.c:772
+#: find.c:770
 msgid "IsWriteable"
 msgstr "IdatzgarriaDa"
 
-#: find.c:774
+#: find.c:772
 msgid "IsExecutable"
 msgstr "AbiarazgarriaDa"
 
-#: find.c:776
+#: find.c:774
 msgid "IsEmpty"
 msgstr "HutsaDa"
 
-#: find.c:778
+#: find.c:776
 msgid "IsMine"
 msgstr "NireaDa"
 
-#: find.c:906
+#: find.c:904
 msgid "Now"
 msgstr "Orain"
 
-#: find.c:919
+#: find.c:917
 msgid "Byte"
 msgstr "Byte"
 
-#: find.c:919
+#: find.c:917
 msgid "Bytes"
 msgstr "Byte"
 
-#: find.c:921
+#: find.c:919
 msgid "Kb"
 msgstr "Kb"
 
-#: find.c:921
+#: find.c:919
 msgid "K"
 msgstr "K"
 
-#: find.c:923
+#: find.c:921
 msgid "Mb"
 msgstr "Mb"
 
-#: find.c:923
+#: find.c:921
 msgid "M"
 msgstr "M"
 
-#: find.c:925
+#: find.c:923
 msgid "Gb"
 msgstr "Gb"
 
 #: find.c:925
-msgid "G"
-msgstr "G"
-
-#: find.c:927
 msgid "Sec"
 msgstr "Seg"
 
-#: find.c:927
+#: find.c:925
 msgid "Secs"
 msgstr "Seg"
 
-#: find.c:929
+#: find.c:927
 msgid "Min"
 msgstr "Min"
 
-#: find.c:929
+#: find.c:927
 msgid "Mins"
 msgstr "Min"
 
-#: find.c:931
+#: find.c:929
 msgid "Hour"
 msgstr "Ordu"
 
-#: find.c:931
+#: find.c:929
 msgid "Hours"
 msgstr "Ordu"
 
-#: find.c:933
+#: find.c:931
 msgid "Day"
 msgstr "Egun"
 
-#: find.c:933
+#: find.c:931
 msgid "Days"
 msgstr "Egun"
 
-#: find.c:935
+#: find.c:933
 msgid "Week"
 msgstr "Aste"
 
-#: find.c:935
+#: find.c:933
 msgid "Weeks"
 msgstr "Aste"
 
-#: find.c:937
+#: find.c:935
 msgid "Year"
 msgstr "Urte"
 
-#: find.c:937
+#: find.c:935
 msgid "Years"
 msgstr "Urte"
 
-#: find.c:946
+#: find.c:944
 msgid "Ago"
 msgstr "dela"
 
-#: find.c:948
+#: find.c:946
 msgid "Hence"
 msgstr "Beraz"
 
-#: find.c:963
+#: find.c:961
 msgid "atime"
 msgstr "sarrera"
 
-#: find.c:965
+#: find.c:963
 msgid "ctime"
 msgstr ""
 
-#: find.c:967
+#: find.c:965
 msgid "mtime"
 msgstr ""
 
-#: find.c:969
+#: find.c:967
 msgid "size"
 msgstr "tamaina"
 
-#: find.c:971
+#: find.c:969
 msgid "inode"
 msgstr "inodoa"
 
-#: find.c:973
+#: find.c:971
 msgid "nlinks"
 msgstr "estekak"
 
-#: find.c:975
+#: find.c:973
 msgid "uid"
 msgstr "uid"
 
-#: find.c:977
+#: find.c:975
 msgid "gid"
 msgstr "gid"
 
-#: find.c:979
+#: find.c:977
 msgid "blocks"
 msgstr "blokea"
 
-#: gtksavebox.c:251
+#: gtksavebox.c:249
 msgid "Save As:"
 msgstr "Honela gorde:"
 
-#: gtksavebox.c:397
+#: gtksavebox.c:401
 msgid "Unnamed"
 msgstr "Izen gabe"
 
-#: gtksavebox.c:473
+#: gtksavebox.c:477
 msgid ""
 "Remote application wants to use Direct Save, but I can't read the "
 "XdndDirectSave0 (type text/plain) property.\n"
@@ -1470,7 +1600,7 @@ msgstr ""
 "Hurruneko aplikazioa \"Direct Save\" erabiltzen saiatzen ari da, baina ezin "
 "da XdndDirectSave0 propietatea (text/plain motakoa) irakurri.\n"
 
-#: gtksavebox.c:598
+#: gtksavebox.c:602
 msgid ""
 "Drag the icon to a directory viewer\n"
 "(or enter a full pathname)"
@@ -1478,7 +1608,7 @@ msgstr ""
 "Ikonoa direktorio leiho batetara arrastatu\n"
 "(edo bide osoa eman)"
 
-#: gui_support.c:331
+#: gui_support.c:456
 msgid ""
 "\n"
 "---\n"
@@ -1486,20 +1616,21 @@ msgstr ""
 "\n"
 "---\n"
 
-#: gui_support.c:400
+#: gui_support.c:525
 #, c-format
 msgid "Attempt to read an XML file as a text file. File '%s' may be corrupted."
 msgstr ""
 "XML fitxategi bat testua balitz bezala irakurtzen saiatu da.\n"
 "'%s' fitxategia hondaturik egon liteke."
 
-#: gui_support.c:417
-#, c-format
+#: gui_support.c:542
+#, fuzzy, c-format
 msgid ""
 "Error in '%s' file at line %d: \n"
 "\"%s\"\n"
 "This may be due to upgrading from a previous version of ROX-Filer. Open the "
-"Options window and click on Save.\n"
+"Options window and try changing something and then changing it back (causing "
+"the file to be resaved).\n"
 "Further errors will be ignored."
 msgstr ""
 "Hust '%s' fitxategiaren %d lerroan:\n"
@@ -1508,18 +1639,18 @@ msgstr ""
 "leiohoa ireki eta Gorde-n klik egin zazu.\n"
 "Hurrengo erroreak albo batetara utziko dira."
 
-#: gui_support.c:1000
+#: gui_support.c:1140
 msgid "Incorrect or missing line break in text/uri-list data"
 msgstr "Lerro amaiera okerra edo falta da text/uri-list datuetan"
 
-#: gui_support.c:1332
+#: gui_support.c:1473
 #, c-format
 msgid "Failed to open file '%s': %s"
 msgstr ""
 "Hust '%s' ezabatzerakoan:\n"
 "%s"
 
-#: gui_support.c:1376
+#: gui_support.c:1517
 #, c-format
 msgid ""
 "Failed to load image '%s': reason not known, probably a corrupt image file"
@@ -1527,15 +1658,16 @@ msgstr ""
 "Ezin da '%s' irudia kargatu: arrazoi ezezaguna, ziurrenik hondaturiko irudi "
 "fitxategia"
 
-#: gui_support.c:1427
+#: gui_support.c:1583
+#, c-format
 msgid ""
-"This program cannot be run, as the 0launch command is not available. It can "
-"be downloaded from here:\n"
+"This program (%s) cannot be run, as the 0launch command is not available. It "
+"can be downloaded from here:\n"
 "\n"
 "http://0install.net/injector.html"
 msgstr ""
 
-#: i18n.c:38
+#: i18n.c:39
 msgid ""
 "Note that you must save your choices and restart the filer for the new "
 "language setting to take full effect."
@@ -1543,312 +1675,384 @@ msgstr ""
 "Zure ezarpenak gorde eta kudeatzailea berrabiarazi behar duzu hizkuntz "
 "berria guztiz martxan ipintzeko."
 
-#: icon.c:78
+#: icon.c:77
 msgid "(click to set)"
 msgstr "(klik egin ezartzeko)"
 
-#: icon.c:133
-msgid "ROX-Filer"
-msgstr "ROX-Filer"
-
-#: icon.c:134 menu.c:252
-msgid "About ROX-Filer..."
-msgstr "ROX-Filer buruz..."
-
-#: icon.c:135 menu.c:253
-msgid "Show Help Files"
-msgstr "Laguntza Bistarazi"
-
-#: icon.c:136 menu.c:254
-msgid "Manual"
-msgstr "Manuala"
-
-#: icon.c:138 menu.c:230
-msgid "Options..."
-msgstr "Aukerak..."
-
-#: icon.c:139 menu.c:239
-msgid "Home Directory"
-msgstr "Etxe direktorioa ireki"
-
-#: icon.c:140 icon.c:1340 menu.c:206 type.c:212
-msgid "File"
-msgstr "Fixategia"
-
-#: icon.c:141 menu.c:212 menu.c:875
-msgid "Shift Open"
-msgstr "Shift Ireki"
-
-#: icon.c:142 menu.c:218
-msgid "Properties"
-msgstr "Propietateak"
-
-#: icon.c:143 menu.c:216
-msgid "Set Run Action..."
-msgstr "Ekintza Ezarri..."
-
-#: icon.c:144 menu.c:217
-msgid "Set Icon..."
-msgstr "Ikonoa Ezarri..."
-
-#: icon.c:145 icon.c:806
-msgid "Edit Item"
-msgstr "Elementua Editatu"
-
-#: icon.c:146
-msgid "Show Location"
-msgstr "Kokalekua Erakutsi"
-
-#: icon.c:147
-msgid "Remove Item(s)"
-msgstr "Elementua(k) Ezabatu"
-
-#: icon.c:278 menu.c:764
+#: icon.c:298 log.c:111 menu.c:986
 #, c-format
 msgid "%s '%s'"
 msgstr "%s '%s'"
 
-#: icon.c:291
+#: icon.c:311
 msgid "Nothing"
 msgstr "Ezer"
 
-#: icon.c:547
+#: icon.c:576
 msgid "The location must contain at least one character!"
 msgstr "Kokalekuak beintzat karaktere bat eduki behar du!"
 
-#: icon.c:613
+#: icon.c:641
+#, c-format
+msgid "You must unlock '%s' before removing it"
+msgstr ""
+
+#: icon.c:651
 msgid "You must first select some items to remove"
 msgstr "Leheneik ezabtzeko zenbait elementu aukeratu behar dituzu"
 
-#: icon.c:627
+#: icon.c:657
+msgid "An item must be unlocked before it can be removed."
+msgstr ""
+
+#: icon.c:671
 msgid "You must open the menu over an item"
 msgstr "Menua elementu baten gainean ireki behar duzu"
 
-#: icon.c:652 menu.c:1260
+#: icon.c:696 menu.c:1586
 msgid "You can only set the run action for a regular file"
 msgstr "Fitxategi arruntentzat bakarrik ezarri dezakezu ekintza"
 
-#: icon.c:738
+#: icon.c:781
 msgid "Press the desired shortcut (eg, Control+F1)"
 msgstr "Sakatu desio duzu laster-tekla  (adibidez, Kontrol+F1)"
 
-#: icon.c:760
+#: icon.c:803
 msgid "Failed to get keyboard grab!"
 msgstr "Huts teklatua eskuratzerakoan!"
 
-#: icon.c:809
+#: icon.c:850 icon.c:1408
+msgid "Edit Item"
+msgstr "Elementua Editatu"
+
+#: icon.c:853
 msgid "Clicking the icon opens:"
 msgstr "Klik egitean ikonoa ireki egiten da:"
 
-#: icon.c:819
+#: icon.c:863
 msgid "Arguments to pass (for executables):"
 msgstr "Erabiliko diren argumentuak (abiarazgarrientzat):"
 
-#: icon.c:833
+#: icon.c:877
 msgid "The text displayed under the icon is:"
 msgstr "Ikono azpian bistaraziko testua:"
 
-#: icon.c:846
+#: icon.c:890
 msgid "The keyboard shortcut is:"
 msgstr "LAster-tekla hau da:"
 
-#: infobox.c:112
-#, c-format
-msgid "Are you sure you want to open %d windows?"
-msgstr "øEst·s seguro que quieres abrir %d ventanas?"
+#: icon.c:910
+#, fuzzy
+msgid "Locked"
+msgstr "Socket-a"
+
+#: icon.c:915
+msgid "Locking an item prevents it from being accidentally removed"
+msgstr ""
+
+#: icon.c:1387
+msgid "ROX-Filer"
+msgstr "ROX-Filer"
+
+#: icon.c:1392 menu.c:787 menu.c:790
+msgid "About ROX-Filer..."
+msgstr "ROX-Filer buruz..."
+
+#: icon.c:1393 menu.c:788
+msgid "Show Help Files"
+msgstr "Laguntza Bistarazi"
+
+#: icon.c:1394
+msgid "Manual"
+msgstr "Manuala"
+
+#: icon.c:1396 menu.c:745
+msgid "Options..."
+msgstr "Aukerak..."
+
+#: icon.c:1397 menu.c:762
+msgid "Home Directory"
+msgstr "Etxe direktorioa ireki"
+
+#: icon.c:1399 type.c:230
+msgid "File"
+msgstr "Fixategia"
+
+#: icon.c:1401 menu.c:707 menu.c:1105
+msgid "Shift Open"
+msgstr "Shift Ireki"
+
+#: icon.c:1402 menu.c:719
+msgid "Properties"
+msgstr "Propietateak"
+
+#: icon.c:1403 menu.c:712
+msgid "Set Run Action..."
+msgstr "Ekintza Ezarri..."
+
+#: icon.c:1404 menu.c:714
+msgid "Set Icon..."
+msgstr "Ikonoa Ezarri..."
+
+#: icon.c:1409
+msgid "Show Location"
+msgstr "Kokalekua Erakutsi"
+
+#: icon.c:1410
+msgid "Remove Item(s)"
+msgstr "Elementua(k) Ezabatu"
 
 #: infobox.c:113
+#, c-format
+msgid "Are you sure you want to open %d windows?"
+msgstr "¬øEst√°s seguro que quieres abrir %d ventanas?"
+
+#: infobox.c:114
 msgid "Show Info"
 msgstr "Argibideak Bistarazi"
 
-#: infobox.c:135 menu.c:769
+#: infobox.c:136 menu.c:991
 msgid "(bad utf-8)"
 msgstr "(okerreko utf-8)"
 
-#: infobox.c:259
+#: infobox.c:278
 msgid "Show _Help Files"
 msgstr "_Laguntza fitxategiak bistarazi"
 
-#: infobox.c:272
+#: infobox.c:291
 msgid "<b>Permissions</b>"
 msgstr "<b>Baimenak</b>"
 
-#: infobox.c:286
+#: infobox.c:309
 msgid "<b>Contents indicate...</b>"
 msgstr "<b>Edukiak hau ezartzen du..</b>"
 
-#: infobox.c:423 infobox.c:560 support.c:349
+#: infobox.c:319
+#, fuzzy
+msgid "<b>When all directories are closed</b>"
+msgstr "Kopiatzen ari diren direktorioak bakarrik bistarazi"
+
+#: infobox.c:455 infobox.c:600 support.c:379
 msgid "bytes"
 msgstr "byte"
 
-#: infobox.c:446
+#: infobox.c:480
 msgid "Failed to read size"
 msgstr "Huts tamaina irakurtzerakoan"
 
-#: infobox.c:504
+#: infobox.c:543
 #, c-format
 msgid "'%s' is no longer a symlink"
-msgstr "'%s' ya no es un enlace simbÛlico"
+msgstr "'%s' ya no es un enlace simb√≥lico"
 
-#: infobox.c:511
+#: infobox.c:550
 #, c-format
 msgid ""
 "Failed to unlink '%s':\n"
 "%s"
 msgstr ""
-"FallÛ la eliminaciÛn de '%s':\n"
+"Fall√≥ la eliminaci√≥n de '%s':\n"
 "%s"
 
-#: infobox.c:516
+#: infobox.c:555
 #, c-format
 msgid ""
 "Failed to create symlink from '%s':\n"
 "%s\n"
 "(note: old link has been deleted)"
 msgstr ""
-"FallÛ la creaciÛn del enlace simbÛlico '%s':\n"
+"Fall√≥ la creaci√≥n del enlace simb√≥lico '%s':\n"
 "%s\n"
 "(nota: el antiguo enlace has sido borrado)"
 
-#: infobox.c:539 tips:270
+#: infobox.c:579 tips:321
 msgid "Error:"
 msgstr "Errorea:"
 
-#: infobox.c:546
+#: infobox.c:586
 msgid "Real directory:"
 msgstr "Direktorio erreala:"
 
-#: infobox.c:549
+#: infobox.c:589
 msgid "Owner, Group:"
 msgstr "Jabea, Taldea:"
 
-#: infobox.c:556 infobox.c:571 infobox.c:580
+#: infobox.c:596 infobox.c:611 infobox.c:620
 msgid "Size:"
 msgstr "Tamaiana:"
 
-#: infobox.c:581
+#: infobox.c:621
 msgid "Scanning"
 msgstr "Arakatzen"
 
-#: infobox.c:602
+#: infobox.c:646
 msgid "Failed to scan"
 msgstr "Huts arakatzerakoan"
 
-#: infobox.c:609
+#: infobox.c:653
 msgid "Change time:"
 msgstr "Aldaketa data:"
 
-#: infobox.c:611
+#: infobox.c:655
 msgid "Modify time:"
 msgstr "Aldaketa data:"
 
-#: infobox.c:613
+#: infobox.c:657
 msgid "Access time:"
 msgstr "Irakurketa data:"
 
-#: infobox.c:621
+#: infobox.c:665
 msgid "Extended attributes:"
 msgstr "Atributu hedatuak:"
 
-#: infobox.c:623
+#: infobox.c:667
 msgid "Present"
 msgstr "Orain"
 
-#: infobox.c:624
+#: infobox.c:668
 msgid "None"
 msgstr "Batez"
 
-#: infobox.c:625
+#: infobox.c:669
 msgid "Not supported"
 msgstr "Ez Onarturik"
 
-#: infobox.c:637
+#: infobox.c:681
 msgid "Link target:"
 msgstr "Lotura helburua:"
 
-#: infobox.c:649 infobox.c:652
+#: infobox.c:693 infobox.c:696
 msgid "Run action:"
 msgstr "Loturiko ekintza:"
 
-#: infobox.c:649
+#: infobox.c:693
 msgid "Execute file"
 msgstr "Fitxategia abiarazi"
 
-#: infobox.c:744
+#: infobox.c:805
+#, fuzzy
+msgid "Comment"
+msgstr "Komandoa:"
+
+#: infobox.c:807
+#, fuzzy
+msgid "Execute"
+msgstr "Fitxategia abiarazi"
+
+#: infobox.c:822
 msgid "<nothing yet>"
 msgstr "<batez oraindik>"
 
-#: infobox.c:814
+#: infobox.c:895
 #, c-format
 msgid "file(1) says... %s"
 msgstr "(1)fitxategiak dio... %s"
 
-#: infobox.c:871
+#: infobox.c:952
 #, c-format
 msgid "Could not change permissions: %s"
 msgstr "Ezin dira baimenak aldatu: %s"
 
-#: infobox.c:889
+#: infobox.c:970 tips:120
 msgid "Owner"
 msgstr "Jabea"
 
-#: infobox.c:891
+#: infobox.c:972 tips:122
 msgid "Group"
 msgstr "Taldea"
 
-#: infobox.c:893
+#: infobox.c:974
 msgid "World"
 msgstr "Danak"
 
-#: infobox.c:896
+#: infobox.c:977
 msgid "Read"
 msgstr "Irakurketa"
 
-#: infobox.c:898
+#: infobox.c:980
 msgid "Write"
 msgstr "Idazketa"
 
-#: infobox.c:900
+#: infobox.c:983
 msgid "Exec"
 msgstr "Abiaraztea"
 
-#: infobox.c:917
+#: infobox.c:1001
 msgid "SUID"
 msgstr "SUID"
 
-#: infobox.c:924
+#: infobox.c:1008
 msgid "SGID"
 msgstr "SGID"
 
-#: infobox.c:931
+#: infobox.c:1015
 msgid "Sticky"
 msgstr "Itsaskorra"
 
-#: infobox.c:953
+#: infobox.c:1071
+#, fuzzy
+msgid "Do nothing"
+msgstr "<ezer>"
+
+#: infobox.c:1077
+msgid "Ask"
+msgstr ""
+
+#: infobox.c:1089
 msgid "Symbolic link"
 msgstr "Esteka sinbolikoa"
 
-#: infobox.c:956
+#: infobox.c:1092
 msgid "ROX application"
 msgstr "ROX aplikazioa"
 
-#: infobox.c:964
+#: infobox.c:1100
 msgid "mounted"
 msgstr "muntaturik"
 
-#: infobox.c:964
+#: infobox.c:1100
 msgid "unmounted"
 msgstr "desmuntaturik"
 
-#: infobox.c:968
+#: infobox.c:1104
 #, c-format
 msgid "Mount point for %s (%s)"
 msgstr "Punto de montaje para %s (%s)"
 
-#: infobox.c:971
+#: infobox.c:1107
 #, c-format
 msgid "Mount point (%s)"
 msgstr "Punto de montaje (%s)"
+
+#: log.c:54
+#, fuzzy
+msgid "ROX-Filer started"
+msgstr "ROX-Filer"
+
+#: log.c:115
+#, fuzzy, c-format
+msgid "%s on %d items"
+msgstr "%d elementu"
+
+#: log.c:132
+#, fuzzy
+msgid "..."
+msgstr "Kopiatu..."
+
+#: log.c:139
+#, fuzzy
+msgid "Item"
+msgstr "Elementua Editatu"
+
+#: log.c:165
+#, fuzzy
+msgid "Time"
+msgstr "Data"
+
+#: log.c:170
+#, fuzzy
+msgid "Action"
+msgstr "Aukerak"
 
 #: main.c:95
 msgid ""
@@ -1886,7 +2090,7 @@ msgstr ""
 "\n"
 
 #: main.c:115
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "Usage: ROX-Filer/AppRun [OPTION]... [FILE]...\n"
 "Open each directory or file listed, or the current working\n"
@@ -1908,10 +2112,12 @@ msgid ""
 "  -S, --rox-session\tuse default panel and pinboard options, and -n\n"
 "  -t, --top=PANEL\topen PANEL as a top-edge panel\n"
 "  -u, --user\t\tshow user name in each window \n"
+"  -U, --url=URL\t\topen file or directory in URI form\n"
 "  -v, --version\t\tdisplay the version information and exit\n"
 "  -x, --examine=FILE\tFILE has changed - re-examine it\n"
 "\n"
-"Report bugs to "
+"Report bugs to %s.\n"
+"Home page (including updated versions): http://rox.sourceforge.net/\n"
 msgstr ""
 "Erabilera: ROX-Filer/AppRun [AUKERA]... [FITXATEGIA]...\n"
 "Ireki direktorio edo zerrenda bakoitza, edo lan huneko direktorioa\n"
@@ -1936,15 +2142,7 @@ msgstr ""
 "\n"
 "Arazoen berri eman "
 
-#: main.c:136
-msgid ""
-".\n"
-"Home page (including updated versions): http://rox.sourceforge.net/\n"
-msgstr ""
-".\n"
-"Webgunea (eguneraturiko bertsioak barne): http://rox.sourceforge.net/\n"
-
-#: main.c:234
+#: main.c:237
 msgid ""
 "We got a BadWindow error from the X server. This might be due to this GTK "
 "bug (during drag-and-drop?):\n"
@@ -1952,7 +2150,7 @@ msgid ""
 "Trying to continue..."
 msgstr ""
 
-#: main.c:382
+#: main.c:399
 msgid ""
 "The -o argument is no longer used. You can turn on override redirect from "
 "the Options box instead."
@@ -1960,281 +2158,378 @@ msgstr ""
 "-o argumentua ez da luzaroago erabiliko. Aukerak leihoko birbidalketa alde "
 "batetara utzi gaitu dezakezu bere ordez."
 
-#: main.c:489
+#: main.c:528
 #, c-format
 msgid "Running as user '%s'"
 msgstr "'%s' erbiltzailea bezala abiarazten"
 
-#: main.c:666
+#: main.c:688
 #, c-format
 msgid "Compiled with GTK version %s\n"
 msgstr "GTK %s bertsioaz konpilaturik\n"
 
-#: main.c:667
+#: main.c:689
 #, c-format
 msgid "Running with GTK version %d.%d.%d\n"
 msgstr "GTK bertsioaz %d.%d.%d abiarazirik\n"
 
-#: main.c:671
+#: main.c:693
 msgid "features set at compile time"
 msgstr "Konpilazioan ezarritako funtzioak"
 
-#: main.c:672
+#: main.c:694
 msgid "Large File Support"
 msgstr "Fitxategi Handi Onarpena"
 
-#: main.c:679
-msgid "GNOME-VFS library"
-msgstr "GNOME-VFS liburutegia"
-
-#: main.c:683
-msgid "No (need 2.8.0 or later)"
-msgstr "Ez (2.8.0 edo berriagoa behar du)"
-
-#: main.c:686
-msgid "Dnotify support"
-msgstr "Dnotify Onarpena"
-
-#: main.c:693
+#: main.c:701
 msgid "Binary compatibility"
 msgstr "Bitar bateragarritasuna"
 
-#: main.c:695
+#: main.c:703
 msgid "Yes (can run with older glibc versions)"
 msgstr "Bai (zaharkituriko glibc bertsioekin lan egin dezake)"
 
-#: main.c:697
+#: main.c:705
 msgid "No (apsymbols.h not found)"
 msgstr "Ez (apsymbols.h ez da aurkitu)"
 
-#: menu.c:180 tips:52
+#: main.c:709
+#, fuzzy
+msgid "Extended attribute support"
+msgstr "Atributu hedatuak"
+
+#: main.c:856
+#, fuzzy, c-format
+msgid "Unable to read '%s': %s"
+msgstr ""
+"Hust '%s' ezabatzerakoan:\n"
+"%s"
+
+#: main.c:895
+#, c-format
+msgid ""
+"Left-click to run %s.\n"
+"Right-click for a list of versions."
+msgstr ""
+
+#: main.c:942 menu.c:1723 menu.c:1729
+#, c-format
+msgid "Error creating '%s': %s"
+msgstr "Errorea '%s' sortzerakoan: %s"
+
+#: main.c:973
+#, fuzzy
+msgid "Save"
+msgstr "Honela gorde:"
+
+#: main.c:978
+msgid "Start script"
+msgstr ""
+
+#: main.c:1003
+msgid ""
+"Click to save a script to run ROX-Filer.\n"
+"If you are using Zero Install you should use 0alias instead."
+msgstr ""
+
+#: menu.c:639
 msgid "Display"
 msgstr "Bistarazi"
 
-#: menu.c:181 tips:57
+#: menu.c:641 tips:49
 msgid "Icons View"
 msgstr "Ikono bistartzea"
 
-#: menu.c:182
-msgid "Icons, With..."
+#: menu.c:642
+#, fuzzy
+msgid "Icons With Sizes"
 msgstr "Ikonoak, Gehi..."
 
-#: menu.c:183 tips:74
-msgid "Sizes"
-msgstr "Tamainak"
+#: menu.c:643
+#, fuzzy
+msgid "Icons With Times"
+msgstr "Ikono gaia"
 
-#: menu.c:185 tips:254
-msgid "Types"
-msgstr "Motak"
+#: menu.c:644
+#, fuzzy
+msgid "Icons With Permissions"
+msgstr "Baimenak"
 
-#: menu.c:186 tips:77
-msgid "Times"
-msgstr "Data"
+#: menu.c:645
+#, fuzzy
+msgid "Icons With Types"
+msgstr "Ikonoak, Gehi..."
 
-#: menu.c:187 tips:58 tips:92
+#: menu.c:647 tips:50 tips:98 tips:99
 msgid "List View"
 msgstr "Zerrenda bistaratzea"
 
-#: menu.c:189
+#: menu.c:651
 msgid "Bigger Icons"
 msgstr "Ikono handiagoak"
 
-#: menu.c:190
+#: menu.c:653
 msgid "Smaller Icons"
 msgstr "Ikono txikiagoak"
 
-#: menu.c:191 tips:71
+#: menu.c:655 tips:71
 msgid "Automatic"
 msgstr "Automatikoa"
 
-#: menu.c:193
+#: menu.c:661
 msgid "Sort by Name"
 msgstr "Izenez sailkatu"
 
-#: menu.c:194
+#: menu.c:662
 msgid "Sort by Type"
 msgstr "Motaz sailkatu"
 
-#: menu.c:195
-msgid "Sort by Date"
+#: menu.c:663
+#, fuzzy
+msgid "Sort by Date (atime)"
 msgstr "Dataz sailkatu"
 
-#: menu.c:196
+#: menu.c:664
+#, fuzzy
+msgid "Sort by Date (ctime)"
+msgstr "Dataz sailkatu"
+
+#: menu.c:665
+#, fuzzy
+msgid "Sort by Date (mtime)"
+msgstr "Dataz sailkatu"
+
+#: menu.c:666
 msgid "Sort by Size"
 msgstr "Tamainaz Sailkatu"
 
-#: menu.c:197
+#: menu.c:667 toolbar.c:536
+#, fuzzy
+msgid "Sort by permissions"
+msgstr "Baimenak"
+
+#: menu.c:668
 msgid "Sort by Owner"
 msgstr "Jabez Sailkatu"
 
-#: menu.c:198
+#: menu.c:669
 msgid "Sort by Group"
 msgstr "Taldez Sailkatu"
 
-#: menu.c:199
+#: menu.c:671
 msgid "Reversed"
 msgstr "Atzezaurrera"
 
-#: menu.c:201
+#: menu.c:675
 msgid "Show Hidden"
 msgstr "Ezkutukoak bistarazi"
 
-#: menu.c:202
+#: menu.c:677
+#, fuzzy
+msgid "Show Only Files"
+msgstr "Laguntza Bistarazi"
+
+#: menu.c:678
+#, fuzzy
+msgid "Show Only Directories"
+msgstr "direktoriorik ez)\n"
+
+#: menu.c:679
 msgid "Filter Files..."
 msgstr "Fitxategi Iragazkia..."
 
-#: menu.c:203
+#: menu.c:680
+#, fuzzy
+msgid "Temp Filter..."
+msgstr "Fitxategi Iragazkia..."
+
+#: menu.c:681
+msgid "Filter Directories With Files"
+msgstr ""
+
+#: menu.c:682
 msgid "Show Thumbnails"
 msgstr "Argazkitxoak bistarazi"
 
-#: menu.c:204
+#: menu.c:683
 msgid "Refresh"
 msgstr "Berritu"
 
-#: menu.c:205
+#: menu.c:684
+#, fuzzy
+msgid "Refresh Thumbs"
+msgstr "Berritu"
+
+#: menu.c:686
 msgid "Save Display Settings..."
 msgstr "Pantaila ezarpenak gorde..."
 
-#: menu.c:207
-msgid "Copy..."
-msgstr "Kopiatu..."
+#: menu.c:687
+#, fuzzy
+msgid "Save Display Settings to parent ..."
+msgstr "Pantaila ezarpenak gorde..."
 
-#: menu.c:208
+#: menu.c:695
+#, fuzzy
+msgid "Cut"
+msgstr "Tamaina"
+
+#: menu.c:697
+msgid "Duplicate..."
+msgstr ""
+
+#: menu.c:699
 msgid "Rename..."
 msgstr "Berrizendatu..."
 
-#: menu.c:209
+#: menu.c:700
 msgid "Link..."
 msgstr "Estekatu..."
 
-#: menu.c:213
-msgid "Open AVFS"
-msgstr "AVFS ireki"
-
-#: menu.c:214
+#: menu.c:708
 msgid "Send To..."
 msgstr "Bidali hona..."
 
-#: menu.c:219
+#: menu.c:717
+#, fuzzy
+msgid "Extended attributes..."
+msgstr "Atributu hedatuak"
+
+#: menu.c:721
 msgid "Count"
 msgstr "Tamaina"
 
-#: menu.c:220
+#: menu.c:723
 msgid "Set Type..."
 msgstr "Mota ezarri..."
 
-#: menu.c:224 toolbar.c:155
+#: menu.c:731 toolbar.c:179
 msgid "Select"
 msgstr "Aukeratu"
 
-#: menu.c:225
+#: menu.c:733
 msgid "Select All"
 msgstr "Danak aukeratu"
 
-#: menu.c:226
+#: menu.c:735
 msgid "Clear Selection"
 msgstr "Eginiko aukera utzi"
 
-#: menu.c:227
+#: menu.c:736
 msgid "Invert Selection"
 msgstr "Aukera alderantzikatu"
 
-#: menu.c:228
+#: menu.c:737
 msgid "Select by Name..."
 msgstr "Izenez aukeratu..."
 
-#: menu.c:229
+#: menu.c:739
+#, fuzzy
+msgid "Reg Select..."
+msgstr "Aukeratu..."
+
+#: menu.c:741
 msgid "Select If..."
 msgstr "Aukeratu..."
 
-#: menu.c:231
+#: menu.c:746
+msgid "Paste"
+msgstr ""
+
+#: menu.c:749 toolbar.c:184
 msgid "New"
 msgstr "Berria"
 
-#: menu.c:233
+#: menu.c:752
 msgid "Blank file"
 msgstr "Fitxategi hutsa"
 
-#: menu.c:235 tasklist.c:308
+#: menu.c:756 tasklist.c:305
 msgid "Window"
 msgstr "Leihoa"
 
-#: menu.c:236
+#: menu.c:758
 msgid "Parent, New Window"
 msgstr "Aita, Leiho Berria"
 
-#: menu.c:237
+#: menu.c:759
 msgid "Parent, Same Window"
 msgstr "Aita, Leiho Berdina"
 
-#: menu.c:238
+#: menu.c:761 tips:44
 msgid "New Window"
 msgstr "Leiho Berria"
 
-#: menu.c:240
+#: menu.c:764
 msgid "Show Bookmarks"
 msgstr "Laster-markak bistarazi"
 
-#: menu.c:241
+#: menu.c:766
+#, fuzzy
+msgid "Show Log"
+msgstr "Argibideak Bistarazi"
+
+#: menu.c:768
 msgid "Follow Symbolic Links"
 msgstr "Esteka sinbolikoak jarraitu"
 
-#: menu.c:242
+#: menu.c:769
 msgid "Resize Window"
 msgstr "Leiho tamaina aldatu"
 
-#: menu.c:245
+#: menu.c:771
 msgid "Close Window"
 msgstr "Leihoa itxi"
 
-#: menu.c:247
+#: menu.c:776
 msgid "Enter Path..."
 msgstr "Bidea idatzi..."
 
-#: menu.c:248
+#: menu.c:778
 msgid "Shell Command..."
 msgstr "Shell Komandoa..."
 
-#: menu.c:249
-msgid "Xterm Here"
+#: menu.c:780
+#, fuzzy
+msgid "Terminal Here"
 msgstr "Xterm Hemen"
 
-#: menu.c:250
-msgid "Switch to xterm"
+#: menu.c:782
+#, fuzzy
+msgid "Switch to Terminal"
 msgstr "xterm-era aldatu"
 
-#: menu.c:718
-msgid "You should Shift+Menu click over a file to send it somewhere"
-msgstr ""
-"Zuk Shift zapalduri duzula fitxategiaren menuan klik egin behar duzu "
-"norabait bidaltzeko"
+#: menu.c:793
+#, fuzzy
+msgid "Customise Dir Menu..."
+msgstr "Menua pertsonalizatu..."
 
-#: menu.c:754
+#: menu.c:976
 msgid "Next Click"
 msgstr "Hurrengo Klik"
 
-#: menu.c:776
+#: menu.c:998
 #, c-format
 msgid "%d items"
 msgstr "%d elementu"
 
-#: menu.c:864
+#: menu.c:1094
 msgid "Open unmounted"
 msgstr "Desmuntaturik ireki"
 
-#: menu.c:867
+#: menu.c:1097
 msgid "Show Target"
 msgstr "Helburua Bistarazi"
 
-#: menu.c:869
+#: menu.c:1099
 msgid "Look Inside"
 msgstr "Barrua Begiratu"
 
-#: menu.c:871
+#: menu.c:1101
 msgid "Open As Text"
 msgstr "Testu bezala ireki"
 
-#: menu.c:1031
+#: menu.c:1320
 msgid ""
 "Extended attributes, used to store types, are not supported for this file or "
 "files.\n"
@@ -2248,15 +2543,15 @@ msgstr ""
 "daiteke, ere fitxategi sistema muntatze aukera zuzenak ezarri behar direla "
 "izan daiteke ('user_xattr' Linux-en)."
 
-#: menu.c:1037
+#: menu.c:1326
 msgid "Setting type not supported for some of these files"
 msgstr "Ezarpen mota ez du onartzen fitxategi batenbatek"
 
-#: menu.c:1072
+#: menu.c:1364
 msgid "_Relative link"
 msgstr "_Esteka erlatiboa"
 
-#: menu.c:1078
+#: menu.c:1370
 msgid ""
 "If on, the symlink will store the path from the symlink to the target file. "
 "Use this if the symlink and the target will be moved together.\n"
@@ -2268,45 +2563,58 @@ msgstr ""
 "Ezgaiturik egon ezkero, erro direktoriotik bidea gordeko da - Esteka mugitu "
 "baina helburu fitxategia leku berdinean geratuko bada erabili."
 
-#: menu.c:1148
+#: menu.c:1382
+msgid "_Sym path"
+msgstr ""
+
+#: menu.c:1388
+msgid "If on, the symlink will use target path as Sym path."
+msgstr ""
+
+#: menu.c:1460
 msgid "New pathname is not absolute"
 msgstr "Bide berria ez da absolutua"
 
-#: menu.c:1214
+#: menu.c:1540
 #, c-format
 msgid "Symlink from '%s' already exists. Replace it with a link to '%s'?"
 msgstr ""
-"Dagoeneko badago '%s'-ren esteka sinboliko bat. ø'%s'-ra estekaz aldatu?"
+"Dagoeneko badago '%s'-ren esteka sinboliko bat. ¬ø'%s'-ra estekaz aldatu?"
 
-#: menu.c:1220
+#: menu.c:1546
 msgid "_Replace"
 msgstr "_Aldatu"
 
-#: menu.c:1351 menu.c:1392 menu.c:1452
-msgid "Create"
-msgstr "Sortu"
-
-#: menu.c:1352
+#: menu.c:1704
 msgid "NewDir"
 msgstr "DirBerria"
 
-#: menu.c:1366 menu.c:1372
-#, c-format
-msgid "Error creating '%s': %s"
-msgstr "Errorea '%s' sortzerakoan: %s"
+#: menu.c:1706 menu.c:1757 menu.c:1827
+msgid "Create"
+msgstr "Sortu"
 
-#: menu.c:1393
+#: menu.c:1755
 msgid "NewFile"
 msgstr "FitxategiBerria"
 
-#: menu.c:1411
+#: menu.c:1779
 #, c-format
 msgid "Error creating file: could not find the template for %s"
 msgstr ""
 "Errorea fitxategia sortzerakoan: ezin izan da %s-rentzat txantilloia aurkitu"
 
-#: menu.c:1482
-#, c-format
+#: menu.c:1847
+#, fuzzy
+msgid ""
+"Symlink any programs you want into this directory. \n"
+"\n"
+"Tip: Directories and `Set Icon' may make it more usefull."
+msgstr ""
+"Crea enlaces simb√≥licos a los programas que quieras en √©ste directorio. "
+"Ellos aparecer√°n en el men√∫ para todos los elementos de √©ste tipo (%s/%s)."
+
+#: menu.c:1883
+#, fuzzy, c-format
 msgid ""
 "The `Send To' menu provides a quick way to send some files to an "
 "application. The applications listed are those in the following "
@@ -2318,8 +2626,9 @@ msgid ""
 "\n"
 "Advanced use:\n"
 "You can also create subdirectories called `.text_html', `.text', etc which "
-"will only be shown for files of that type. `.group' is shown only when "
-"multiple files are selected."
+"will only be shown for files of that type and shared with the file menu. In "
+"addition, `.group' is shown only when multiple files are selected. `.all' is "
+"all."
 msgstr ""
 "`Bidali Hona' menuak fitxategi batzu aplikazio batetara bidaltzeko bide "
 "azkar bat da. Bistaraziko diren aplikazioa direktorio hauetakoak dira:\n"
@@ -2333,7 +2642,7 @@ msgstr ""
 "fitxategi mota horientzat bistaraziko dena. `.group' -direktorioa fitxategi "
 "anitz aukeraturik daudenean isaraziko da."
 
-#: menu.c:1493
+#: menu.c:1895
 msgid ""
 "I'll show you your SendTo directory now; you should symlink (Ctrl+Shift "
 "drag) any applications you want into it."
@@ -2342,13 +2651,13 @@ msgstr ""
 "aplikazioei esteka sinbolikoak sortu (Ktrl+Shift+arrastatu) beharko "
 "zenizkieke."
 
-#: menu.c:1496 menu.c:1536
+#: menu.c:1898 menu.c:1938
 msgid "Your CHOICESPATH variable setting prevents customisations - sorry."
 msgstr ""
 "Zure CHOICESPATH aldagaiaren balioak ez ditu pertsonalizazioak onarzen - "
 "barkatu."
 
-#: menu.c:1529
+#: menu.c:1931
 #, c-format
 msgid ""
 "Any files placed in your Templates directories will appear on the `New' "
@@ -2360,7 +2669,7 @@ msgid ""
 "%s\n"
 msgstr ""
 
-#: menu.c:1534
+#: menu.c:1936
 #, fuzzy
 msgid ""
 "I'll show you your Templates directory now; you should place any template "
@@ -2370,15 +2679,21 @@ msgstr ""
 "aplikazioei esteka sinbolikoak sortu (Ktrl+Shift+arrastatu) beharko "
 "zenizkieke."
 
-#: menu.c:1651
-msgid "Customise"
+#: menu.c:2081
+#, fuzzy
+msgid "Customise..."
 msgstr "Pertsonalizatu"
 
-#: menu.c:1717
+#: menu.c:2106
+#, fuzzy
+msgid "Customise Dir menu..."
+msgstr "Menua pertsonalizatu..."
+
+#: menu.c:2169
 msgid "This is already the canonical name for this directory."
 msgstr "Hau dagoeneko direktorio honen izen kanonikoa da."
 
-#: menu.c:1748
+#: menu.c:2200
 msgid ""
 "You can't open a second view onto this directory because the `Unique "
 "Windows' option is turned on in the Options window."
@@ -2386,75 +2701,103 @@ msgstr ""
 "Ezin duzu direktorio honen bigarren bistaratze leiho bat ireki `Leiho "
 "Bakarrak' aukera gaiturik bait dago ezarpenetan."
 
-#: menu.c:1869
-msgid "Copy ... ?"
-msgstr "Kopiatu ... ?"
+#: menu.c:2348
+msgid "The clipboard is empty."
+msgstr ""
 
-#: menu.c:1872
+#: menu.c:2384
+#, fuzzy, c-format
+msgid "Copy of %s"
+msgstr "?%s %s-ra kopiatu?"
+
+#: menu.c:2390
+#, fuzzy, c-format
+msgid "Copy(%d) of %s"
+msgstr "?%s %s-ra kopiatu?"
+
+#: menu.c:2456
+msgid "Duplicate ... ?"
+msgstr ""
+
+#: menu.c:2459
 msgid "Rename ... ?"
 msgstr "Berrizendatu ... ?"
 
-#: menu.c:1875
+#: menu.c:2462
 msgid "Symlink ... ?"
 msgstr "Estekatu ... ?"
 
-#: menu.c:1878
+#: menu.c:2465
 msgid "Shift Open ... ?"
 msgstr "Shift Ireki ... ?"
 
-#: menu.c:1881
+#: menu.c:2468
 msgid "Properties of ... ?"
 msgstr "Honen propietateak ... ?"
 
-#: menu.c:1884
+#: menu.c:2472
+#, fuzzy
+msgid "Extended attributes of ... ?"
+msgstr "Atributu hedatuak"
+
+#: menu.c:2476
 msgid "Set type of ... ?"
 msgstr "Honen Mota Ezarrie ... ?"
 
-#: menu.c:1887
+#: menu.c:2479
 msgid "Set run action for ... ?"
 msgstr "Honentzat Ekintza Ezarri ... ?"
 
-#: menu.c:1890
+#: menu.c:2482
 msgid "Set icon for ... ?"
 msgstr "Honentzat Ikonoa Ezarri ... ?"
 
-#: menu.c:1893
+#: menu.c:2485
 msgid "Send ... to ... ?"
 msgstr "Bidali ... nora ... ?"
 
-#: menu.c:1896
+#: menu.c:2488
 msgid "DELETE ... ?"
 msgstr "EZABATU ... ?"
 
-#: menu.c:1899
+#: menu.c:2491
 msgid "Count the size of ... ?"
 msgstr "Honen tamaina kalkulatu ... ?"
 
-#: menu.c:1902
+#: menu.c:2494
 msgid "Set permissions on ... ?"
 msgstr "Baimenak ezarri ... ?"
 
-#: menu.c:1905
+#: menu.c:2497
 msgid "Search inside ... ?"
 msgstr "Bilatu honen barruan ... ?"
 
-#: menu.c:1908
-msgid "Look inside ... ?"
-msgstr "Bilatu barruan ... ?"
+#: menu.c:2500
+#, fuzzy
+msgid "Copy ... to clipboard ?"
+msgstr "Kopiatu ... ?"
 
-#: menu.c:1972
+#: menu.c:2503
+msgid "Cut ... to clipboard ?"
+msgstr ""
+
+#: menu.c:2582
 msgid "You cannot do this to more than one item at a time"
 msgstr "Ezin duzu hau elementu anitzekin egin"
 
-#: menu.c:2004
+#: menu.c:2609
+msgid "Duplicate"
+msgstr ""
+
+#: menu.c:2614
 msgid "Rename"
 msgstr "Berrizendatu"
 
-#: menu.c:2009
+#: menu.c:2619
 msgid "Symlink"
 msgstr "Esteka"
 
-#: menu.c:2041
+#: menu.c:2654
 msgid ""
 "User-definable shortcuts are disabled by default in Gtk2, and you have not "
 "enabled them. You can turn this feature on by:\n"
@@ -2476,7 +2819,7 @@ msgstr ""
 "\tgtk-can-change-accels = 1\n"
 "\t(XSETTINGS erabiltzen EZ baduzu bakarrik )"
 
-#: menu.c:2052
+#: menu.c:2665
 msgid ""
 "To set a keyboard short-cut for a menu item:\n"
 "\n"
@@ -2496,31 +2839,40 @@ msgstr ""
 "Menuko elementuaren alboan tekla agertuko da eta aski izango da tekla hori "
 "sakatzea menua ireki gabe hemendik aurrera."
 
-#: menu.c:2067
+#: menu.c:2680
 msgid "Set keyboard shortcuts"
 msgstr "Teklatu laster-teklak ezarri"
 
-#: minibuffer.c:131
+#: minibuffer.c:140
 msgid "Goto:"
 msgstr "Joan:"
 
-#: minibuffer.c:132
+#: minibuffer.c:141
 msgid "Shell:"
 msgstr "Shell-a:"
 
-#: minibuffer.c:133
+#: minibuffer.c:142
 msgid "Select If:"
 msgstr "Kasu honetan aukeratu:"
 
-#: minibuffer.c:134
+#: minibuffer.c:143
 msgid "Select Named:"
 msgstr "Hautatu Deiturikoa:"
 
-#: minibuffer.c:135
+#: minibuffer.c:144
+#, fuzzy
+msgid "Reg Select (i):"
+msgstr "Kasu honetan aukeratu:"
+
+#: minibuffer.c:145
 msgid "Pattern:"
 msgstr "Patroia:"
 
-#: minibuffer.c:264
+#: minibuffer.c:146
+msgid "Temp Filter (reg-i):"
+msgstr ""
+
+#: minibuffer.c:320
 msgid ""
 "Enter the name of a file and I'll display it for you. Press Tab to fill in "
 "the longest match. Escape to close the minibuffer."
@@ -2528,14 +2880,34 @@ msgstr ""
 "Fitxategi izena idatzi bistaratzeko. Tab sakaru parekatze luzeena "
 "bistaratzeko. \"Esc\" sakatu minibuffer-a ixteko."
 
-#: minibuffer.c:270
+#: minibuffer.c:326
 msgid ""
 "Enter a shell command to execute. Click on a file to add it to the buffer."
 msgstr ""
 "Idatzi abiarazteko shell komando bat. Klik egin fitxategi batetan buffer-ean "
 "gehitzeko."
 
-#: minibuffer.c:275
+#: minibuffer.c:331
+#, fuzzy
+msgid ""
+"Enter a file name pattern to select all matching files:\n"
+"\n"
+". means any character\n"
+".* means zero or more characters\n"
+"[a-z] means any character from a to z\n"
+"\\.png$ means any name ending in '.png'\n"
+"\n"
+"Shift + Enter: switch to Temp Filter."
+msgstr ""
+"Idatz ezazu parekatze guztiak aukeratzeko bilaketa patroia:\n"
+"\n"
+"? edozein karaktere da\n"
+"* 0 edo karaktere gehiago da\n"
+"[aA] 'a' edo 'A' da\n"
+"[a-z] a-tik z-ra edozeinkaraktere da (minuskulak)\n"
+"*.png '.png'-ez amaitzen den edozein izen da"
+
+#: minibuffer.c:340
 msgid ""
 "Enter a file name pattern to select all matching files:\n"
 "\n"
@@ -2553,7 +2925,7 @@ msgstr ""
 "[a-z] a-tik z-ra edozeinkaraktere da (minuskulak)\n"
 "*.png '.png'-ez amaitzen den edozein izen da"
 
-#: minibuffer.c:287
+#: minibuffer.c:352
 msgid ""
 "Enter a pattern to match for files to be shown.  An empty filter turns the "
 "filter off."
@@ -2561,41 +2933,55 @@ msgstr ""
 "Betetzen duten fitxategiak bistaratzeko patroia bat idatzi. IRagazki huts "
 "batek iragazkia ezgaitzen du."
 
-#: minibuffer.c:895
+#: minibuffer.c:358
+#, fuzzy
+msgid ""
+"Enter a pattern to match for files to be shown and press Enter Key.\n"
+"It is active until the minibuffer is closed."
+msgstr ""
+"Betetzen duten fitxategiak bistaratzeko patroia bat idatzi. IRagazki huts "
+"batek iragazkia ezgaitzen du."
+
+#: minibuffer.c:1045
 msgid "Invalid Find condition"
 msgstr "Bilkaeta baldintza okerra"
 
-#: mount.c:374
+#: mount.c:103
+#, c-format
+msgid "File system table \"%s\" not found, cannot monitor system mounts"
+msgstr ""
+
+#: mount.c:393
 #, c-format
 msgid "%s total, %s used, %s free (%.1f %%)"
 msgstr "%s guztira, %s erabilia, %s libre (%.1f %%)"
 
-#: options.c:277
+#: options.c:272
 msgid "ROX-Filer has converted your Options file to the new XML format"
 msgstr "ROX-Filer-ek zure aukera fitxategia XML formatu berrira bihurtu du"
 
-#: options.c:535 options.c:1258
+#: options.c:560 options.c:1250
 msgid "(use default)"
 msgstr "(lehenetsia erabili)"
 
-#: options.c:806
+#: options.c:844
 #, c-format
 msgid "Internal error: %s unreadable"
 msgstr "Barne errorea: %s irakurrezina"
 
-#: options.c:917
+#: options.c:929
 msgid "Options"
 msgstr "Aukerak"
 
-#: options.c:962
+#: options.c:974
 msgid "_Revert"
 msgstr "_Desegin"
 
-#: options.c:968
+#: options.c:981
 msgid "Restore all choices to how they were when the Options box was opened."
 msgstr "Berezarri aukera guztiak aukera leiho ireki denean zuten egoerara."
 
-#: options.c:983
+#: options.c:996
 #, c-format
 msgid ""
 "Choices will be saved as:\n"
@@ -2604,24 +2990,36 @@ msgstr ""
 "Aukerak honela gordeko dira:\n"
 "%s"
 
-#: options.c:991
+#: options.c:1004
 msgid "(saving disabled by CHOICESPATH)"
 msgstr "(Gordetzea CHOICESPATH dela eta ezgaiturik dago)"
 
-#: options.c:1164 usericons.c:450
+#: options.c:1160 usericons.c:461
 #, c-format
 msgid "Error saving %s: %s"
 msgstr "Errorea %s gordetzerakoan: %s"
 
-#: options.c:1794
+#: options.c:1813
 msgid "Missing '='"
 msgstr "'=' bat falta da"
 
-#: panel.c:439
+#: panel.c:326
+#, fuzzy, c-format
+msgid "Unable to replace '%s'"
+msgstr ""
+"Hust '%s' ezabatzerakoan:\n"
+"%s"
+
+#: panel.c:330
+#, c-format
+msgid "Unable to save '%s'"
+msgstr ""
+
+#: panel.c:562
 msgid "Your old panel file has been converted to the new XML format."
 msgstr "Zure panel fitxategi zaharra XML formatu berrira eguneraturik izan da."
 
-#: panel.c:546
+#: panel.c:670
 msgid ""
 "You have tried to close a panel via the window manager - I usually find that "
 "this is accidental... really close?"
@@ -2629,20 +3027,20 @@ msgstr ""
 "Leiho kudeatzailearen bidez panel bat ixten saiatu zara - normalean hau "
 "istripu bat izaten da... benetan itxi?"
 
-#: panel.c:639
+#: panel.c:771
 msgid "Missing < or > in panel config file"
 msgstr "Panelaren konfigurazio fitxategian  < bat edo > bat falta da"
 
-#: panel.c:1519
+#: panel.c:1655
 #, c-format
 msgid "Error saving panel %s: %s"
 msgstr "Errorea %s panela gordetzerakoan: %s"
 
-#: panel.c:1835
+#: panel.c:1981
 msgid "Applet quit without ever creating a widget!"
 msgstr "Applet-a widget bat ere sortu gabe amaiatu da!"
 
-#: panel.c:1934
+#: panel.c:2077
 #, c-format
 msgid ""
 "Error running applet:\n"
@@ -2651,69 +3049,59 @@ msgstr ""
 "Errorea applet-a abiaraztean:\n"
 "%s"
 
-#: panel.c:2335
+#: panel.c:2751
+#, fuzzy
+msgid "Are you sure you want to remove this panel from the desktop?"
+msgstr "¬øEst√°s seguro que quieres abrir %d ventanas?"
+
+#: panel.c:2754 panel.c:2781
+#, fuzzy
+msgid "Remove Panel"
+msgstr "Elementua(k) Ezabatu"
+
+#: panel.c:2777
 #, fuzzy
 msgid "Panel Options..."
 msgstr "Aukerak..."
 
-#: panel.c:2427
+#: panel.c:2862
 #, c-format
 msgid "Xinerama monitor %d unavailable"
 msgstr "%d Xinerama monitorea ez dago erabilgarri"
 
-#: panel.c:2502
+#: panel.c:2897
+msgid "Top"
+msgstr ""
+
+#: panel.c:2899
 #, fuzzy
-msgid "Panel Options"
-msgstr "Aukerak"
-
-#: panel.c:2517
-#, fuzzy, c-format
-msgid "Panel: %s"
-msgstr "Panelak"
-
-#: panel.c:2525
-msgid "Select the panel's position:"
-msgstr ""
-
-#: panel.c:2531
-msgid "Top-edge panel"
-msgstr ""
-
-#: panel.c:2532
-msgid "Top edge"
-msgstr ""
-
-#: panel.c:2533
-msgid "Bottom edge panel"
-msgstr ""
-
-#: panel.c:2534
-#, fuzzy
-msgid "Bottom edge"
+msgid "Bottom"
 msgstr "Behekaldeko marjina"
 
-#: panel.c:2535
-msgid "Left edge panel"
+#: panel.c:2901
+msgid "Left"
 msgstr ""
 
-#: panel.c:2536
-msgid "Left edge"
+#: panel.c:2903
+msgid "Right"
 msgstr ""
 
-#: panel.c:2537
-msgid "Right-edge panel"
-msgstr ""
+#: panel.c:2905
+#, fuzzy
+msgid "Default"
+msgstr "Lehenetsiriko tamaina:"
 
-#: panel.c:2538
-msgid "Right edge"
-msgstr ""
+#: panel.c:2909
+#, fuzzy
+msgid "Unknown side"
+msgstr "Ezezaguna"
 
 #: pinboard.c:354
 msgid "Your old pinboard file has been converted to the new XML format."
 msgstr ""
 "Zure idazmahai fitxategi zaharra XML formatu berrira eguneratua izan da."
 
-#: pinboard.c:635
+#: pinboard.c:711
 msgid ""
 "The backdrop handler must be an application directory. Drag an application "
 "directory into the Set Backdrop dialog box, or (for programmers) pass it to "
@@ -2723,7 +3111,7 @@ msgstr ""
 "Aplikazio direktorio bat Idazmahai atzealde ezarpen kutxara arrastatu ezazu, "
 "edo (programentzat) SOAP SetBackdropApp metodora pasa ezazu."
 
-#: pinboard.c:654
+#: pinboard.c:730
 msgid ""
 "You can only set the backdrop to an image or to a program which knows how to "
 "manage ROX-Filer's backdrop.\n"
@@ -2737,51 +3125,63 @@ msgstr ""
 "Garatzaileak: Aplikazioaren AppInfo.xml CanSetBackdrop elementua eduki behar "
 "du, ROX-Filer manualean argitzen den bezala."
 
-#: pinboard.c:674
+#: pinboard.c:750
 msgid "Set backdrop"
 msgstr "Pantallaren atzeko irudia ezarri"
 
-#: pinboard.c:685
+#: pinboard.c:761
 msgid "Choose a style and drag an image in:"
 msgstr "Estilo bat aukeratu eta irudi bat arrastatu:"
 
-#: pinboard.c:698
+#: pinboard.c:774
 msgid "Centre the image without scaling it"
 msgstr "Eskala aldatu gabe irudia erdiratu"
 
-#: pinboard.c:699
+#: pinboard.c:775
 msgid "Centre"
 msgstr "Erdiratua"
 
-#: pinboard.c:700
+#: pinboard.c:776
 msgid "Scale the image to fit the backdrop area, without distorting it"
 msgstr "Irudia idazmahaiaren tamainakoa bihurtu baina eraldatu gabe"
 
-#: pinboard.c:702
+#: pinboard.c:778
 msgid "Scale"
 msgstr "Eskalan"
 
-#: pinboard.c:703
+#: pinboard.c:779
+#, fuzzy
+msgid ""
+"Scale the image to fit the backdrop area, regardless of image dimensions - "
+"overscale"
+msgstr "Irudia idazmahaiaren tamainakoa bihurtu baina eraldatu gabe"
+
+#: pinboard.c:781
+#, fuzzy
+msgid "Fit"
+msgstr "Iruzkina"
+
+#: pinboard.c:782
 msgid "Stretch the image to fill the backdrop area"
 msgstr "Irudia zabaldu pantaila osoa bete dezan"
 
-#: pinboard.c:704
+#: pinboard.c:783
 msgid "Stretch"
 msgstr "Zabaldua"
 
-#: pinboard.c:705
+#: pinboard.c:784
 msgid "Tile the image over the backdrop area"
 msgstr "Irudiaz idazmahaian mosaiko bat egin"
 
-#: pinboard.c:706
+#: pinboard.c:785
 msgid "Tile"
 msgstr "Mosaiko"
 
-#: pinboard.c:711
+#: pinboard.c:790
 msgid "Drop an image here"
 msgstr "Askatu irudi bat hemen"
 
-#: pinboard.c:772
+#: pinboard.c:851
 msgid ""
 "No pinboard was in use... the 'Default' pinboard has been selected. Use 'rox "
 "-p=Default' to turn it on in future."
@@ -2789,7 +3189,7 @@ msgstr ""
 "Ez zegoen idazmahairik erabilia... 'Lehenetsiriko' idazmahaia hautatua izan "
 "da.'rox -p=Default' erabili aurrerago gaitzeko."
 
-#: pinboard.c:866
+#: pinboard.c:945
 msgid ""
 "Only files (and certain applications) can be used to set the background "
 "image."
@@ -2797,35 +3197,40 @@ msgstr ""
 "Fitxategiak bakarrik (eta zenbait aplikazio) erabili daitezke idazmahaiaren "
 "atzealde irudia ezartzeko."
 
-#: pinboard.c:1471
+#: pinboard.c:1607
 msgid "Missing '>' in icon label"
 msgstr "'>' bat falta da ikonoaren etiketan"
 
-#: pinboard.c:1480
+#: pinboard.c:1616
 msgid "Missing ',' after icon label"
 msgstr "',' bat falta da ikono etiketaren ondoren"
 
-#: pinboard.c:1565
+#: pinboard.c:1704
 #, c-format
 msgid "Error saving pinboard %s: %s"
 msgstr "Errorea %s direktorioa gordetzerakoan: %s"
 
-#: pinboard.c:2109
+#: pinboard.c:2247
 msgid "Backdrop..."
 msgstr "Pantaila atzekaldea..."
 
-#: pinboard.c:2202
+#: pinboard.c:2250
+#, fuzzy
+msgid "Add Panel"
+msgstr "Panelak"
+
+#: pinboard.c:2344
 #, c-format
 msgid ""
 "Error loading backdrop image:\n"
 "%s\n"
 "Backdrop removed."
 msgstr ""
-"Error cargando im·gen de fondo de pantala:\n"
+"Error cargando im√°gen de fondo de pantala:\n"
 "%s\n"
 "Fondo de pantalla eliminado."
 
-#: pixmaps.c:991
+#: pixmaps.c:1227
 #, c-format
 msgid ""
 "Can't delete thumbnails in %s:\n"
@@ -2834,62 +3239,89 @@ msgstr ""
 "Ezin dira %s-ko argazkitxoak ezabatu:\n"
 "%s"
 
-#: pixmaps.c:1012
+#: pixmaps.c:1258
 msgid "There are no thumbnails to delete"
 msgstr "Ez dago argazkitxorik ezabatzeko"
 
-#: pixmaps.c:1025
+#: pixmaps.c:1271
 msgid "Purge thumbnails disk cache"
 msgstr "Diskako argazkitxo katxea ezabatu"
 
-#: remote.c:624
+#: remote.c:764
 #, c-format
 msgid "Unknown style '%s'"
 msgstr "'%s' estilo ezezaguna"
 
-#: remote.c:646
+#: remote.c:786
 #, c-format
 msgid "Unknown details type '%s'"
 msgstr "'%s' xehetasun mota ezezaguna"
 
-#: remote.c:674
+#: remote.c:815
 #, c-format
 msgid "Unknown sorting type '%s'"
 msgstr "'%s' sailkapen mota ezezaguna"
 
-#: remote.c:1117
+#: remote.c:1286
 #, c-format
 msgid "Attempt to invoke unknown SOAP method '%s'"
-msgstr "Intento de invocar un mÈtodo SOAP desconocido '%s'"
+msgstr "Intento de invocar un m√©todo SOAP desconocido '%s'"
 
-#: rox_gettext.c:95
-#, c-format
-msgid "Invalid .gmo translation file (too short): %s"
-msgstr "Archivo de traducciÛn .gmo no v·lido (demasiado corto): %s"
-
-#: rox_gettext.c:108
-#, c-format
-msgid "Invalid .gmo translation file (GNU magic number not found): %s"
-msgstr ""
-"Archivo de traducciÛn .gmo no v·lido (no se encontrÛ el n˙mero m·gico GNU): %"
-"s"
-
-#: run.c:96 run.c:141
+#: run.c:97 run.c:151
 #, c-format
 msgid "Program %s not found - deleted?"
 msgstr "Programa %s no encontrado - borrado?"
 
-#: run.c:287
+#: run.c:359
+#, fuzzy, c-format
+msgid ""
+"No run action specified for files of this type (%s/%s) - you can set a run "
+"action by choosing `Set Run Action' from the File menu, or you can just drag "
+"the file to an application.%s"
+msgstr ""
+"Ez dago ekintza ezarririk fitxategi mota honentzat (%s/%s) - ekintza "
+"ezartzeko menuan`Ekintza Ezarri' aukeratu edo fixtategia aplikazio batetara "
+"arrastatzearekin ere aski da"
+
+#: run.c:365
+msgid ""
+"\n"
+"\n"
+"Note: If this is a computer program which you want to run, you need to set "
+"the execute bit by choosing Permissions from the File menu."
+msgstr ""
+
+#: run.c:373
 #, c-format
 msgid "File doesn't exist, or I can't access it: %s"
 msgstr "Fitxategia edo ez dago edo ezin da ireki: %s"
 
-#: run.c:292
+#: run.c:378
 #, c-format
 msgid "I don't know how to open '%s'"
 msgstr "Ez dakit '%s' nola ireki"
 
-#: run.c:323
+#: run.c:409
+#, fuzzy, c-format
+msgid "'%s' is not a valid URI"
+msgstr "'%s' ya no es un enlace simb√≥lico"
+
+#: run.c:420
+#, fuzzy, c-format
+msgid "%s not accessable"
+msgstr "'%s' direktorioa ez da eskuragarria"
+
+#: run.c:428
+#, fuzzy, c-format
+msgid "Non-local URL %s"
+msgstr "Ez abiarazgarria %s"
+
+#: run.c:445
+#, fuzzy, c-format
+msgid "%s: no handler for %s"
+msgstr "Huts kudeatzaielan (handler) %s: %s"
+
+#: run.c:465
 msgid ""
 "Application:\n"
 "This is an application directory - you can run it as a program, or open it "
@@ -2901,220 +3333,22 @@ msgstr ""
 "ireki (irekitzerakoan Shift sakatuaz). Aplikazio gehinek laguntza ematen "
 "dute hemen baina honek ez."
 
-#: run.c:407
+#: run.c:549
 #, c-format
 msgid "Could not send data to program: %s"
 msgstr "Ezin dira datuak programara bidali: %s"
 
-#: run.c:437
+#: run.c:578
 #, c-format
 msgid "Could not read link: %s"
 msgstr "Ezin izan da esteka irakurri: %s"
 
-#: run.c:465
+#: run.c:606
 #, c-format
 msgid "Broken symlink (or you don't have permission to follow it): %s"
 msgstr "apurtutako esteka sinbolikoa (edo ez duzu irakurtzeko eskubiderik): %s"
 
-#: run.c:502
-#, fuzzy, c-format
-msgid ""
-"No run action specified for files of this type (%s/%s) - you can set a run "
-"action by choosing `Set Run Action' from the File menu, or you can just drag "
-"the file to an application.%s"
-msgstr ""
-"Ez dago ekintza ezarririk fitxategi mota honentzat (%s/%s) - ekintza "
-"ezartzeko menuan`Ekintza Ezarri' aukeratu edo fixtategia aplikazio batetara "
-"arrastatzearekin ere aski da"
-
-#: run.c:508
-msgid ""
-"\n"
-"\n"
-"Note: If this is a computer program which you want to run, you need to set "
-"the execute bit by choosing Permissions from the File menu."
-msgstr ""
-
-#: support.c:272
-msgid "B"
-msgstr "B"
-
-#: support.c:351
-msgid "byte"
-msgstr "byte"
-
-#: toolbar.c:115
-msgid "Close"
-msgstr "Itxi"
-
-#: toolbar.c:115
-msgid "Close filer window"
-msgstr "Kudeatzaile leihoa itxi"
-
-#: toolbar.c:119
-msgid "Up"
-msgstr "Gora"
-
-#: toolbar.c:119
-msgid "Change to parent directory"
-msgstr "Goiko direktorioara joan"
-
-#: toolbar.c:123
-msgid "Home"
-msgstr "Etxea"
-
-#: toolbar.c:123
-msgid "Change to home directory"
-msgstr "Etxe direktoriora joan"
-
-#: toolbar.c:127
-msgid "Bookmarks"
-msgstr "Laster-markak"
-
-#: toolbar.c:127
-msgid "Bookmarks menu"
-msgstr "Laster-marka menua"
-
-#: toolbar.c:131
-msgid "Scan"
-msgstr "Berritu"
-
-#: toolbar.c:131
-msgid "Rescan directory contents"
-msgstr "Berritu  direktorio edukiak"
-
-#: toolbar.c:135
-msgid "Change icon size"
-msgstr "Ikono tamaina aldatu"
-
-#: toolbar.c:139
-msgid "Automatic size mode"
-msgstr "Tamaina automatiko modua"
-
-#: toolbar.c:143
-msgid "Show extra details"
-msgstr "Xehetasun gehiarriak bistarazi"
-
-#: toolbar.c:147
-msgid "Sort"
-msgstr "Sailkatu"
-
-#: toolbar.c:147
-msgid "Change sort criteria"
-msgstr "Sailkatze irizpideak aldatu"
-
-#: toolbar.c:151
-msgid "Hidden"
-msgstr "Eskutaturik"
-
-#: toolbar.c:151
-msgid "Show/hide hidden files"
-msgstr "Ezkutaturiko fitxategiak ezkutatu/bistarazi"
-
-#: toolbar.c:155
-msgid "Select all/invert selection"
-msgstr "Dana hautatu/Hautapena alderantzizkatu"
-
-#: toolbar.c:159
-msgid "Show ROX-Filer help"
-msgstr "ROX-Filer laguntza bistarazi"
-
-#: toolbar.c:220
-#, c-format
-msgid " (%u hidden)"
-msgstr " (%u ezkutaturik)"
-
-#: toolbar.c:228 tips:80
-msgid "items"
-msgstr "elementu"
-
-#: toolbar.c:228
-msgid "item"
-msgstr "elementu"
-
-#: toolbar.c:231
-#, c-format
-msgid "No items%s"
-msgstr "Elementurik ez%s"
-
-#: toolbar.c:250
-#, c-format
-msgid "%u selected (%s)"
-msgstr "%u hautaturik (%s)"
-
-#: toolbar.c:422
-msgid "Sort by name"
-msgstr "Izenez sailkatu"
-
-#: toolbar.c:422
-msgid "Sort by type"
-msgstr "Motaz sailkatu"
-
-#: toolbar.c:422
-msgid "Sort by date"
-msgstr "Dataz sailkatu"
-
-#: toolbar.c:423
-msgid "Sort by size"
-msgstr "Tamainaz sailkatu"
-
-#: toolbar.c:423
-msgid "Sort by owner"
-msgstr "Jabez sailkatu"
-
-#: toolbar.c:423
-msgid "Sort by group"
-msgstr "Taldez sailkatu"
-
-#: toolbar.c:457
-msgid "ascending"
-msgstr "gorantz"
-
-#: toolbar.c:457
-msgid "descending"
-msgstr "beherantz"
-
-#: type.c:203
-msgid "Sym link"
-msgstr "Esteka simb"
-
-#: type.c:205
-msgid "Mount point"
-msgstr "Muntatze puntua"
-
-#: type.c:207
-msgid "App dir"
-msgstr "Aplik Dir"
-
-#: type.c:214
-msgid "Dir"
-msgstr "Dir"
-
-#: type.c:216
-msgid "Char dev"
-msgstr "Kar gailua"
-
-#: type.c:218
-msgid "Block dev"
-msgstr "Bloke gailua"
-
-#: type.c:220
-msgid "Pipe"
-msgstr "Tutua"
-
-#: type.c:222
-msgid "Socket"
-msgstr "Socket-a"
-
-#: type.c:224
-msgid "Door"
-msgstr "Atea"
-
-#: type.c:227
-msgid "Unknown"
-msgstr "Ezezaguna"
-
-#: type.c:355
+#: run.c:785
 #, c-format
 msgid ""
 "Executable '%s' is world-writeable! Refusing to run. Please change the "
@@ -3128,23 +3362,296 @@ msgid ""
 "Otherwise, you should check, or even just delete, all the existing run "
 "actions."
 msgstr ""
-"°El ejecutable '%s' es modificable por todos! Me niego a ejecutar. Por favor "
-"modifica los permisos ahora (Èste problema puede haber sido causado por un "
+"¬°El ejecutable '%s' es modificable por todos! Me niego a ejecutar. Por favor "
+"modifica los permisos ahora (√©ste problema puede haber sido causado por un "
 "bug en versiones anteriores del filer).\n"
 "\n"
-"Tener accions de ejecuciÛn (no enlaces simbÛlicos) modificables por todos "
+"Tener accions de ejecuci√≥n (no enlaces simb√≥licos) modificables por todos "
 "significa que otras personas que usen tu computadora pueden reemplazar tus "
-"acciones de ejecuciÛn con versiones maliciosas.\n"
+"acciones de ejecuci√≥n con versiones maliciosas.\n"
 "\n"
-"Si confÌas en todos los que puedan escribir en Èsos archivos, entonces no "
-"necesitas preocuparte. Sino, deberÌas verificar, o incluso sÛlo eliminar, "
-"todas las acciones de ejecuciÛn existentes."
+"Si conf√≠as en todos los que puedan escribir en √©sos archivos, entonces no "
+"necesitas preocuparte. Sino, deber√≠as verificar, o incluso s√≥lo eliminar, "
+"todas las acciones de ejecuci√≥n existentes."
 
-#: type.c:368
+#: run.c:798
 msgid "go-w (Fix security problem)"
 msgstr "go-w (Segurtasun arazoa konpontzend u)"
 
-#: type.c:498
+#: support.c:288
+msgid " "
+msgstr ""
+
+#: support.c:381
+msgid "byte"
+msgstr "byte"
+
+#: support.c:1531 support.c:1585
+#, fuzzy, c-format
+msgid "Failed to open and stat file '%s': %s"
+msgstr ""
+"Hust '%s' ezabatzerakoan:\n"
+"%s"
+
+#: support.c:1542 support.c:1596
+#, fuzzy, c-format
+msgid "Failed to mmap file '%s': %s"
+msgstr ""
+"Hust '%s' ezabatzerakoan:\n"
+"%s"
+
+#: toolbar.c:116
+msgid "Close"
+msgstr "Itxi"
+
+#: toolbar.c:116
+msgid "Close filer window"
+msgstr "Kudeatzaile leihoa itxi"
+
+#: toolbar.c:120
+msgid "Up"
+msgstr "Gora"
+
+#: toolbar.c:120
+msgid ""
+"Change to parent directory\n"
+"  Right: Open parent directory\n"
+"  Middle: Change to parent in real path"
+msgstr ""
+
+#: toolbar.c:126
+msgid "Home"
+msgstr "Etxea"
+
+#: toolbar.c:126
+msgid ""
+"Change to home directory\n"
+"  Right: Open home directory\n"
+"  Middle: Change to first bookmark"
+msgstr ""
+
+#: toolbar.c:132
+msgid "Jump"
+msgstr ""
+
+#: toolbar.c:132
+msgid ""
+"Bookmarks menu\n"
+"  Right: Edit Bookmarks\n"
+"  Middle: Jump to last visited directory"
+msgstr ""
+
+#: toolbar.c:138
+msgid "Scan"
+msgstr "Berritu"
+
+#: toolbar.c:138
+msgid ""
+"Rescan directory contents\n"
+"  Middle: Delete/re-create thumbnail cache"
+msgstr ""
+
+#: toolbar.c:143
+#, fuzzy
+msgid "Size‚îº"
+msgstr "Tamaina"
+
+#: toolbar.c:143
+msgid ""
+"Change icon size\n"
+"  Right: Change to smaller\n"
+"  Middle: Change to Auto Size\n"
+"  Scroll: Temporary huge zoom\n"
+"Current size:\n"
+"  ‚îò : Huge\n"
+"  ‚î§ : Large\n"
+"  ‚îê : Small\n"
+"  ‚îå, ‚îú : Auto"
+msgstr ""
+
+#: toolbar.c:155
+#, fuzzy
+msgid "Auto"
+msgstr "Automatikoa"
+
+#: toolbar.c:155
+msgid "Automatic size mode"
+msgstr "Tamaina automatiko modua"
+
+#: toolbar.c:159
+#, fuzzy
+msgid "List"
+msgstr "Zerrenda bistaratzea"
+
+#: toolbar.c:159
+msgid ""
+"Show extra details\n"
+"  Right: Rotate Icons with details\n"
+"  Middle: Return to normal Icons View"
+msgstr ""
+
+#: toolbar.c:165
+msgid "Sort"
+msgstr "Sailkatu"
+
+#: toolbar.c:165
+msgid "Change sort criteria"
+msgstr "Sailkatze irizpideak aldatu"
+
+#: toolbar.c:169
+msgid "Hide"
+msgstr ""
+
+#: toolbar.c:169
+msgid ""
+"Left: Show/hide hidden files\n"
+"Right: Show/hide thumbnails"
+msgstr ""
+
+#: toolbar.c:174
+msgid "Dirs"
+msgstr ""
+
+#: toolbar.c:174
+msgid ""
+"Left: Show only directories\n"
+"Right: Show only files"
+msgstr ""
+
+#: toolbar.c:179
+#, fuzzy
+msgid ""
+"Left: Select all\n"
+"Right: Invert selection"
+msgstr "Dana hautatu/Hautapena alderantzizkatu"
+
+#: toolbar.c:184
+msgid ""
+"Left: New Directory\n"
+"Middle: New Blank file\n"
+"Right: Menu"
+msgstr ""
+
+#: toolbar.c:190
+msgid "‚óã"
+msgstr ""
+
+#: toolbar.c:190
+msgid ""
+"Save Current Display Settings...\n"
+"  Right: for parent/* \n"
+"  Middle: Clear to default settings\n"
+"Under:\n"
+"  ‚ñΩ: No settings\n"
+"  ‚ñº: Own settings\n"
+"  ‚ñ∂: Parent settings\n"
+"  ‚ñ∑: Far parent settings"
+msgstr ""
+
+#: toolbar.c:202
+msgid "Show ROX-Filer help"
+msgstr "ROX-Filer laguntza bistarazi"
+
+#: toolbar.c:270
+#, c-format
+msgid " (%u hidden)"
+msgstr " (%u ezkutaturik)"
+
+#: toolbar.c:276 tips:79
+msgid "items"
+msgstr "elementu"
+
+#: toolbar.c:276
+msgid "item"
+msgstr "elementu"
+
+#: toolbar.c:279
+#, c-format
+msgid "No items%s"
+msgstr "Elementurik ez%s"
+
+#: toolbar.c:298
+#, c-format
+msgid "%u selected (%s)"
+msgstr "%u hautaturik (%s)"
+
+#: toolbar.c:535
+msgid "Sort by name"
+msgstr "Izenez sailkatu"
+
+#: toolbar.c:535
+msgid "Sort by type"
+msgstr "Motaz sailkatu"
+
+#: toolbar.c:535
+msgid "Sort by date"
+msgstr "Dataz sailkatu"
+
+#: toolbar.c:535
+msgid "Sort by size"
+msgstr "Tamainaz sailkatu"
+
+#: toolbar.c:536
+msgid "Sort by owner"
+msgstr "Jabez sailkatu"
+
+#: toolbar.c:536
+msgid "Sort by group"
+msgstr "Taldez sailkatu"
+
+#: toolbar.c:568
+msgid "ascending"
+msgstr "gorantz"
+
+#: toolbar.c:568
+msgid "descending"
+msgstr "beherantz"
+
+#: toolbar.c:891
+msgid "_N_Items_"
+msgstr ""
+
+#: type.c:221
+msgid "Sym link"
+msgstr "Esteka simb"
+
+#: type.c:223
+msgid "Mount point"
+msgstr "Muntatze puntua"
+
+#: type.c:225
+msgid "App dir"
+msgstr "Aplik Dir"
+
+#: type.c:232
+msgid "Dir"
+msgstr "Dir"
+
+#: type.c:234
+msgid "Char dev"
+msgstr "Kar gailua"
+
+#: type.c:236
+msgid "Block dev"
+msgstr "Bloke gailua"
+
+#: type.c:238
+msgid "Pipe"
+msgstr "Tutua"
+
+#: type.c:240
+msgid "Socket"
+msgstr "Socket-a"
+
+#: type.c:242
+msgid "Door"
+msgstr "Atea"
+
+#: type.c:245
+msgid "Unknown"
+msgstr "Ezezaguna"
+
+#: type.c:583
 msgid ""
 "Enter a shell command which will load \"$@\" into a suitable program. Eg:\n"
 "\n"
@@ -3155,71 +3662,71 @@ msgstr ""
 "\n"
 "gimp \"$@\""
 
-#: type.c:679
+#: type.c:779
 msgid "This is not a program! Give me an application instead!"
 msgstr "Hau ez da programa bat! Honen ordez aplikazio bat eman behar duzu!"
 
-#: type.c:740
+#: type.c:839
 msgid "No run action defined"
 msgstr "Ez dago abiarazte ekintzarik"
 
-#: type.c:766
+#: type.c:843
 #, c-format
 msgid "Error in handler %s: %s"
 msgstr "Huts kudeatzaielan (handler) %s: %s"
 
-#: type.c:781
+#: type.c:858
 #, c-format
 msgid "Invalid application %s (bad AppRun)"
-msgstr "AplicaciÛn inv·lida %s (AppRun incorrecto)"
+msgstr "Aplicaci√≥n inv√°lida %s (AppRun incorrecto)"
 
-#: type.c:792
+#: type.c:869
 #, c-format
 msgid "Non-executable %s"
 msgstr "Ez abiarazgarria %s"
 
-#: type.c:825
+#: type.c:902
 msgid "Set run action"
 msgstr "Ekintza ezarri"
 
-#: type.c:831
+#: type.c:908
 msgid ""
 "If a handler for the specific type isn't set up, use this as the default."
 msgstr ""
 "Mota bereziarerentzat ez badago aplikaziorik ezarririk, hau erabili "
 "lehenespen bezala."
 
-#: type.c:833
+#: type.c:910
 #, c-format
 msgid "Set default for all `%s/<anything>'"
 msgstr "Lehenespen bezala ezarri `%s/<zerbait>' guztietan"
 
-#: type.c:837
+#: type.c:914
 msgid "Use this application for all files with this MIME type."
 msgstr "MIME mota honetako fitxategi guztiekin aplikaziio hau erabili."
 
-#: type.c:839
+#: type.c:916
 #, c-format
 msgid "Only for the type `%s' (%s/%s)"
 msgstr "`%s' (%s/%s) motarentzat bakarrik"
 
-#: type.c:845
+#: type.c:922
 msgid "Drop a suitable application here"
 msgstr "Ekarri aplikazio erabilgarri bat hona"
 
-#: type.c:860
+#: type.c:963
 msgid "OR"
 msgstr "EDO"
 
-#: type.c:867
+#: type.c:971
 msgid "Enter a shell command:"
 msgstr "Idatzi shell komando bat:"
 
-#: type.c:896
+#: type.c:1000
 msgid "_Use Command"
 msgstr "_Komandoa"
 
-#: type.c:926
+#: type.c:1030
 msgid ""
 "A run action already exists and is quite a big program - are you sure you "
 "want to delete it?"
@@ -3227,43 +3734,29 @@ msgstr ""
 "Ekintza bat ezarririk dago eta nahiko programa handi bat da - ezabatu nahi "
 "duzula zihur zaude?"
 
-#: type.c:937
+#: type.c:1041
 #, c-format
 msgid "Can't remove %s: %s"
 msgstr "Ezin da %s ezabatu: %s"
 
-#: type.c:974
+#: type.c:1078
 msgid "Choices saving is disabled by CHOICESPATH variable"
 msgstr "CHOICESPATH aldagaiak aukerak gordetzea ezintzen du"
 
-#: type.c:1249
-#, c-format
-msgid ""
-"Icon theme '%s' does not contain MIME icons. Using ROX default theme instead."
-msgstr ""
-"'%s' ikono gaiak ez ditu MIME ikonorik. ROX-en lehenetsiriko gaia erabiltzen "
-"honen ordez."
-
-#: type.c:1263
-#, c-format
+#: type.c:1395
+#, fuzzy, c-format
 msgid ""
 "Failed to create symlink '%s':\n"
-"%s\n"
-"\n"
-"(this may mean that the ROX theme already exists there, but the 'mime-"
-"application:postscript' icon couldn't be loaded for some reason)"
+"%s"
 msgstr ""
-"Huts '%s' esteka sinbolikoa sortzerakoan:\n"
-"%s\n"
-"\n"
-"(honek ROX gaia dagoeneko han dagoela baina 'mime-application:postscript' "
-"zerbaitegaik ezin izna dela kargatu esan nahi dezake)"
+"Fall√≥ la eliminaci√≥n de '%s':\n"
+"%s"
 
-#: usericons.c:181
+#: usericons.c:188
 msgid "The pathname you gave does not exist. The icon has not been changed."
 msgstr "Emandako bidea ez dago. Ikonoa ez da aldatu."
 
-#: usericons.c:191 usericons.c:616
+#: usericons.c:198 usericons.c:644
 msgid ""
 "Unable to load image file -- maybe it's not in a format I understand, or "
 "maybe the permissions are wrong?\n"
@@ -3273,12 +3766,12 @@ msgstr ""
 "edo agian baimenak gaizki al daude?\n"
 "Ikonoa ez da aldatua izango."
 
-#: usericons.c:238
+#: usericons.c:244
 #, c-format
 msgid "Really delete icon '%s'?"
-msgstr "ø'%s' ikonoa benetan ezabatu?"
+msgstr "¬ø'%s' ikonoa benetan ezabatu?"
 
-#: usericons.c:242
+#: usericons.c:248
 #, c-format
 msgid ""
 "Can't delete '%s':\n"
@@ -3287,30 +3780,30 @@ msgstr ""
 "Ezin da '%s' ezabatu:\n"
 "%s"
 
-#: usericons.c:270
+#: usericons.c:281
 msgid "Set icon"
 msgstr "Ikonoa ezarri"
 
-#: usericons.c:279
+#: usericons.c:290
 msgid ""
 "Use a copy of the image as the default for all files of these MIME types."
 msgstr "Erabili irudiaren kopia bat MIME mota hauetako fitxategi guztientzat."
 
-#: usericons.c:281
+#: usericons.c:292
 #, c-format
 msgid "Set icon for all `%s/<anything>'"
 msgstr "`%s/<zerbait>' guztientzat ikonoa ezarri"
 
-#: usericons.c:286
+#: usericons.c:297
 msgid "Use a copy of the image for all files of this MIME type."
 msgstr "Erabili irudiaren kopia bat MIME mota honetako fitxategi guztientzat."
 
-#: usericons.c:288
+#: usericons.c:299
 #, c-format
 msgid "For all files of type `%s' (%s/%s)"
 msgstr "Para todos los archivos de tipo `%s' (%s/%s)"
 
-#: usericons.c:294
+#: usericons.c:305
 msgid ""
 "Add the file and image filenames to your personal list. The setting will be "
 "lost if the image or the file is moved."
@@ -3318,12 +3811,12 @@ msgstr ""
 "Gehitu fitxategi eta irudi fitxategi izenak zerrenda pertsonalera. Ezarpena "
 "galdu egingo da irudia edo fitxategia mugitzen bada."
 
-#: usericons.c:297
+#: usericons.c:308
 #, c-format
 msgid "Only for the file `%s'"
 msgstr "`%s' fitxategiarentzat bakarrik"
 
-#: usericons.c:305
+#: usericons.c:316
 msgid ""
 "Copy the image inside the directory, as a hidden file called '.DirIcon'. All "
 "users will then see the icon, and you can move the directory around safely. "
@@ -3334,19 +3827,19 @@ msgstr ""
 "eta direktorioasegurtasunez mugitu ahal izango duzu. Hau normalean aukera "
 "hoberena da direktorioan idazteko aukera baduzu."
 
-#: usericons.c:311
+#: usericons.c:322
 msgid "Copy image into directory"
 msgstr "Kopiatu irudia direktorio barnean"
 
-#: usericons.c:317
+#: usericons.c:328
 msgid "Drop an icon file here"
 msgstr "Askatu ikono bat hemen"
 
-#: usericons.c:587
+#: usericons.c:615
 msgid "Setting icon disabled by CHOICESPATH"
 msgstr "CHOICESPATH aldagaiak ikonoak ezartzea ezintzen du"
 
-#: usericons.c:631
+#: usericons.c:659
 #, c-format
 msgid ""
 "Error creating image '%s':\n"
@@ -3355,144 +3848,71 @@ msgstr ""
 "Errorea '%s' irudia sortzerakoan:\n"
 "%s"
 
-#: view_details.c:1009
+#: view_collection.c:326
+msgid "- Double click here to close the windows"
+msgstr ""
+
+#: view_details.c:1018
+msgid "Mono font"
+msgstr ""
+
+#: view_details.c:1019
+msgid "Font for displaying mono-spaced text"
+msgstr ""
+
+#: view_details.c:1233
 msgid "_Name"
 msgstr "_Izena"
 
-#: view_details.c:1012
+#: view_details.c:1236
 msgid "_Type"
 msgstr "_Mota"
 
-#: view_details.c:1015
-msgid "_Permissions"
-msgstr "_Baimenak"
-
-#: view_details.c:1016
-msgid "_Owner"
-msgstr "_Jabea"
-
-#: view_details.c:1018
-msgid "_Group"
-msgstr "_Taldea"
-
-#: view_details.c:1020
+#: view_details.c:1238
 msgid "_Size"
 msgstr "_Tamaina"
 
-#: view_details.c:1022
+#: view_details.c:1244
+msgid "_Permissions"
+msgstr "_Baimenak"
+
+#: view_details.c:1250
+msgid "_Owner"
+msgstr "_Jabea"
+
+#: view_details.c:1252
+msgid "_Group"
+msgstr "_Taldea"
+
+#: view_details.c:1254
 msgid "Last _Modified"
 msgstr "Akzen _Aldaketa"
 
-#: tips:1
-msgid "Translation"
-msgstr "Itzulpena"
-
-#: tips:2
-msgid "Language"
-msgstr "Hizkuntza"
-
-#: tips:3
-msgid "Use the LANG environment variable"
-msgstr "LANG aldagaieko ingurunea erabili"
-
-#: tips:4
-msgid "Basque"
+#: view_details.c:1260
+msgid "Last _Changed"
 msgstr ""
 
-#: tips:5
-msgid "Chinese (traditional)"
-msgstr "Txinatar (tradizionala)"
+#: view_details.c:1266
+msgid "Last _Accessed"
+msgstr ""
 
-#: tips:6
-msgid "Chinese (simplified)"
-msgstr "Txinatar (soildua)"
+#: xtypes.c:802
+msgid "Extended attributes"
+msgstr "Atributu hedatuak"
 
-#: tips:7
-msgid "Czech"
-msgstr "Txekiera"
-
-#: tips:8
-msgid "Danish"
-msgstr "Daniera"
-
-#: tips:9
-msgid "Dutch"
-msgstr "Holandarra"
-
-#: tips:10
-msgid "English (no translation)"
-msgstr "Ingelesa (itzuli gabe)"
-
-#: tips:11
-#, fuzzy
-msgid "Estonian"
-msgstr "Errumaniera"
-
-#: tips:12
-msgid "Finnish"
-msgstr "Finlandiera"
-
-#: tips:13
-msgid "French"
-msgstr "Frantsesa"
-
-#: tips:14
-msgid "German"
-msgstr "Alemaniera"
-
-#: tips:15
-msgid "Hungarian"
-msgstr "Hungariera"
-
-#: tips:16
-msgid "Japanese"
-msgstr "Japoniera"
-
-#: tips:17
-msgid "Norwegian"
-msgstr "Norvegiera"
-
-#: tips:18
-msgid "Italian"
-msgstr "Italiera"
-
-#: tips:19
-msgid "Polish"
-msgstr "Poloniera"
-
-#: tips:20
-msgid "Portuguese (Brasil)"
-msgstr "Portugesa (Brasil)"
-
-#: tips:21
-msgid "Romanian"
-msgstr "Errumaniera"
-
-#: tips:22
-msgid "Russian"
-msgstr "Errusiera"
-
-#: tips:23
-msgid "Spanish"
-msgstr "Gaztelania"
-
-#: tips:24
-msgid "Swedish"
-msgstr "Suediera"
-
-#: tips:25
+#: tips:1
 msgid "Filer windows"
 msgstr "Kudeatzaile leihoa"
 
-#: tips:26
+#: tips:2
 msgid "Auto-resize filer windows"
 msgstr "Kudeatziale leihoak automatikoki tamainaz aldatu"
 
-#: tips:27
+#: tips:3
 msgid "Never automatically resize"
 msgstr "Inoiz ez automatikoki tamaiana aldatu "
 
-#: tips:28
+#: tips:4
 msgid ""
 "You'll have to resize windows manually, using the window manager, the "
 "`Resize Window' menu entry or by double-clicking on the window background."
@@ -3500,11 +3920,11 @@ msgstr ""
 "Leiho tamainak leiho kudeatzailea, `Leiho tamaina aldatu' menuaz edo leiho "
 "atzealdean klik bikoitza eginez eskuz aldatu beharko dituzu."
 
-#: tips:29
+#: tips:5
 msgid "Resize when changing the display style"
 msgstr "Tamaina aldatu bistaratze metodoa aldatzerakoan"
 
-#: tips:30
+#: tips:6
 msgid ""
 "Changing the size of the icons or which details are displayed will resize "
 "the window for you."
@@ -3512,11 +3932,11 @@ msgstr ""
 "Ikono tamaina edo bistarazitako xehetasunak aldatzean leihoa tamaina "
 "automatikoki aldatuko da."
 
-#: tips:31
+#: tips:7
 msgid "Always resize"
 msgstr "Beti tamaina aldatu"
 
-#: tips:32
+#: tips:8
 msgid ""
 "The filer will resize windows whenever it seems useful (that is, when "
 "changing directory or display style)."
@@ -3524,15 +3944,16 @@ msgstr ""
 "Kudeatzaileak leiho tamaina erabilgarri denean aldatuko du (hau da, "
 "direktorioa aldatu edi bistaratze estiloa aldatzean)."
 
-#: tips:33
+#: tips:9
 msgid "Largest window size:"
 msgstr "Leiho tamaina handiena:"
 
-#: tips:34
+#: tips:10 tips:13 tips:333 ../Templates.ui.h:17
+#, no-c-format
 msgid "%"
 msgstr "%"
 
-#: tips:35
+#: tips:11
 msgid ""
 "The largest size, as a percentage of the screen size, that the auto-resizer "
 "will resize a window to."
@@ -3540,15 +3961,29 @@ msgstr ""
 "Leiho baten tamaina aldatzean erabiliko den tamaina handiena, pantailaren "
 "tamaina ehunekotan."
 
-#: tips:36
+#: tips:12
+#, fuzzy
+msgid "Largest window width:"
+msgstr "Leiho tamaina handiena:"
+
+#: tips:14
+#, fuzzy
+msgid ""
+"The largest width, as a percentage of the screen size, that the auto-resizer "
+"will resize a window to."
+msgstr ""
+"Leiho baten tamaina aldatzean erabiliko den tamaina handiena, pantailaren "
+"tamaina ehunekotan."
+
+#: tips:15
 msgid "Window behaviour"
 msgstr "Leihoaren Portamoldea"
 
-#: tips:37
+#: tips:16
 msgid "Short titlebar flags"
 msgstr "Izenburu etiketa laburrak"
 
-#: tips:38
+#: tips:17
 msgid ""
 "Use single letters instead of words for Scanning, All and Thumbs indicators "
 "in the titlebar."
@@ -3556,11 +3991,11 @@ msgstr ""
 "Hitzak beharrean hizkiak erabili kudeaketa, Denak eta argazkitxo "
 "erakusleentzat izenburu barran."
 
-#: tips:39
+#: tips:18
 msgid "Unique windows"
 msgstr "Leiho bakarrak"
 
-#: tips:40
+#: tips:19
 msgid ""
 "If you open a directory and that directory is already displayed in another "
 "window, then this option causes the other window to be closed."
@@ -3568,11 +4003,34 @@ msgstr ""
 "Direktorio bat irekitzerakoan berau beste leiho batetan irekirik egon ezkero "
 "beste leihoa itxi egingo da."
 
-#: tips:41
+#: tips:20
+msgid "Close window when dir missing"
+msgstr ""
+
+#: tips:21
+msgid ""
+"If a directory that is open in a window disappears, (deleted or unmounted) "
+"automatically close window."
+msgstr ""
+
+#: tips:22
+#, fuzzy
+msgid "Window Link"
+msgstr "Leihoa"
+
+#: tips:23
+msgid ""
+"If this is on and you open a directory by middle button, the new window and "
+"the source window are toggled into link mode. In link mode, left-click a "
+"directory to open it in a window placed to the right of the source window. "
+"If this value is off, ctrl + middle button toggles the linked window."
+msgstr ""
+
+#: tips:24
 msgid "New window on button 1"
 msgstr "Leiho berria 1 botoiaz"
 
-#: tips:42
+#: tips:25
 msgid ""
 "Clicking with mouse button 1 (usually the left button) opens a directory in "
 "a new window with this turned on. Clicking with the button-2 (middle) will "
@@ -3582,11 +4040,11 @@ msgstr ""
 "egiteandirektorioa leiho berri batetan irekiko da. 3. botoiaz (erdikoa) "
 "egitean leihoa berdina erabiliok da."
 
-#: tips:43
+#: tips:26
 msgid "Single-click navigation"
 msgstr "Klik bakarreko nabigatzea"
 
-#: tips:44 tips:137
+#: tips:27 tips:191
 msgid ""
 "Clicking on an item opens it with this on. Hold down Control to select the "
 "item instead. If off, clicking once selects an item; double click to open "
@@ -3597,11 +4055,11 @@ msgstr ""
 "egiterakoan elementua aukeratua egingo da, irekitzeko klik bikoitza egin "
 "beharko da."
 
-#: tips:45
+#: tips:28
 msgid "Double-click on background resizes"
 msgstr "Atzealdean klik-bikoitzaz tamaina aldatu"
 
-#: tips:46
+#: tips:29
 msgid ""
 "If on then double clicking on the window background resizes the window, just "
 "like clicking on the Automatic size mode button in the toolbar."
@@ -3610,15 +4068,15 @@ msgstr ""
 "egingo da, tresnabarrako tamaina automatiko modu botoia klikatuko bazenu "
 "bezala."
 
-#: tips:47
+#: tips:30
 msgid "Sorting"
 msgstr "Sailkapena"
 
-#: tips:48
+#: tips:31
 msgid "Directories come first (for sort by name)"
 msgstr "Direktorioak lehenengo (izenezko sailkapenarentzat)"
 
-#: tips:49
+#: tips:32
 msgid ""
 "If this is on then directories will always appear before anything else when "
 "sorting by name."
@@ -3626,11 +4084,11 @@ msgstr ""
 "Gaiturik badago direktorioa beti lehenego bistarazik dira izenez "
 "sailkatzerakoan."
 
-#: tips:50
+#: tips:33
 msgid "Capitalised names first (for sort by name)"
 msgstr "Hizki larrizko izenak lehenengo (izenezko sailkapenarentzat)"
 
-#: tips:51
+#: tips:34
 msgid ""
 "If on, all filenames starting with a capital letter come before filenames "
 "starting with lowercase ones."
@@ -3638,15 +4096,58 @@ msgstr ""
 "Gaiturik badago hizki larri batez hasten diren fitxategiak minuskulaz hasten "
 "direnez aurretik bistaraziko dira."
 
-#: tips:53
+#: tips:35
+#, fuzzy
+msgid "Newly comes first (for sort by Date)"
+msgstr "Direktorioak lehenengo (izenezko sailkapenarentzat)"
+
+#: tips:36
+msgid "If on, the Sort by Dates are reversed."
+msgstr ""
+
+#: tips:37 tips:354
+#, fuzzy
+msgid "etc"
+msgstr "Seg"
+
+#: tips:38
+#, fuzzy
+msgid "Show extended attribute indicator"
+msgstr "Atributu hedatuak"
+
+#: tips:39
+msgid ""
+"If this is on then files which have one or more extended attributes set will "
+"have an emblem added to indicate this."
+msgstr ""
+
+#: tips:40
+msgid "Hide the message bar Running as user 'root'"
+msgstr ""
+
+#: tips:41
+msgid ""
+"This hides the bar even with the command-line option -u, --user if user is "
+"the root."
+msgstr ""
+
+#: tips:42
+msgid "Time and date format"
+msgstr ""
+
+#: tips:43
+msgid "Set time and date format for Properties window and extra details view."
+msgstr ""
+
+#: tips:45
 msgid "Default settings for new windows"
 msgstr "Leiho berrientzako lehenetsitako ezarpenak"
 
-#: tips:54
+#: tips:46
 msgid "Inherit options from source window"
 msgstr "Jatorrizko leihoaren aukerak erabili"
 
-#: tips:55
+#: tips:47
 msgid ""
 "If this is on then display options for a new window are inherited from the "
 "source window if possible, otherwise they are set to the defaults below."
@@ -3654,27 +4155,38 @@ msgstr ""
 "Gaiturik badago leiho berri baten bistartze aukerak jatorrizko leihotik "
 "artuko dira posible bada, bestela lehenespenak erabiliko dira."
 
-#: tips:56
+#: tips:48
 msgid "View type:"
 msgstr "Ikuspegi mota:"
 
-#: tips:59
+#: tips:51
 msgid "Sort by:"
 msgstr "Sailkapena:"
 
-#: tips:61 tips:76
+#: tips:53 tips:76 tips:114
 msgid "Type"
 msgstr "Mota"
 
-#: tips:62
-msgid "Date"
+#: tips:54
+#, fuzzy
+msgid "Date (m)"
 msgstr "Data"
 
-#: tips:64
+#: tips:55
+#, fuzzy
+msgid "Date (c)"
+msgstr "Data"
+
+#: tips:56
+#, fuzzy
+msgid "Date (a)"
+msgstr "Data"
+
+#: tips:58
 msgid "Show hidden files"
 msgstr "Ezkutaturiko fitxategiak bistarazi"
 
-#: tips:65
+#: tips:59
 msgid ""
 "If this is on then files whose names start with a dot are shown too, "
 "otherwise they are hidden."
@@ -3682,7 +4194,34 @@ msgstr ""
 "Gaiturik badago izena puntu batez hasten duten fixtategiak bistarazi egingo "
 "dira, bestela ezkutatu egingo dira."
 
-#: tips:66
+#: tips:60
+#, fuzzy
+msgid "Enable .hidden file"
+msgstr "Ezkutaturiko fitxategiak bistarazi"
+
+#: tips:61
+#, fuzzy
+msgid ""
+"If this is on then, in addition to files whose names start with a dot, also "
+"items listed in \".hidden\" file will be treated as hidden."
+msgstr ""
+"Gaiturik badago izena puntu batez hasten duten fixtategiak bistarazi egingo "
+"dira, bestela ezkutatu egingo dira."
+
+#: tips:62
+#, fuzzy
+msgid "Huge Icons size:"
+msgstr "Ikono Itzelak"
+
+#: tips:63 tips:82 tips:85 tips:90 tips:109 tips:364 tips:367
+msgid "pixels"
+msgstr "pixel"
+
+#: tips:64
+msgid "Resolution depends on 'Thumbnails->Cache File Size'."
+msgstr ""
+
+#: tips:65 tips:66
 msgid "Icon View"
 msgstr "Ikono Bistaratzea"
 
@@ -3694,11 +4233,11 @@ msgstr "Lehenetsiriko tamaina:"
 msgid "Huge Icons"
 msgstr "Ikono Itzelak"
 
-#: tips:69 tips:245
+#: tips:69 tips:296
 msgid "Large Icons"
 msgstr "Ikono Handiak"
 
-#: tips:70 tips:244
+#: tips:70 tips:295
 msgid "Small Icons"
 msgstr "Ikono Txikiak"
 
@@ -3710,15 +4249,20 @@ msgstr "Lehenetsiriko xehetasunak:"
 msgid "No details"
 msgstr "Xehetasun gabe"
 
+#: tips:74
+msgid "Sizes"
+msgstr "Tamainak"
+
+#: tips:77
+msgid "Times"
+msgstr "Data"
+
 #: tips:78
-msgid "Automatic small icons:"
+#, fuzzy
+msgid "Automatic small icons: Change at:"
 msgstr "Ikono txiki automatikoak:"
 
-#: tips:79
-msgid "Change at:"
-msgstr "Aldaketa hemen:"
-
-#: tips:81
+#: tips:80
 msgid ""
 "When automatic icon sizing is selected: If the directory contains this many "
 "items then it will be shown using Small Icons, otherwise Large Icons will be "
@@ -3728,103 +4272,227 @@ msgstr ""
 "hau edo handiago badu Ikono Txikiak erabiltzen bistaraziko dira, bestela "
 "Ikono Handiak erabiliko dira. "
 
-#: tips:82
-msgid "Max width (Large icons):"
-msgstr "Zabalera handiena (Ikono Handiak):"
+#: tips:81
+#, fuzzy
+msgid "Large Icons: (Max width):"
+msgstr "Ikono Handiak"
 
-#: tips:83 tips:86
-msgid "pixels"
-msgstr "pixel"
-
-#: tips:84
-msgid ""
-"Text wider than this is broken onto two lines in Large Icons mode. In Huge "
-"Icons mode, text is wrapped when 50% wider than this."
+#: tips:83
+#, fuzzy
+msgid "Text wider than this is broken onto two lines in Large Icons mode."
 msgstr ""
 "Hau baino testu luzeagoak bi lerrotan bereiziko dira Ikono Handi moduan. "
 "Ikono Itzel moduan honen erdia baino luzeagoak direnak erdibituko dira."
 
-#: tips:85
-msgid "(Small Icons):"
-msgstr "(Ikono Txikiak):"
+#: tips:84
+msgid "(Wrapped, Details):"
+msgstr ""
+
+#: tips:86
+msgid ""
+"Maximum length for Large Icons mode and Details. This can be changed "
+"temporarily by right dragging of the toolbar."
+msgstr ""
 
 #: tips:87
-msgid "Maximum width for the text beside a Small Icon."
-msgstr "Ikono txiki baten alboko testuaren gehienezko zabalera."
+msgid "Wrap by characters"
+msgstr ""
 
 #: tips:88
-msgid "Order small icons vertically"
+msgid ""
+"If this option is on, file names will wrap by characters instead of words."
 msgstr ""
 
 #: tips:89
-msgid ""
-"If this option is on, then small icons are ordered vertically, not "
-"horizontally."
-msgstr ""
-
-#: tips:90
-msgid "Order large icons vertically"
-msgstr ""
+#, fuzzy
+msgid "Small Icons (Max width):"
+msgstr "(Ikono Txikiak):"
 
 #: tips:91
-msgid ""
-"If this option is on, then large icons are sorted vertically, not "
-"horizontally."
+msgid "Maximum width for the text beside a Small Icon."
+msgstr "Ikono txiki baten alboko testuaren gehienezko zabalera."
+
+#: tips:92
+msgid "Order small icons vertically"
 msgstr ""
 
 #: tips:93
+msgid ""
+"If this option is on, then small icons are arranged in columns, not rows."
+msgstr ""
+
+#: tips:94
+msgid "Order large icons vertically"
+msgstr ""
+
+#: tips:95
+msgid ""
+"If this option is on, then large icons are arranged in columns, not rows."
+msgstr ""
+
+#: tips:96
+msgid "Scroll speed: 1/"
+msgstr ""
+
+#: tips:97
+msgid "view"
+msgstr ""
+
+#: tips:100
 msgid "Show column headings"
 msgstr "Zutabe goiburuak erakutsi"
 
-#: tips:94
+#: tips:101
 msgid "If this is on then column headings will be shown in the list view."
 msgstr ""
 "Gaiturik badago zutabe goiburuak bistarazi egingo dira zerrenda ikuspegian."
 
-#: tips:95
+#: tips:102
 #, fuzzy
 msgid "Show full type"
 msgstr "Motaz sailkatu"
 
-#: tips:96
+#: tips:103
 msgid ""
 "If this is on then the full description of each object's type will be show "
 "rather than a short summary of its basic type."
 msgstr ""
 
-#: tips:97
+#: tips:104
+msgid "Only icons and names are clickable"
+msgstr ""
+
+#: tips:105
+msgid "For lasso."
+msgstr ""
+
+#: tips:106
+msgid "Save columns order"
+msgstr ""
+
+#: tips:107
+msgid "If this is on reordering columns is saved"
+msgstr ""
+
+#: tips:108
+msgid "Name column width (Max):"
+msgstr ""
+
+#: tips:110
+#, fuzzy
+msgid "Maximum width for the Name Column."
+msgstr "Ikono txiki baten alboko testuaren gehienezko zabalera."
+
+#: tips:111
+#, fuzzy
+msgid "Show Columns"
+msgstr "Zutabe goiburuak erakutsi"
+
+#: tips:113
+#, fuzzy
+msgid "If this is on then Name column will be shown in the list view."
+msgstr ""
+"Gaiturik badago zutabe goiburuak bistarazi egingo dira zerrenda ikuspegian."
+
+#: tips:115
+#, fuzzy
+msgid "If this is on then Type column will be shown in the list view."
+msgstr ""
+"Gaiturik badago zutabe goiburuak bistarazi egingo dira zerrenda ikuspegian."
+
+#: tips:117
+#, fuzzy
+msgid "If this is on then Size column will be shown in the list view."
+msgstr ""
+"Gaiturik badago zutabe goiburuak bistarazi egingo dira zerrenda ikuspegian."
+
+#: tips:119
+#, fuzzy
+msgid "If this is on then Permissions column will be shown in the list view."
+msgstr ""
+"Gaiturik badago zutabe goiburuak bistarazi egingo dira zerrenda ikuspegian."
+
+#: tips:121
+#, fuzzy
+msgid "If this is on then Owner column will be shown in the list view."
+msgstr ""
+"Gaiturik badago zutabe goiburuak bistarazi egingo dira zerrenda ikuspegian."
+
+#: tips:123
+#, fuzzy
+msgid "If this is on then Group column will be shown in the list view."
+msgstr ""
+"Gaiturik badago zutabe goiburuak bistarazi egingo dira zerrenda ikuspegian."
+
+#: tips:124
+#, fuzzy
+msgid "Last Modified"
+msgstr "Akzen _Aldaketa"
+
+#: tips:125
+#, fuzzy
+msgid "If this is on then Last Modified column will be shown in the list view."
+msgstr ""
+"Gaiturik badago zutabe goiburuak bistarazi egingo dira zerrenda ikuspegian."
+
+#: tips:126
+msgid "Last Changed"
+msgstr ""
+
+#: tips:127
+#, fuzzy
+msgid "If this is on then Last Changed column will be shown in the list view."
+msgstr ""
+"Gaiturik badago zutabe goiburuak bistarazi egingo dira zerrenda ikuspegian."
+
+#: tips:128
+msgid "Last Accessed"
+msgstr ""
+
+#: tips:129
+#, fuzzy
+msgid "If this is on then Last Accessed column will be shown in the list view."
+msgstr ""
+"Gaiturik badago zutabe goiburuak bistarazi egingo dira zerrenda ikuspegian."
+
+#: tips:130
 msgid "Tools/Minibuffer"
 msgstr "Lanabesa/Minibuffer-a"
 
-#: tips:98
+#: tips:131
 msgid "Toolbar"
 msgstr "Tresnabarra"
 
-#: tips:99
+#: tips:132
 msgid "Toolbar type:"
 msgstr "Tresnabarra mota:"
 
-#: tips:100
+#: tips:133
 msgid "No toolbar"
 msgstr "Tresnabarrarik ez"
 
-#: tips:101
+#: tips:134
 msgid "Icons only"
 msgstr "Ikonoak bakarrik"
 
-#: tips:102
+#: tips:135
 msgid "Text under icons"
 msgstr "Testua ikonoen azpian"
 
-#: tips:103
+#: tips:136
 msgid "Text beside icons"
 msgstr "Testua ikonoen alboan"
 
-#: tips:104
+#: tips:137
+#, fuzzy
+msgid "Text only"
+msgstr "Irudi bakarrik"
+
+#: tips:138
 msgid "Show totals of items"
 msgstr "Elementu kopurua bistarazi"
 
-#: tips:105
+#: tips:139
 msgid ""
 "Show the number of items displayed in a filer window, as well as the number "
 "of hidden items (if any). When there's a selection, show the number of "
@@ -3834,15 +4502,15 @@ msgstr ""
 "ezkutatutako fitxategi kopurua (baleude). Hautapen bat egina badago, "
 "aukeratutako fitxategi kopurua erakutsiko da."
 
-#: tips:106
+#: tips:140
 msgid "Select the buttons you want on the bar:"
 msgstr "Barran nahi dituzun botoiak hautatu:"
 
-#: tips:107
+#: tips:141
 msgid "Width of toolbar sets minimum width of window"
 msgstr "Tresnabarra zabalerak leihoaren gutxieneko zabalera ezartzen du"
 
-#: tips:108
+#: tips:142
 msgid ""
 "Each filer window is constrained to be wide enough to show the whole of the "
 "toolbar"
@@ -3850,15 +4518,15 @@ msgstr ""
 "Kudeatzailearen leiho bakoitza gutzienez tresnabarra bistaratzeko bezain "
 "zabala izan behar da"
 
-#: tips:109
+#: tips:143
 msgid "Minibuffer"
 msgstr "Minibuffer-a"
 
-#: tips:110
+#: tips:144
 msgid "Beep if Tab-completion fails"
 msgstr "beep egin tabuladore betetzeak huts egin ezkero"
 
-#: tips:111
+#: tips:145
 msgid ""
 "When using the `Enter Path...' minibuffer and Tab is pressed, beep if "
 "nothing happens (eg, because there are several possibilities and the next "
@@ -3868,11 +4536,11 @@ msgstr ""
 "ez bada ezer gertatzen (adibidez aukera anitz daudelako eta hurrengo hizkia "
 "aldatzen delako)."
 
-#: tips:112
+#: tips:146
 msgid "Beep if there are several matches"
 msgstr "Parekatzea asko egon ezkero beep egin"
 
-#: tips:113
+#: tips:147
 msgid ""
 "When using the `Enter Path...' minibuffer and Tab is pressed, beep if there "
 "is more than one matching file, even though some more letters were added."
@@ -3881,7 +4549,27 @@ msgstr ""
 "fitxategi bat baino gehiagok parekatzea betetzen badute nahiz hizki batenbat "
 "gehitu."
 
-#: tips:116
+#: tips:148
+#, fuzzy
+msgid "Stdout handler"
+msgstr "Deskarga kudeatzailea"
+
+#: tips:149
+msgid ""
+"This will be run when Mini Shell puts out string to stdout. $1 is the string."
+msgstr ""
+
+#: tips:150
+#, fuzzy
+msgid "Errout handler"
+msgstr "Huts kudeatzaielan (handler) %s: %s"
+
+#: tips:151
+msgid ""
+"This will be run when Mini Shell puts out string to errout. $1 is the string."
+msgstr ""
+
+#: tips:154
 msgid ""
 "When thumbnails are turned on, each image file in a directory is loaded and "
 "a small thumbnail of it is shown."
@@ -3889,11 +4577,11 @@ msgstr ""
 "Argazkitxoak gaiturik daudenean direktorioko irudi bakoitza kargatu eta bere "
 "argazki txiki bat bistarazi egingo da."
 
-#: tips:117
+#: tips:155
 msgid "Show image thumbnails"
 msgstr "Irudien argazkitxoak bistarazi"
 
-#: tips:118
+#: tips:156
 msgid ""
 "This is the default setting for new windows. Use the Display menu to turn "
 "thumbnails on and off for individual windows."
@@ -3901,30 +4589,104 @@ msgstr ""
 "Hau da leiho berrien lehenetsiriko konfigurazioa. Bistarazi menua erabili "
 "leiho batetan argazkitxo bistaratzea gaitu edo ezgaitzeko."
 
-#: tips:119
+#: tips:157
+#, fuzzy
+msgid "Show image thumbnail for directory."
+msgstr "Irudien argazkitxoak bistarazi"
+
+#: tips:158
+msgid ""
+"When no items in a sub-directory have a thumbnail, this process tries to "
+"create a thumbnail. If you don't like the choice, visit the sub-directory "
+"and middle-click the scan button in the toolbar to choose the first item."
+msgstr ""
+
+#: tips:159
 #, fuzzy
 msgid "Video thumbnails"
 msgstr "Argazkitxoak bistarazi"
 
-#: tips:120
+#: tips:160
 msgid "Thumbnails cache"
 msgstr "Argazkitxo katxea"
 
-#: tips:121
+#: tips:161
+#, fuzzy
 msgid ""
 "To speed things up, the generated thumbnails are stored in the hidden ~/."
-"thumbnails directory. Click here to remove all the cached thumbnails. They "
-"will be created again as needed."
+"cache/thumbnails directory. Click here to remove all the cached thumbnails. "
+"They will be created again as needed."
 msgstr ""
 "Gauzak bizkortzeko sortutako argazkitxoak ~/.thumbnails ezkutatutako "
 "direktorioan gordeko dira. Hemen klik egin katxean dauden argazkitxo guztiak "
 "ezabatzeko. Beharrezko direnean berriz sortuko dira."
 
-#: tips:122 tips:195
+#: tips:162
+msgid "being left over "
+msgstr ""
+
+#: tips:163
+msgid "days"
+msgstr ""
+
+#: tips:164
+msgid "0 is all."
+msgstr ""
+
+#: tips:165
+#, fuzzy
+msgid "Manage thumbnails"
+msgstr "Irudien argazkitxoak bistarazi"
+
+#: tips:166
+msgid "Cache File Size:"
+msgstr ""
+
+#: tips:167
+msgid "Small (64px)"
+msgstr ""
+
+#: tips:168
+msgid "Normal (128px)"
+msgstr ""
+
+#: tips:169
+msgid "Large (256px)"
+msgstr ""
+
+#: tips:170
+msgid "Huge (512px)"
+msgstr ""
+
+#: tips:171
+#, fuzzy
+msgid "Use JPEG for thumbnails"
+msgstr "Argazkitxoak bistarazi"
+
+#: tips:172
+msgid ""
+"Small file size and about 4-6 times faster, but without alpha channel "
+"transparency."
+msgstr ""
+
+#: tips:173
+msgid "Purge Time for Memory Cache:"
+msgstr ""
+
+#: tips:174
+#, fuzzy
+msgid "sec"
+msgstr "Seg"
+
+#: tips:175
+msgid "Purge Time for Memory cache. If you have an SSD, 0 is recommended"
+msgstr ""
+
+#: tips:176 tips:233
 msgid "Pinboard"
 msgstr "Idazmahaia"
 
-#: tips:123
+#: tips:177
 msgid ""
 "When using a pinboard, you can drag files and applications onto the desktop "
 "background to create shortcuts to them."
@@ -3932,47 +4694,47 @@ msgstr ""
 "Idazmahaia erabiltzen denean idazmahai atzekaldera fitxategi eta plikazioa "
 "arrastatu ditzakezu estekak sortzeko."
 
-#: tips:124 tips:241
+#: tips:178 tips:292
 msgid "Appearance"
 msgstr "Itxura"
 
-#: tips:125
+#: tips:179
 msgid "Foreground:"
 msgstr "Lehen maila:"
 
-#: tips:126
+#: tips:180
 msgid "Text shadow:"
 msgstr "Testu itzala:"
 
-#: tips:127
+#: tips:181
 msgid "Background:"
 msgstr "Atzekaldea:"
 
-#: tips:128
+#: tips:182
 msgid "No shadow"
 msgstr "Testu itzala:"
 
-#: tips:129
+#: tips:183
 msgid "Thin"
 msgstr "Estua"
 
-#: tips:130
+#: tips:184
 msgid "Thick"
 msgstr "Lodia"
 
-#: tips:131
+#: tips:185
 msgid "Use custom font:"
 msgstr "Pertsonalizatutako letra-tipoa erabili:"
 
-#: tips:132
+#: tips:186
 msgid "The font used for the text displayed under the icons"
 msgstr "Ikonoen azpiko testua bistaratzeko erabiliko den letra-tipoa"
 
-#: tips:133
+#: tips:187
 msgid "Fast scaling of images"
 msgstr "Irudi eskalatze azkarra"
 
-#: tips:134
+#: tips:188
 msgid ""
 "Choose between the fast or slow method of scaling backdrop images.  The slow "
 "method can give better results."
@@ -3980,19 +4742,19 @@ msgstr ""
 "Hautatu irudi eskalatze metodo azkar eta geldoan artean. Metodo geldoak "
 "emaitza hobeak lortzen ditu."
 
-#: tips:135
+#: tips:189
 msgid "Pinboard behaviour"
 msgstr "Idazmahai portamoldea"
 
-#: tips:136
+#: tips:190
 msgid "Single-click to open"
 msgstr "Klik bakarra irekitzeko"
 
-#: tips:138
+#: tips:192
 msgid "Keep icons within screen limits"
 msgstr "Ikonoak panatalla mugen barnean mantendu"
 
-#: tips:139
+#: tips:193
 msgid ""
 "If this is set, pinboard icons are always kept completely within screen "
 "limits, including the label."
@@ -4000,39 +4762,39 @@ msgstr ""
 "Gaiturik dagoenean, idazmahaieko ikonoak guztiz pantailaren mugen barnean "
 "kokatuko dira, etiketa barne."
 
-#: tips:140
+#: tips:194
 msgid "Icon grid step:"
 msgstr "Ikono arteko tartea:"
 
-#: tips:141
+#: tips:195
 msgid "Fine"
 msgstr "Fina"
 
-#: tips:142
+#: tips:196
 msgid "Use a 2-pixel grid for positioning icons on the desktop."
 msgstr "2 pixel zabalerako sareta bat erabili ikonoak idazmahaiean ipintzeko."
 
-#: tips:143
+#: tips:197
 msgid "Medium"
 msgstr "Erdikoa"
 
-#: tips:144
+#: tips:198
 msgid "Use a 16-pixel grid for positioning icons on the desktop."
 msgstr "16 pixel zabalerako sareta bat erabili ikonoak idazmahaiean ipintzeko."
 
-#: tips:145
+#: tips:199
 msgid "Coarse"
 msgstr "Zabala"
 
-#: tips:146
+#: tips:200
 msgid "Use a 32-pixel grid for positioning icons on the desktop."
 msgstr "32 pixel zabalerako sareta bat erabili ikonoak idazmahaiean ipintzeko."
 
-#: tips:147 tips:149
+#: tips:201 tips:203
 msgid "Iconified windows"
 msgstr "Txikituriko leihoak"
 
-#: tips:148
+#: tips:202
 msgid ""
 "Most window managers provide a way to iconify (or 'minimise') windows, and "
 "various programs, including ROX-Filer, can be used to display the iconified "
@@ -4042,11 +4804,11 @@ msgstr ""
 "eta zenbait progrmanak, ROX-Filer barne, erabili daitezke ikonoturiko "
 "leihoak ikusteko."
 
-#: tips:150
+#: tips:204
 msgid "Show iconified windows"
 msgstr "Txikituriko leihoak bistarazi"
 
-#: tips:151
+#: tips:205
 msgid ""
 "If this option is on, the filer will show each iconified window as a small "
 "button on the pinboard. Requires a compatible window manager, and the "
@@ -4056,11 +4818,11 @@ msgstr ""
 "idazmahaieko botoi bat bezala bistaraziko da. Leiho kudeatzaile bateragarri "
 "bat behar da eta idazmahaia martxan egon behar da."
 
-#: tips:152
+#: tips:206
 msgid "Show per workspace"
 msgstr ""
 
-#: tips:153
+#: tips:207
 #, fuzzy
 msgid ""
 "If this option is on, the filer will only show iconified windows associated "
@@ -4070,39 +4832,39 @@ msgstr ""
 "idazmahaieko botoi bat bezala bistaraziko da. Leiho kudeatzaile bateragarri "
 "bat behar da eta idazmahaia martxan egon behar da."
 
-#: tips:154
+#: tips:208
 msgid "Iconify to the"
 msgstr "Txikitu hemen:"
 
-#: tips:155
+#: tips:209
 msgid "top-left"
 msgstr "Ezker-goialdean"
 
-#: tips:156
+#: tips:210
 msgid "top-right"
 msgstr "Eskuin-goialdean"
 
-#: tips:157
+#: tips:211
 msgid "bottom-left"
 msgstr "Ezker-behekaldean"
 
-#: tips:158
+#: tips:212
 msgid "bottom-right"
 msgstr "Eskuin-behekaldean"
 
-#: tips:159
+#: tips:213
 msgid ", going"
 msgstr ", zentzua: "
 
-#: tips:160
+#: tips:214
 msgid "horizontally"
 msgstr "horizontala"
 
-#: tips:161
+#: tips:215
 msgid "vertically"
 msgstr "betikala"
 
-#: tips:162
+#: tips:216
 msgid ""
 "Sometimes the filer doesn't know about your desktop furniture and puts "
 "iconified windows under (for example) the Gnome panel. You can define a top "
@@ -4114,180 +4876,100 @@ msgstr ""
 "edo behekaldean marjin bat ezarri dezakezu ikonoak hor ipintzea ezintzeko. "
 "Kudeatzaileak bere panela ezagutzen du."
 
-#: tips:163
+#: tips:217
 msgid "Top margin"
 msgstr "Goikaldeko marjina"
 
-#: tips:164
+#: tips:218
 msgid "Height of no-go area at top of screen."
 msgstr "Pantailaren goikaldean erabiltzea ez den nahi altuera."
 
-#: tips:165
+#: tips:219
 msgid "Bottom margin"
 msgstr "Behekaldeko marjina"
 
-#: tips:166
+#: tips:220
 msgid "Height of no-go area at bottom of screen."
 msgstr "Pantailaren behekaldean erabiltzea ez den nahi altuera."
 
-#: tips:167
-msgid "Panels"
-msgstr "Panelak"
+#: tips:221
+#, fuzzy
+msgid "Left margin"
+msgstr "Goikaldeko marjina"
 
-#: tips:168
-msgid ""
-"Panels are bars of icons that run along the side of the screen. See the "
-"manual for information about using panels."
-msgstr ""
-"Panelak pantailaren albo batetan kokaturiko ikono barrak dira. Panelen "
-"erabilerari buruz argibide gehiago jasotzeko manuala irakurri."
+#: tips:222
+#, fuzzy
+msgid "Width of no-go area at left of screen."
+msgstr "Pantailaren goikaldean erabiltzea ez den nahi altuera."
 
-#: tips:169
-msgid "Panel style"
-msgstr "Panel estiloa"
+#: tips:223
+#, fuzzy
+msgid "Right margin"
+msgstr "Behekaldeko marjina"
 
-#: tips:170
-msgid "Image and text"
-msgstr "Irudia eta testua"
+#: tips:224
+#, fuzzy
+msgid "Width of no-go area at right of screen."
+msgstr "Pantailaren goikaldean erabiltzea ez den nahi altuera."
 
-#: tips:171
-msgid "Every panel icon is shown with an image and some text."
-msgstr "Paneleko ikono bakoitza irudi bat eta testu batez bistaratzen dira."
-
-#: tips:172
-msgid "Image only for applications"
-msgstr "Irudi bakarrik aplikazioentzat"
-
-#: tips:173
-msgid ""
-"Applications have just an image, everything else has both an image and text."
-msgstr ""
-"Aplikazioek irudia bakarrik dute, beste guztiak irudi eta testua izango dute."
-
-#: tips:174
-msgid "Image only"
-msgstr "Irudi bakarrik"
-
-#: tips:175
-msgid "Only the image is shown."
-msgstr "Irudia bakarrik bistaratzen da."
-
-#: tips:176
-msgid "Panel width (thin)"
-msgstr "Panel zabalera (estua)"
-
-#: tips:177
-msgid "(thick)"
-msgstr "(lodia)"
-
-#: tips:178
-msgid "The size of the panels."
-msgstr "Panelen tamaina."
-
-#: tips:179
-msgid "Do not cover panel"
-msgstr "Ez panela tapatu"
-
-#: tips:180
-msgid ""
-"Ask the window manager not to cover panels at all when you maximise windows. "
-"Some window managers may not honour this. If unset, the filer asks for just "
-"a couple of pixels at the edge of the screen to remain uncovered, so that "
-"auto-raising works."
-msgstr ""
-"Leiho kudeatzaileari leihoan guztiz handitzerakoan panela ez estaltzeko "
-"eskatu. Leiho kudeatzaile btazuek ez dute hau errespetatzen. Gaiturik ez "
-"badago kudeatzaileak pare bat pixel bakarrik eskatzen ditu aute-erakusteak "
-"gaituaz bistarazi ahal izateko."
-
-#: tips:181
-msgid "Xinerama"
-msgstr "Xinerama"
-
-#: tips:182
-msgid "Confine to Xinerama monitor"
-msgstr "Xinerama monitorean mantendu"
-
-#: tips:183
-msgid ""
-"If you have an Xinerama multi-monitor setup, use this option to confine the "
-"panels to one monitor instead of spanning them."
-msgstr ""
-"Xinerama bidez monitore anitz konfiguraturik badituzu panela monitore "
-"batetan mantentzeko (batetik bestera pasa beharrean) aukera hau erabili."
-
-#: tips:184
-msgid ""
-"The monitor the panels are confined to in Xinerama mode (numbered from 0)."
-msgstr "Xinerama moduan panelak mantenduko diren monitorea (0-tik zenbaturik)."
-
-#: tips:185
+#: tips:225
 msgid "Desktop"
 msgstr ""
 
-#: tips:186
+#: tips:226
 msgid ""
 "When run by a session manager program (such as ROX-Session) the filer can "
 "open up a panel and/or the pinboard.  Here you configure which."
 msgstr ""
 
-#: tips:187
+#: tips:227
 #, fuzzy
 msgid "Panel only"
 msgstr "Irudi bakarrik"
 
-#: tips:188
+#: tips:228
 #, fuzzy
 msgid "Only a panel is shown."
 msgstr "Irudia bakarrik bistaratzen da."
 
-#: tips:189
+#: tips:229
 #, fuzzy
 msgid "Pinboard only"
 msgstr "Idazmahaia"
 
-#: tips:190
+#: tips:230
 #, fuzzy
 msgid "Only the pinboard is shown."
 msgstr "Irudia bakarrik bistaratzen da."
 
-#: tips:191
+#: tips:231
 #, fuzzy
 msgid "Panel and pinboard"
 msgstr "Idazmahaia"
 
-#: tips:192
+#: tips:232
 msgid "Both a panel and a pinboard are shown."
 msgstr ""
 
-#: tips:193
-#, fuzzy
-msgid "Panel"
-msgstr "Panelak"
-
-#: tips:194
-msgid "Enter the name of the panel to show here."
-msgstr ""
-
-#: tips:196
+#: tips:234
 msgid "Enter the name of the pinboard to show here."
 msgstr ""
 
-#: tips:197
+#: tips:235
 msgid "Changes here take effect the next time the filer is run."
 msgstr ""
 
-#: tips:198
+#: tips:236
 msgid ""
-"The session manager activates these options by using the -S or --rox-session "
-"argument to rox."
+"The session manager activates these options by\n"
+"using the -S or --rox-session argument to rox."
 msgstr ""
 
-#: tips:199
+#: tips:237
 msgid "Action windows"
 msgstr "Ekintza leihoak"
 
-#: tips:200
+#: tips:238
 msgid ""
 "Action windows appear when you start a background\n"
 "operation, such as copying or deleting some files."
@@ -4295,63 +4977,110 @@ msgstr ""
 "Ekintza leihoak ekintza bat atzeko planoan abiarazterakoan\n"
 " agertzen dira, fitxategiak kopiatu edo borratu bezalakoetan."
 
-#: tips:201
+#: tips:239
 msgid "Auto-start (Quiet) these actions"
 msgstr "Ekintza hauek auto-abiarazi (ixilpean)"
 
-#: tips:203
+#: tips:241
 msgid "Copy files without confirming first."
 msgstr "Lehenik berretsi gabe kopiatu fitxategiak."
 
-#: tips:205
+#: tips:243
 msgid "Move files without confirming first."
 msgstr "Lehenik berretsi gabe mugitu fitxategiak."
 
-#: tips:207
+#: tips:245
 msgid "Create links to files without confirming first."
 msgstr "Lehenik berretsi gabe fitxategietara estekak sortu."
 
-#: tips:209
+#: tips:247
 msgid "Delete files without confirming first."
 msgstr "Lehenik berretsi gabe ezabatu fitxategiak."
 
-#: tips:210
+#: tips:248
 msgid "Mount"
 msgstr "Muntatu"
 
-#: tips:211
+#: tips:249
 msgid "Mount and unmount filesystems without confirming first."
 msgstr "Lehenik berretsi gabe fitxategi sistemak muntatu eta desmuntatu."
 
-#: tips:212
+#: tips:250
 msgid "Default settings"
 msgstr "Lehenetsiriko aukerak"
 
-#: tips:214
+#: tips:251
+#, fuzzy
+msgid "Force Del"
+msgstr "Indartu"
+
+#: tips:252
 msgid "Don't confirm deletion of non-writeable items."
 msgstr "Lehenik berretsi gabe ezabatu idazketa aurkako babeturiko fitxategiak."
 
-#: tips:216
+#: tips:254
 msgid "Don't display so much information in the message area."
 msgstr "Mezu eremuan ez argibide gehiegi bistarazi."
 
-#: tips:218
+#: tips:256
 msgid "Also change contents of subdirectories."
 msgstr "Azpidirektorioen edukia ere eraldatu."
 
-#: tips:221
+#: tips:263
+#, fuzzy
+msgid "Mount commands"
+msgstr "Muntatze puntua"
+
+#: tips:264
+#, fuzzy
+msgid "Mount command"
+msgstr "Muntatze puntua"
+
+#: tips:265
+msgid "The command used to mount a filesystem. If unsure, use \"mount\"."
+msgstr ""
+
+#: tips:266
+#, fuzzy
+msgid "Unmount command"
+msgstr "Desmuntatu"
+
+#: tips:267
+msgid ""
+"The command used to unmount a filesystem. If unsure, use \"umount\" (yes, "
+"without the first \"n\")."
+msgstr ""
+
+#: tips:268
+#, fuzzy
+msgid "Eject command"
+msgstr "_Komandoa"
+
+#: tips:269
+msgid "The command used to eject removable media. If unsure, use \"eject\"."
+msgstr ""
+
+#: tips:270
+msgid "Wink"
+msgstr ""
+
+#: tips:271
+msgid "Wink last move/copy/linked item"
+msgstr ""
+
+#: tips:272
 msgid "Drag and Drop"
 msgstr "Arrastatu eta Jaregin"
 
-#: tips:222
+#: tips:273
 msgid "Dragging to icons"
 msgstr "Ikonoak arrastatzen"
 
-#: tips:223
+#: tips:274
 msgid "Allow dragging to icons in filer windows"
 msgstr "Kudeatzaile leihoetan fitxategiak arrastatzea baimendu"
 
-#: tips:224
+#: tips:275
 msgid ""
 "When this is on you can drag a file over a sub-directory or program in a "
 "filer window. The item will highlight when you do this and dropping the file "
@@ -4361,11 +5090,11 @@ msgstr ""
 "programa baten gainera arrastatu dezakezu, Elementu nabarmendu egingo da eta "
 "fitxategia askatzerakoan direktorio barnean sartu edo programan kargatuko da."
 
-#: tips:225
+#: tips:276
 msgid "Directories spring open"
 msgstr "Direktorioen irekiera automatikoa"
 
-#: tips:226
+#: tips:277
 msgid ""
 "This option, which requires the above option to be turned on too, causes the "
 "highlighted directory to 'spring open' after the file is held over it for a "
@@ -4375,15 +5104,15 @@ msgstr ""
 "fitxategi direktorioaren gainean mantendu ondoren 'automatikoki irekitzea' "
 "lortzen du."
 
-#: tips:227
+#: tips:278
 msgid "Spring delay:"
 msgstr "Irekiera automatiko atzerapena:"
 
-#: tips:228
+#: tips:279
 msgid "ms"
 msgstr "ms"
 
-#: tips:229
+#: tips:280
 msgid ""
 "This option sets how long, in ms, you must hold a file over a directory "
 "before it will spring open. The above option must be turned on for this to "
@@ -4393,33 +5122,33 @@ msgstr ""
 "mantendu behar den denbora ezartzen du, ms-etan. Aurreko aukera gaiturik "
 "egon behar da honek eraginik edukitzeko."
 
-#: tips:230
+#: tips:281
 msgid "When dragging files with the left mouse button"
 msgstr "Saguaren ezkerreko botoiaz fitxategia arrastatzerakoan"
 
-#: tips:231 tips:235
+#: tips:282 tips:286
 msgid "Show a menu of possible actions"
 msgstr "Aukera posibleen menu bat bistarazi"
 
-#: tips:232
+#: tips:283
 msgid "Copy the files"
 msgstr "Fitxategiak kopiatu"
 
-#: tips:233
+#: tips:284
 msgid ""
 "Note that you can still get the menu to appear, by dragging with Alt held "
 "down."
 msgstr "Oraindik Alt tekla zanpatua mantenduaz menua agertzea lor dezakezu."
 
-#: tips:234
+#: tips:285
 msgid "When dragging files with the middle mouse button"
 msgstr "Saguaren erdiko botoiaz fitxategiak arrastatzerakoan"
 
-#: tips:236
+#: tips:287
 msgid "Move the files"
 msgstr "Fitxategiak mugitu"
 
-#: tips:237
+#: tips:288
 msgid ""
 "Note that you can still get the menu to appear, by dragging with the left "
 "button and holding down the Alt key."
@@ -4427,11 +5156,11 @@ msgstr ""
 "Oraindik Alt tekla zanpatua mantenduaz eta ezkerro botoiaz menua bistaratzea "
 "lor dezakezu."
 
-#: tips:238
+#: tips:289
 msgid "Download handler"
 msgstr "Deskarga kudeatzailea"
 
-#: tips:239
+#: tips:290
 msgid ""
 "When you drag a file from a web browser or other remote source, this program "
 "will be run to download it. $1 is the URI dragged to the filer, and the "
@@ -4443,35 +5172,35 @@ msgstr ""
 "arrastaturiko URI-a da, eta momentuko direktorioa helburua da. Adibidez:\n"
 "xterm -e wget $1"
 
-#: tips:240
+#: tips:291
 msgid "Menus"
 msgstr "Menuak"
 
-#: tips:242
+#: tips:293
 msgid "Size of icons in menus:"
 msgstr "Menuetako ikono tamaina:"
 
-#: tips:243
+#: tips:294
 msgid "No Icons"
 msgstr "Ikono gabe"
 
-#: tips:246
+#: tips:297
 msgid "Same as current window"
 msgstr "Dagoen leihoaren berdina"
 
-#: tips:247
+#: tips:298
 msgid "Same as default"
 msgstr "Lehenetsirikoa"
 
-#: tips:248
+#: tips:299
 msgid "Behaviour"
 msgstr "Portamoldea"
 
-#: tips:249
+#: tips:300
 msgid "File menu on right-click"
 msgstr "Fitxategi menua eskubiko-klik eginez"
 
-#: tips:250
+#: tips:301
 msgid ""
 "Show the File menu instead of the main menu when right-clicking with files "
 "selected (the main menu can be accessed by holding down Control)."
@@ -4480,23 +5209,29 @@ msgstr ""
 "bistarazi menu nagusiaren ordez (menu nagusia Kontrol tekla zanpatuaz "
 "bistaraziko da)."
 
-#: tips:251
-msgid "`Xterm Here' program"
+#: tips:302
+#, fuzzy
+msgid "Terminal emulator program"
 msgstr "`Xterm Hemen' programa"
 
-#: tips:252
-msgid "The program to launch when you choose `Xterm Here' from the menu."
+#: tips:303
+#, fuzzy
+msgid "The program to launch when you choose `Terminal Here' from the menu."
 msgstr "Menuan `Xterm Hemen' aukeratzean abiaraziko den programa."
 
-#: tips:253
+#: tips:304
 msgid "Keyboard shortcuts"
 msgstr "Laster-teklak"
 
-#: tips:255
+#: tips:305
+msgid "Types"
+msgstr "Motak"
+
+#: tips:306
 msgid "MIME types"
 msgstr "MIME motak"
 
-#: tips:256
+#: tips:307
 #, fuzzy
 msgid ""
 "The filer uses a set of rules to work out the correct MIME type for each "
@@ -4509,24 +5244,24 @@ msgstr ""
 "\n"
 "http://rox.sourceforge.net/mime_editor.html"
 
-#: tips:257
+#: tips:308
 msgid "Edit MIME rules"
 msgstr ""
 
-#: tips:258
+#: tips:309
 #, fuzzy
 msgid "Themes"
 msgstr "Data"
 
-#: tips:259
+#: tips:310
 msgid "Icon theme"
 msgstr "Ikono gaia"
 
-#: tips:260
+#: tips:311
 msgid "Themes should be placed inside the ~/.icons directory."
 msgstr "Gaiak ~/.icons direktorian kokatu beharko lirateke."
 
-#: tips:261
+#: tips:312
 msgid ""
 "Use the 'Set Icon...' dialog box to set the icon for each MIME type. Note "
 "that icons set this way override those from the selected theme."
@@ -4535,40 +5270,40 @@ msgstr ""
 "izan modu honetan aukeratutako ikonoak aukeratutako gaiaren ikonoak aldatuko "
 "dituztela."
 
-#: tips:262
+#: tips:313
 msgid "Colours"
 msgstr "Koloreak"
 
-#: tips:263
+#: tips:314
 msgid "File type colours"
 msgstr "Fitxategi mota koloreak"
 
-#: tips:264
+#: tips:315
 msgid "Colour files based on their types"
 msgstr "Fitxategiak moten arabera kolorezturik"
 
-#: tips:265
+#: tips:316
 msgid "Filenames (and details) are coloured according to the file's type."
 msgstr ""
 "Fitxategi izenak (eta xehetasuna) fitxategi motaren arabera koloreztuko dira."
 
-#: tips:266
+#: tips:317
 msgid "Directory:"
 msgstr "Direktorioa:"
 
-#: tips:267
+#: tips:318
 msgid "Regular file:"
 msgstr "Fitxategi arrunta:"
 
-#: tips:268
+#: tips:319
 msgid "Pipe:"
 msgstr "Tutua:"
 
-#: tips:269
+#: tips:320
 msgid "Socket:"
 msgstr "Socket-a:"
 
-#: tips:271
+#: tips:322
 msgid ""
 "Error, such as a symlink which points to a non-existant file, or a file "
 "which the filer does not have permission to examine."
@@ -4576,19 +5311,19 @@ msgstr ""
 "Errorea, ez dagoen fitxategi batetara loturiko esteka edo kudeatzaileak "
 "ikusteko baimenik ez duen fitxategia bezala."
 
-#: tips:272
+#: tips:323
 msgid "Character device:"
 msgstr "Karaktere gailua:"
 
-#: tips:273
+#: tips:324
 msgid "Block device:"
 msgstr "Bloke gailua:"
 
-#: tips:274
+#: tips:325
 msgid "Door:"
 msgstr "Door:"
 
-#: tips:275
+#: tips:326
 msgid ""
 "Door files are a bit like sockets or pipes, and have only been seen on "
 "Solaris."
@@ -4596,33 +5331,61 @@ msgstr ""
 "Door fitxategia socket edo tutuen antzekoak dira, eta SOlaris-en bakarrik "
 "aurki daitezke."
 
-#: tips:276
+#: tips:327
 msgid "Executable file:"
 msgstr "Fitxategi abiarazgarria:"
 
-#: tips:277
+#: tips:328
 msgid "Application directory:"
 msgstr "Aplikazio direktorioa:"
 
-#: tips:278
+#: tips:329
 msgid "Unknown type:"
 msgstr "Mota ezezaguna:"
 
-#: tips:279
+#: tips:330
+#, fuzzy
+msgid "Background colour"
+msgstr "Atzekaldea:"
+
+#: tips:331
+#, fuzzy
+msgid "Use custom background colour:"
+msgstr "Pertsonalizatutako letra-tipoa erabili:"
+
+#: tips:332
+msgid "Transparency:"
+msgstr ""
+
+#: tips:334
+msgid ""
+"This depends on your environment. Basically if your windows have shadows, "
+"then they can also be transparent."
+msgstr ""
+
+#: tips:335
 msgid "Compatibility"
 msgstr "Bateragarritasuna"
 
-#: tips:280
+#: tips:336
+msgid "Command line program"
+msgstr ""
+
+#: tips:337
+msgid "Make script"
+msgstr ""
+
+#: tips:338
 msgid "Window manager problems"
 msgstr "Leiho kudeatzaile arazoak"
 
-#: tips:281
+#: tips:339
 msgid "Override window manager control of the pinboard and panels"
 msgstr ""
 "Leiho kudeatzaileak idazmahai eta panelen gain duen kontrola albo batetara "
 "utzi"
 
-#: tips:282
+#: tips:340
 msgid ""
 "Some window managers don't support the new Extended Window Manager Hints "
 "system, and so treat the pinboard and panels like normal windows. Turn this "
@@ -4636,12 +5399,12 @@ msgstr ""
 "etortzen bada, izenburu barra eta beste batzu leihoen inguruan agertu edo "
 "panel edo idazmahaia leiho aukeraketan agertzen badira."
 
-#: tips:283
+#: tips:341
 msgid "Pass all backdrop mouse clicks to window manager"
 msgstr ""
 "Pantailaren atzekaldean eginiko klik guztiak leiho kudeatzaileari bidali"
 
-#: tips:284
+#: tips:342
 msgid ""
 "Normally, right clicking on the desktop background will open the pinboard "
 "menu and left clicking will clear the selection. Turn this on to forward the "
@@ -4652,11 +5415,11 @@ msgstr ""
 "gaitu gertaerak leiho kudeatzailera bidaltzeko. Ikono gaineko klik-ak ez "
 "dira bidaliko."
 
-#: tips:285
+#: tips:343
 msgid "Blackbox root menus hack"
 msgstr "Blackbox erro menuentzat 'hack'-a"
 
-#: tips:286
+#: tips:344
 msgid ""
 "Blackbox, Fluxbox and similar window managers do not yet work well with the "
 "ROX-Filer pinboard. This option enables some workarounds. These window "
@@ -4668,27 +5431,51 @@ msgstr ""
 "gaitzen ditu. Hau beharrezko izan ez dedin leiho kudeatzaile hauek bere "
 "portamoldea hurrengo bertsioetarako aldatzea espero da."
 
-#: tips:287
+#: tips:345
 msgid "Panel is a 'dock'"
 msgstr "Panela 'dock' bat da"
 
-#: tips:288
+#: tips:346
+#, fuzzy
 msgid ""
-"Disable this option if the panel stays above other windows against your "
-"wishes. Requires a restart to take effect."
+"Makes sure panels stay against screen edges. Disable this option if the "
+"panel stays above other windows against your wishes. Requires a restart to "
+"take effect."
 msgstr ""
 "Ezgaitu aukera hau zure desioen kontra panela beste aplikazioen gainetik "
 "agertzen bada. Berrabiarazi egin behar da."
 
-#: tips:289
+#: tips:347
+#, fuzzy
+msgid "Panel stays on top"
+msgstr "Panel estiloa"
+
+#: tips:348
+msgid ""
+"Keeps the panel above other windows. Enable this option to make sure the "
+"dock option works correctly in some versions of compiz. May require a "
+"restart to take effect."
+msgstr ""
+
+#: tips:349
+msgid "Panel confined to work area"
+msgstr ""
+
+#: tips:350
+msgid ""
+"Keeps the panel confined to the work area specified by the Extended Window "
+"Manager Specification. Applies to new panels."
+msgstr ""
+
+#: tips:351
 msgid "Drag and drop"
 msgstr "Arratratu eta jaregin"
 
-#: tips:290
+#: tips:352
 msgid "Don't use hostnames"
 msgstr "Ez erabili ostalari izenak"
 
-#: tips:291
+#: tips:353
 msgid ""
 "Some older applications don't support XDND fully and may need to have this "
 "option turned on. Use this if dragging files to an application shows a + "
@@ -4699,15 +5486,11 @@ msgstr ""
 "batetara mugitzean markatzailearen gainean + ikur bat agertu baina "
 "asakatzerakoan ez badu funtzionatzen."
 
-#: tips:292
-msgid "Extended attributes"
-msgstr "Atributu hedatuak"
-
-#: tips:293
+#: tips:355
 msgid "Don't use extended attributes"
 msgstr "Ez erabili atributu hedatuak"
 
-#: tips:294
+#: tips:356
 msgid ""
 "This disables the use of extended attributes available in newer operating "
 "systems and file systems.  With this option set the 'Set Type' menu entry is "
@@ -4719,6 +5502,402 @@ msgstr ""
 "Ezarri' menu sarrera ezgaiturik dago, fitxategiaren MIME mota fitxategiaren "
 "izenean bakarrik oinarrituko da eta propietate leihoak ez du aukera hedatuen "
 "argibiderik emango."
+
+#: tips:357
+msgid "Fast width calculating"
+msgstr ""
+
+#: tips:358
+msgid ""
+"If this is on, string width calculations will be faster but less accurate in "
+"Small Icons mode."
+msgstr ""
+
+#: tips:359
+msgid "Purge Dir Cache"
+msgstr ""
+
+#: tips:360
+msgid "Don't check this if you haven't problems with RAM."
+msgstr ""
+
+#: tips:361
+msgid "Take control of window move on auto-resize"
+msgstr ""
+
+#: tips:362
+msgid ""
+"When this is on, rox rather than the window manager, handles window move. "
+"When this is off, pointer warp on auto-move is disabled."
+msgstr ""
+
+#: tips:363
+#, fuzzy
+msgid "Bottom gap:"
+msgstr "Behekaldeko marjina"
+
+#: tips:365 tips:368
+msgid ""
+"For the overridden auto-move in the auto-resize and the display settings."
+msgstr ""
+
+#: tips:366
+msgid "Right gap:"
+msgstr ""
+
+#: tips:369
+msgid "Disable pointer warp"
+msgstr ""
+
+#: tips:370
+msgid ""
+"Check this if you don't want your mouse pointer to be moved on window shrink/"
+"auto-move."
+msgstr ""
+
+#: ../Templates.ui.h:1
+#, fuzzy
+msgid "ROX-Filer log viewer"
+msgstr "ROX-Filer"
+
+#: ../Templates.ui.h:2
+msgid "Recently performed actions..."
+msgstr ""
+
+#: ../Templates.ui.h:3
+#, fuzzy
+msgid "Open Directory"
+msgstr "Etxe direktorioa ireki"
+
+#: ../Templates.ui.h:4
+#, fuzzy
+msgid "Panel Options"
+msgstr "Aukerak"
+
+#: ../Templates.ui.h:5
+#, fuzzy
+msgid "Image and Text"
+msgstr "Irudia eta testua"
+
+#: ../Templates.ui.h:6
+#, fuzzy
+msgid "Every icon on this panel is shown with an image and some text."
+msgstr "Paneleko ikono bakoitza irudi bat eta testu batez bistaratzen dira."
+
+#: ../Templates.ui.h:7
+msgid "Image only for applications"
+msgstr "Irudi bakarrik aplikazioentzat"
+
+#: ../Templates.ui.h:8
+#, fuzzy
+msgid ""
+"Applications in this panel have just an image, everything else has both an "
+"image and text."
+msgstr ""
+"Aplikazioek irudia bakarrik dute, beste guztiak irudi eta testua izango dute."
+
+#: ../Templates.ui.h:9
+msgid "Image only"
+msgstr "Irudi bakarrik"
+
+#: ../Templates.ui.h:10
+#, fuzzy
+msgid "Only the image is shown for icons in this panel."
+msgstr "Irudia bakarrik bistaratzen da."
+
+#: ../Templates.ui.h:11
+#, fuzzy
+msgid "Panel width"
+msgstr "Panel zabalera (estua)"
+
+#: ../Templates.ui.h:12
+#, fuzzy
+msgid "The size of this panel."
+msgstr "Panelen tamaina."
+
+#: ../Templates.ui.h:13
+msgid "px"
+msgstr ""
+
+#: ../Templates.ui.h:14
+#, fuzzy
+msgid "Transparency"
+msgstr "Itzulpena"
+
+#: ../Templates.ui.h:15
+msgid ""
+"This depends on your environment. Basically if your windows had shadows, "
+"then you'll get transparent view."
+msgstr ""
+
+#: ../Templates.ui.h:18
+msgid "Do not cover panel"
+msgstr "Ez panela tapatu"
+
+#: ../Templates.ui.h:19
+#, fuzzy
+msgid ""
+"Ask the window manager not to cover this panel when maximising windows, "
+"otherwise leave just 2 pixels at the edge of the screen to allow auto-"
+"raising. Some window managers may not honour this setting."
+msgstr ""
+"Leiho kudeatzaileari leihoan guztiz handitzerakoan panela ez estaltzeko "
+"eskatu. Leiho kudeatzaile btazuek ez dute hau errespetatzen. Gaiturik ez "
+"badago kudeatzaileak pare bat pixel bakarrik eskatzen ditu aute-erakusteak "
+"gaituaz bistarazi ahal izateko."
+
+#: ../Templates.ui.h:20
+#, fuzzy
+msgid "<b>Panel style</b>"
+msgstr "Panel estiloa"
+
+#: ../Templates.ui.h:21
+msgid "Confine to Xinerama monitor"
+msgstr "Xinerama monitorean mantendu"
+
+#: ../Templates.ui.h:22
+#, fuzzy
+msgid ""
+"If you use multiple monitors with Xinerama, use this option to confine the "
+"panel to one monitor."
+msgstr ""
+"Xinerama bidez monitore anitz konfiguraturik badituzu panela monitore "
+"batetan mantentzeko (batetik bestera pasa beharrean) aukera hau erabili."
+
+#: ../Templates.ui.h:23
+#, fuzzy
+msgid ""
+"The monitor this panel is confined to when using Xinerama. The numbering "
+"starts from zero."
+msgstr "Xinerama moduan panelak mantenduko diren monitorea (0-tik zenbaturik)."
+
+#: ../Templates.ui.h:24
+#, fuzzy
+msgid "<b>Xinerama</b>"
+msgstr "Xinerama"
+
+#: ../Templates.ui.h:25
+msgid "Right edge"
+msgstr ""
+
+#: ../Templates.ui.h:26
+msgid "Left edge"
+msgstr ""
+
+#: ../Templates.ui.h:27
+#, fuzzy
+msgid "Bottom edge"
+msgstr "Behekaldeko marjina"
+
+#: ../Templates.ui.h:28
+msgid "Top edge"
+msgstr ""
+
+#: ../Templates.ui.h:29
+#, fuzzy
+msgid "<b>Position</b>"
+msgstr "<b>Baimenak</b>"
+
+#~ msgid "<dir>"
+#~ msgstr "<dir>"
+
+#~ msgid "?'%s' already exists - overwrite?"
+#~ msgstr "?'%s' badago - gainidatzi?"
+
+#, fuzzy
+#~ msgid "Choices migration"
+#~ msgstr "Txinatar (tradizionala)"
+
+#~ msgid ""
+#~ "Error scanning '%s':\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Errorea '%s' irakurtzerakoan:\n"
+#~ "%s"
+
+#~ msgid "Directory missing/deleted"
+#~ msgstr "Direktorioa ezabatua/falta da"
+
+#~ msgid "Directory '%s' not found."
+#~ msgstr "'%s' direktorioa ez da aurkitu."
+
+#~ msgid "Cancel"
+#~ msgstr "Ezeztatu"
+
+#~ msgid ""
+#~ ".\n"
+#~ "Home page (including updated versions): http://rox.sourceforge.net/\n"
+#~ msgstr ""
+#~ ".\n"
+#~ "Webgunea (eguneraturiko bertsioak barne): http://rox.sourceforge.net/\n"
+
+#~ msgid "GNOME-VFS library"
+#~ msgstr "GNOME-VFS liburutegia"
+
+#~ msgid "No (need 2.8.0 or later)"
+#~ msgstr "Ez (2.8.0 edo berriagoa behar du)"
+
+#~ msgid "Dnotify support"
+#~ msgstr "Dnotify Onarpena"
+
+#~ msgid "Open AVFS"
+#~ msgstr "AVFS ireki"
+
+#~ msgid "You should Shift+Menu click over a file to send it somewhere"
+#~ msgstr ""
+#~ "Zuk Shift zapalduri duzula fitxategiaren menuan klik egin behar duzu "
+#~ "norabait bidaltzeko"
+
+#~ msgid "Look inside ... ?"
+#~ msgstr "Bilatu barruan ... ?"
+
+#, fuzzy
+#~ msgid "Panel: %s"
+#~ msgstr "Panelak"
+
+#~ msgid "Invalid .gmo translation file (too short): %s"
+#~ msgstr "Archivo de traducci√≥n .gmo no v√°lido (demasiado corto): %s"
+
+#~ msgid "Invalid .gmo translation file (GNU magic number not found): %s"
+#~ msgstr ""
+#~ "Archivo de traducci√≥n .gmo no v√°lido (no se encontr√≥ el n√∫mero m√°gico "
+#~ "GNU): %s"
+
+#~ msgid "B"
+#~ msgstr "B"
+
+#~ msgid "Change to parent directory"
+#~ msgstr "Goiko direktorioara joan"
+
+#~ msgid "Change to home directory"
+#~ msgstr "Etxe direktoriora joan"
+
+#~ msgid "Bookmarks"
+#~ msgstr "Laster-markak"
+
+#~ msgid "Bookmarks menu"
+#~ msgstr "Laster-marka menua"
+
+#~ msgid "Rescan directory contents"
+#~ msgstr "Berritu  direktorio edukiak"
+
+#~ msgid "Change icon size"
+#~ msgstr "Ikono tamaina aldatu"
+
+#~ msgid "Show extra details"
+#~ msgstr "Xehetasun gehiarriak bistarazi"
+
+#~ msgid "Hidden"
+#~ msgstr "Eskutaturik"
+
+#~ msgid "Show/hide hidden files"
+#~ msgstr "Ezkutaturiko fitxategiak ezkutatu/bistarazi"
+
+#~ msgid ""
+#~ "Icon theme '%s' does not contain MIME icons. Using ROX default theme "
+#~ "instead."
+#~ msgstr ""
+#~ "'%s' ikono gaiak ez ditu MIME ikonorik. ROX-en lehenetsiriko gaia "
+#~ "erabiltzen honen ordez."
+
+#~ msgid ""
+#~ "Failed to create symlink '%s':\n"
+#~ "%s\n"
+#~ "\n"
+#~ "(this may mean that the ROX theme already exists there, but the 'mime-"
+#~ "application:postscript' icon couldn't be loaded for some reason)"
+#~ msgstr ""
+#~ "Huts '%s' esteka sinbolikoa sortzerakoan:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "(honek ROX gaia dagoeneko han dagoela baina 'mime-application:postscript' "
+#~ "zerbaitegaik ezin izna dela kargatu esan nahi dezake)"
+
+#~ msgid "Language"
+#~ msgstr "Hizkuntza"
+
+#~ msgid "Use the LANG environment variable"
+#~ msgstr "LANG aldagaieko ingurunea erabili"
+
+#~ msgid "Chinese (traditional)"
+#~ msgstr "Txinatar (tradizionala)"
+
+#~ msgid "Chinese (simplified)"
+#~ msgstr "Txinatar (soildua)"
+
+#~ msgid "Czech"
+#~ msgstr "Txekiera"
+
+#~ msgid "Danish"
+#~ msgstr "Daniera"
+
+#~ msgid "Dutch"
+#~ msgstr "Holandarra"
+
+#~ msgid "English (no translation)"
+#~ msgstr "Ingelesa (itzuli gabe)"
+
+#, fuzzy
+#~ msgid "Estonian"
+#~ msgstr "Errumaniera"
+
+#~ msgid "Finnish"
+#~ msgstr "Finlandiera"
+
+#~ msgid "French"
+#~ msgstr "Frantsesa"
+
+#~ msgid "German"
+#~ msgstr "Alemaniera"
+
+#~ msgid "Hungarian"
+#~ msgstr "Hungariera"
+
+#~ msgid "Japanese"
+#~ msgstr "Japoniera"
+
+#~ msgid "Norwegian"
+#~ msgstr "Norvegiera"
+
+#~ msgid "Italian"
+#~ msgstr "Italiera"
+
+#~ msgid "Polish"
+#~ msgstr "Poloniera"
+
+#~ msgid "Portuguese (Brasil)"
+#~ msgstr "Portugesa (Brasil)"
+
+#~ msgid "Romanian"
+#~ msgstr "Errumaniera"
+
+#~ msgid "Russian"
+#~ msgstr "Errusiera"
+
+#~ msgid "Spanish"
+#~ msgstr "Gaztelania"
+
+#~ msgid "Swedish"
+#~ msgstr "Suediera"
+
+#~ msgid "Change at:"
+#~ msgstr "Aldaketa hemen:"
+
+#~ msgid "Max width (Large icons):"
+#~ msgstr "Zabalera handiena (Ikono Handiak):"
+
+#~ msgid "Panels"
+#~ msgstr "Panelak"
+
+#~ msgid ""
+#~ "Panels are bars of icons that run along the side of the screen. See the "
+#~ "manual for information about using panels."
+#~ msgstr ""
+#~ "Panelak pantailaren albo batetan kokaturiko ikono barrak dira. Panelen "
+#~ "erabilerari buruz argibide gehiago jasotzeko manuala irakurri."
+
+#~ msgid "(thick)"
+#~ msgstr "(lodia)"
 
 #~ msgid ""
 #~ "Error loading MIME database:\n"
