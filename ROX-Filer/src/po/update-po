@@ -5,7 +5,7 @@ echo
 
 (cd ..; python po/tips.py &&
  intltool-extract --type=gettext/glade --update ../Templates.ui &&
- xgettext --keyword=_ --keyword=N_ --output=messages.pot *.c tips ../Templates.ui.h)
+ xgettext --from-code=UTF-8 --keyword=_ --keyword=N_ --output=messages.pot *.c tips ../Templates.ui.h)
 
 echo
 
