@@ -787,7 +787,7 @@ gboolean ensure_filer_menu(void)
 	adi(N_("About ROX-Filer..."), menu_rox_help,  HELP_ABOUT);
 	ads(N_("Show Help Files"   ), menu_rox_help,  HELP_DIR, GTK_STOCK_HELP);
 		sta(GDK_KEY_F1, 0);
-	adi(N_("About ROX-Filer..."), menu_rox_help,  HELP_MANUAL);
+	adi(N_("Manual"), menu_rox_help,  HELP_MANUAL);
 
 	start_menu(NULL, filer_menu);
 	adi(N_("Customise Dir Menu..."), customise_directory_menu, 0);
