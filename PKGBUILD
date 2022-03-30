@@ -4,7 +4,7 @@
 
 pkgname=rox-filer-hugeicons
 pkgver=2.11.h
-pkgrel=1
+pkgrel=2
 branch=stable
 pkgdesc="A fork of rox-filer having 64 - 512px icons"
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ license=('GPL')
 url="https://github.com/jun7/rox-filer"
 depends=('sh' 'libsm' 'gtk2')
 makedepends=('libxslt' 'git')
-source=("git://github.com/jun7/rox-filer.git#branch=$branch")
+source=("git+https://github.com/jun7/rox-filer.git#branch=$branch")
 md5sums=('SKIP')
 
 pkgver(){
