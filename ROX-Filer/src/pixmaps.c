@@ -709,15 +709,19 @@ static gchar *thumbnail_program(MIME_type *type)
 	leaf = g_strconcat(type->media_type, "_", type->subtype, NULL);
 	path = choices_find_xdg_path_load(leaf, "MIME-thumb", SITE);
 	g_free(leaf);
-	if (path)
+	if (path && g_file_test(path, G_FILE_TEST_IS_EXECUTABLE))
 	{
 		return path;
 	}
 
 	path = choices_find_xdg_path_load(type->media_type, "MIME-thumb",
 					  SITE);
-
-	return path;
+	if (path && g_file_test(path, G_FILE_TEST_IS_EXECUTABLE))
+	{
+		return path;
+	}
+	
+	return NULL;
 }
 
 /* Load path and create the thumbnail
