@@ -218,14 +218,14 @@ void minibuffer_show(FilerWindow *filer_window, MiniType mini_type, guint keyval
 			item = cursor.peek(&cursor);
 			pos = 0;
 			if (view_count_selected(filer_window->view) > 0)
-				gtk_entry_set_text(mini, " \"$@\"");
+				gtk_entry_set_text(mini, " \"$@\" ");
 			else if (item)
 			{
 				guchar *escaped;
 				guchar *tmp;
 
 				escaped = shell_escape(item->leafname);
-				tmp = g_strconcat(" ", escaped, NULL);
+				tmp = g_strconcat(" ", escaped, " ", NULL);
 				g_free(escaped);
 				gtk_entry_set_text(mini, tmp);
 				g_free(tmp);
@@ -301,6 +301,7 @@ void minibuffer_add(FilerWindow *filer_window, const gchar *leafname)
 		gtk_editable_insert_text(edit, " ", 1, &pos);
 
 	gtk_editable_insert_text(edit, esc, strlen(esc), &pos);
+	gtk_editable_insert_text(edit, " ", 1, &pos);
 	gtk_editable_set_position(edit, pos);
 
 	g_free(esc);
