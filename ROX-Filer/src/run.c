@@ -401,7 +401,7 @@ gboolean run_by_uri(const gchar *uri, gchar **errmsg)
 	gboolean retval;
 	gchar *tmp, *tmp2;
 	gchar *scheme;
-	gchar *cmd;
+	gchar *cmd = NULL;
 
 	scheme=get_uri_scheme((EscapedPath *) uri);
 	if(!scheme)
@@ -413,6 +413,23 @@ gboolean run_by_uri(const gchar *uri, gchar **errmsg)
 
 	if(strcmp(scheme, "file")==0) {
 		tmp=get_local_path((EscapedPath *) uri);
+		if(tmp) {
+			if(!g_file_test(tmp, G_FILE_TEST_EXISTS)) {
+				/* is uri a file://...#anchor ? */
+				gchar *p = strchr(tmp, '#');
+				if (p != NULL) {
+					*p = '\0';
+					if(g_file_test(tmp, G_FILE_TEST_EXISTS)) {
+						/* will open uri in browser */
+						g_free(scheme);
+						scheme = g_strdup("http");
+					}
+					*p = '#';
+				}
+			}
+		}
+	}
+	if(strcmp(scheme, "file")==0) {
 		if(tmp) {
 			tmp2=pathdup(tmp);
 			retval=run_by_path(tmp2);
