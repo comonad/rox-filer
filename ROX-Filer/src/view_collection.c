@@ -1036,16 +1036,50 @@ static void small_template(GdkRectangle *area, CollectionItem *colitem,
 static void small_full_template(GdkRectangle *area, CollectionItem *colitem,
 			   ViewCollection *view_collection, Template *template)
 {
-	int	col_width = view_collection->collection->item_width;
-	GdkRectangle temparea = *area;
+	bool details_first = (view_collection->filer_window->details_type == DETAILS_SIZE);
 
-	temparea.width = col_width - template->details.width;
+	ViewData *view = (ViewData *) colitem->view_data;
+	int margin = 2;
 
-	small_template(&temparea, colitem, view_collection, template);
+	int total_width = view_collection->collection->item_width;
 
-	template->details.x = area->x + col_width - template->details.width;
-	template->details.y =
-		area->y + area->height / 2 - template->details.height / 2;
+	int details_width = template->details.width;
+	int icon_width = small_width + margin; // icon incl margins
+	int text_width = total_width - details_width - icon_width; // max_text_width
+
+	int details_x;
+	int icon_x;
+	int text_x;
+	int details_dy;
+	if (details_first)
+	{
+		int cursor_x = area->x;
+		details_x = cursor_x; cursor_x += details_width;
+		icon_x = cursor_x; cursor_x += icon_width;
+		text_x = cursor_x; cursor_x += text_width;
+		details_dy = -2; // visually move DETAILS_SIZE upwards to break visual line with item to the left
+	}
+	else
+	{
+		int cursor_x = area->x;
+		icon_x = cursor_x; cursor_x += icon_width;
+		text_x = cursor_x; cursor_x += text_width;
+		details_x = cursor_x; cursor_x += details_width;
+		details_dy = 0;
+	}
+
+	template->icon.x = icon_x + margin/2;
+	template->icon.y = area->y + 1;
+	template->icon.width = icon_width - margin/2;
+	template->icon.height = small_height;
+
+	template->leafname.x = text_x;
+	template->leafname.y = area->y + area->height / 2 - view->name_height / 2;
+	template->leafname.width = MIN(text_width, view->name_width);
+	template->leafname.height = view->name_height;
+
+	template->details.x = details_x;
+	template->details.y = area->y + area->height / 2 - template->details.height / 2 + details_dy;
 }
 
 #define INSIDE(px, py, area, ladj, radj)	\

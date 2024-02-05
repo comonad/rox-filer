@@ -1,5 +1,9 @@
 
 Changes
+
+- **compared to jun7/rox-filer: in small-icons view, file size details**
+  **are now shown at left of the icon instead of at the far right end**
+  
 - **Short cut keys around Copy and Paste are changed**
 
 - https://github.com/jun7/rox-filer/wiki/Changes
@@ -59,3 +63,4 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 
 Please report any bugs to the [rox-devel mailing list](http://rox.sourceforge.net/desktop/lists).
+

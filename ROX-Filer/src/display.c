@@ -1052,7 +1052,17 @@ static char *getdetails(FilerWindow *filer_window,
 //		if (item->base_type != TYPE_DIRECTORY)
 		{
 			if (filer_window->display_style == SMALL_ICONS)
-				buf = g_strdup(format_size_aligned(item->size));
+			{
+				buf = g_strdup(format_size_aligned(item->size)); // 5 chars
+				if (buf[4]==' ') // align right
+				{
+					buf[4]=buf[3];
+					buf[3]=buf[2];
+					buf[2]=buf[1];
+					buf[1]=buf[0];
+					buf[0]=' ';
+				}
+			}
 			else
 				buf = g_strchomp(g_strdup(format_size(item->size)));
 		}
