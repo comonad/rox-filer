@@ -1050,7 +1050,11 @@ static void small_full_template(GdkRectangle *area, CollectionItem *colitem,
 	int details_x;
 	int icon_x;
 	int text_x;
+
 	int details_dy;
+	int icon_dy = 1;
+	int text_dy = 0;
+
 	if (details_first)
 	{
 		int cursor_x = area->x;
@@ -1069,17 +1073,17 @@ static void small_full_template(GdkRectangle *area, CollectionItem *colitem,
 	}
 
 	template->icon.x = icon_x + margin/2;
-	template->icon.y = area->y + 1;
+	template->icon.y = area->y + (area->height - small_height) / 2 + icon_dy;
 	template->icon.width = icon_width - margin/2;
 	template->icon.height = small_height;
 
 	template->leafname.x = text_x;
-	template->leafname.y = area->y + area->height / 2 - view->name_height / 2;
+	template->leafname.y = area->y + (area->height - view->name_height) / 2 + text_dy;
 	template->leafname.width = MIN(text_width, view->name_width);
 	template->leafname.height = view->name_height;
 
 	template->details.x = details_x;
-	template->details.y = area->y + area->height / 2 - template->details.height / 2 + details_dy;
+	template->details.y = area->y + (area->height - template->details.height) / 2 + details_dy;
 }
 
 #define INSIDE(px, py, area, ladj, radj)	\
