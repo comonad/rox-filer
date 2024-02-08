@@ -1055,13 +1055,19 @@ static void small_full_template(GdkRectangle *area, CollectionItem *colitem,
 	int icon_dy = 1;
 	int text_dy = 0;
 
+	int detail_alignment;
+
 	if (details_first)
 	{
 		int cursor_x = area->x;
 		details_x = cursor_x; cursor_x += details_width;
 		icon_x = cursor_x; cursor_x += icon_width;
 		text_x = cursor_x; cursor_x += text_width;
-		details_dy = -2; // visually move DETAILS_SIZE upwards to break visual line with item to the left
+		details_dy = -2; // visually move DETAILS_SIZE upwards to break visual text line with item to the left
+		detail_alignment = 2; // aligned at center
+
+		details_dy = 0; // or align boxes at bottom. this might accidentally appear to be the same.
+		detail_alignment = 3; // aligned at bottom
 	}
 	else
 	{
@@ -1070,6 +1076,7 @@ static void small_full_template(GdkRectangle *area, CollectionItem *colitem,
 		text_x = cursor_x; cursor_x += text_width;
 		details_x = cursor_x; cursor_x += details_width;
 		details_dy = 0;
+		detail_alignment = 1; // align text boxes at their top edge. this seems to align their inner text.
 	}
 
 	template->icon.x = icon_x + margin/2;
@@ -1083,7 +1090,18 @@ static void small_full_template(GdkRectangle *area, CollectionItem *colitem,
 	template->leafname.height = view->name_height;
 
 	template->details.x = details_x;
-	template->details.y = area->y + (area->height - template->details.height) / 2 + details_dy;
+	switch (detail_alignment) {
+	case 1: // allign upper^edge^of^details to upper^edge^of^text
+		template->details.y = template->leafname.y;
+		break;
+	case 2: // allign center-of-details to center-of-text
+		template->details.y = area->y + (area->height - template->details.height) / 2 + details_dy;
+		break;
+	case 3: // allign lower_edge_of_details to lower_edge_of_text
+		template->details.y = template->leafname.y + (view->name_height - template->details.height);
+		break;
+	}
+	template->details.y += details_dy;
 }
 
 #define INSIDE(px, py, area, ladj, radj)	\
