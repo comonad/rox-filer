@@ -118,8 +118,8 @@ static Tool all_tools[] = {
 	 FALSE},
 
 	{N_("Up"), GTK_STOCK_GO_UP, N_("Change to parent directory\n"
-						"  Right: Open parent directory\n"
-						"  Middle: Change to parent in real path"),
+						"  Right: Change to parent in real path\n"
+						"  Middle: Open parent directory"),
 	 toolbar_up_clicked, DROP_TO_PARENT, TRUE,
 	 FALSE},
 
@@ -480,6 +480,18 @@ static void toolbar_close_clicked(GtkWidget *widget, FilerWindow *filer_window)
 static void toolbar_up_clicked(GtkWidget *widget, FilerWindow *filer_window)
 {
 	gint eb = get_release();
+
+	const mouseL = 1;
+	const mouseM = 3;
+	const mouseR = 2;
+	// flip middle and right button behavior, original was:
+	//	{N_("Up"), GTK_STOCK_GO_UP, N_("Change to parent directory\n"
+	//					"  Right: Open parent directory\n"
+	//					"  Middle: Change to parent in real path"),
+	// toolbar_up_clicked, DROP_TO_PARENT, TRUE, FALSE},
+	eb = eb==mouseR ? mouseM
+	   : eb==mouseM ? mouseR
+	   : eb ;
 
 	if (NEW_WIN_BUTTON(eb) && eb != 2)
 		filer_open_parent(filer_window);
