@@ -1,5 +1,8 @@
 #!/bin/sh
 
+export CC=gcc-13
+
+
 PROG=ROX-Filer
 
 APP_DIR=`dirname "$0"`
